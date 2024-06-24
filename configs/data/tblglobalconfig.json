@@ -1,0 +1,282 @@
+[
+  {
+    "ID": 101,
+    "Name": "BotReplaceTime",
+    "Num": 30000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 102,
+    "Name": "WaitMaxTime",
+    "Num": 10000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 103,
+    "Name": "GrassVision",
+    "Num": 1000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 104,
+    "Name": "AttackReset",
+    "Num": 2000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 105,
+    "Name": "DailyFirstAwardTimes",
+    "Num": 2,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 106,
+    "Name": "DailyFirstAwardBonus",
+    "Num": 3,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 107,
+    "Name": "ContinueWaitMaxTime",
+    "Num": 15000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 108,
+    "Name": "RestockDistanceLimit",
+    "Num": 1200,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 109,
+    "Name": "HeroLvCap",
+    "Num": 10,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 110,
+    "Name": "TestCD",
+    "Num": 1,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 111,
+    "Name": "FirstAwardLowest",
+    "Num": 1,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 112,
+    "Name": "DefaultHeros",
+    "Num": 0,
+    "Text": "",
+    "Values": [
+      10003,
+      10004,
+      10005,
+      10006,
+      10010,
+      10014
+    ]
+  },
+  {
+    "ID": 113,
+    "Name": "DefaultDiamond",
+    "Num": 100000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 114,
+    "Name": "DefaultGole",
+    "Num": 100000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 115,
+    "Name": "DefaultHeroCoin",
+    "Num": 100000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 116,
+    "Name": "MaxNickname",
+    "Num": 14,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 117,
+    "Name": "HallBirth",
+    "Num": 0,
+    "Text": "",
+    "Values": [
+      151,
+      125
+    ]
+  },
+  {
+    "ID": 118,
+    "Name": "View",
+    "Num": 90,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 119,
+    "Name": "DamageFactor",
+    "Num": 200,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 120,
+    "Name": "MailLimit",
+    "Num": 99,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 121,
+    "Name": "PetChangeName",
+    "Num": 0,
+    "Text": "1,1,2,0|2,9999,2,100",
+    "Values": []
+  },
+  {
+    "ID": 122,
+    "Name": "TaskBarShowTaskTypes",
+    "Num": 0,
+    "Text": "",
+    "Values": [
+      99,
+      1,
+      11
+    ]
+  },
+  {
+    "ID": 123,
+    "Name": "Aihelpshowid",
+    "Num": 0,
+    "Text": "E001",
+    "Values": []
+  },
+  {
+    "ID": 124,
+    "Name": "ChatTeamShow",
+    "Num": 20,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 125,
+    "Name": "ChatQueueAutoRefresh",
+    "Num": 60,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 126,
+    "Name": "CahtRefresh",
+    "Num": 60,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 127,
+    "Name": "EnlistCD",
+    "Num": 30,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 128,
+    "Name": "LoginTime",
+    "Num": 20160,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 129,
+    "Name": "ExtraCheckIn",
+    "Num": 0,
+    "Text": "",
+    "Values": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ]
+  },
+  {
+    "ID": 130,
+    "Name": "GetPetStone",
+    "Num": 10,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 131,
+    "Name": "LikeLimit",
+    "Num": 100000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 132,
+    "Name": "LikeCoin",
+    "Num": 0,
+    "Text": "",
+    "Values": [
+      1,
+      50
+    ]
+  },
+  {
+    "ID": 133,
+    "Name": "SELF_MAX_RANK",
+    "Num": 5000,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 134,
+    "Name": "WORLD_MAX_RANK",
+    "Num": 10,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 135,
+    "Name": "QuestionnaireReward",
+    "Num": 10013,
+    "Text": "",
+    "Values": []
+  },
+  {
+    "ID": 136,
+    "Name": "QuestionnaireMetal",
+    "Num": 0,
+    "Text": "",
+    "Values": [
+      4,
+      25
+    ]
+  }
+]

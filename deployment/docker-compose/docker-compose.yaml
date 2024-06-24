@@ -1,0 +1,131 @@
+version: '3'
+services:
+  rumble-bff:
+    env_file:
+      - .env
+    environment:
+      - AUTH_URL=platform:8081
+      - BUDDY_URL=platform:8081
+      - CHAT_URL=platform:8081
+      - KNAPSACK_URL=platform:8081
+      - MATCH_URL=platform:8081
+      - PARTY_URL=platform:8081
+      - PET_URL=platform:8081
+      - PROFILE_URL=platform:8081
+      - MAIL_URL=platform:8081
+      - MISSION_URL=platform:8081
+      - HERO_URL=platform:8081
+      - ANALYTICS_URL=platform:8081
+      - CASHBATTLE_URL=activity:8081
+      - GM_URL=gm:8081
+      - NATS_URL=nats://game-nats:4222
+      - BOSS_GM_HOST=http://192.168.90.20:8383
+      - CACHE_URL=redis://game-redis:6379
+      - LEADERBOARD_URL=platform:8081
+    container_name: bff
+    image: ${REGISTRY}/rumble/bff:latest
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    ports:
+      - "8888:8888"
+    restart: always
+    networks:
+      - rumble-network
+  rumble-battle:
+    env_file:
+      - .env
+    container_name: battle
+    image: ${REGISTRY}/rumble/room:latest
+    restart: always
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    environment:
+      - ZINX_TCP_PORT=9999
+      - AUTH_URL=platform:8081
+      - PROFILE_URL=platform:8081
+      - HERO_URL=platform:8081
+      - KNAPSACK_URL=platform:8081
+      - MISSION_URL=platform:8081
+      - MATCH_URL=platform:8081
+      - PARTY_URL=platform:8081
+      - PET_URL=platform:8081
+      - CACHE_URL=redis://game-redis:6379
+      - NATS_URL=nats://game-nats:4222
+      - CASHBATTLE_URL=activity:8081
+      - LEADERBOARD_URL=platform:8081
+    ports:
+      - "9999:9999"
+    networks:
+      - rumble-network
+  rumble-platform:
+    container_name: platform
+    image: ${REGISTRY}/platform/platform:latest
+    restart: always
+    hostname: platform
+    ports:
+      - "8082:8081"
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    environment:
+      - DATABASE_URL=mongodb://game-mongodb:27017
+      - CACHE_URL=redis://game-redis:6379
+      - NATS_URL=nats://game-nats:4222
+    env_file:
+      - .env
+    networks:
+      - rumble-network
+  rumble-activity:
+    container_name: activity
+    image: ${REGISTRY}/rumble/activity:latest
+    restart: always
+    hostname: activity
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    env_file:
+      - .env
+    environment:
+      - AUTH_URL=platform:8081
+      - PROFILE_URL=platform:8081
+      - MAIL_URL=platform:8081
+      - PET_URL=platform:8081
+      - MATCH_URL=platform:8081
+      - CACHE_URL=redis://game-redis:6379
+      - NATS_URL=nats://game-nats:4222
+      - GM_URL=gm:8081
+    networks:
+      - rumble-network
+  rumble-gm:
+    container_name: gm
+    image: ${REGISTRY}/rumble/gm:latest
+    restart: always
+    hostname: gm
+    ports:
+      - "8081:8081"
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    environment:
+      - AUTH_URL=platform:8081
+      - PROFILE_URL=platform:8081
+      - CHAT_URL=platform:8081
+      - KNAPSACK_URL=platform:8081
+      - MAIL_URL=platform:8081
+      - PET_URL=platform:8081
+      - MATCH_URL=platform:8081
+      - CACHE_URL=redis://game-redis:6379
+      - NATS_URL=nats://game-nats:4222
+      - CASHBATTLE_URL=activity:8081
+    env_file:
+      - .env
+    networks:
+      - rumble-network
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /root/.docker/config.json:/config.json
+      - /var/run/docker.sock:/var/run/docker.sock
+    command:
+      --interval 30
+      --cleanup
+      --label-enable
+networks:
+  rumble-network:

@@ -1,0 +1,169 @@
+[
+  {
+    "ID": 1,
+    "Name": "TemGift_1",
+    "Res": "cdp_reward_04",
+    "Type": 1,
+    "SaleOff": 3000000,
+    "PurChaseID": 14,
+    "ItemBoxID": 20000,
+    "LimitTime": 30,
+    "CD": 30,
+    "TermLv1": 10001,
+    "TermMun1": [
+      0,
+      600
+    ],
+    "TermLv2": 20002,
+    "TermMun2": [
+      5,
+      10
+    ],
+    "TermLv3": 0,
+    "TermMun3": []
+  },
+  {
+    "ID": 2,
+    "Name": "TemGift_2",
+    "Res": "cdp_reward_03",
+    "Type": 2,
+    "SaleOff": 3000000,
+    "PurChaseID": 15,
+    "ItemBoxID": 20001,
+    "LimitTime": 30,
+    "CD": 40,
+    "TermLv1": 10002,
+    "TermMun1": [
+      0,
+      100
+    ],
+    "TermLv2": 20002,
+    "TermMun2": [
+      5,
+      10
+    ],
+    "TermLv3": 0,
+    "TermMun3": []
+  },
+  {
+    "ID": 3,
+    "Name": "TemGift_3",
+    "Res": "cdp_reward_05",
+    "Type": 3,
+    "SaleOff": 2000000,
+    "PurChaseID": 16,
+    "ItemBoxID": 20002,
+    "LimitTime": 30,
+    "CD": 1440,
+    "TermLv1": 10003,
+    "TermMun1": [
+      0,
+      200
+    ],
+    "TermLv2": 20002,
+    "TermMun2": [
+      5,
+      10
+    ],
+    "TermLv3": 20001,
+    "TermMun3": [
+      2000,
+      99999999
+    ]
+  },
+  {
+    "ID": 4,
+    "Name": "TemGift_4",
+    "Res": "cdp_reward_02",
+    "Type": 4,
+    "SaleOff": 1350000,
+    "PurChaseID": 17,
+    "ItemBoxID": 20003,
+    "LimitTime": 30,
+    "CD": 1440,
+    "TermLv1": 10005,
+    "TermMun1": [
+      2,
+      999
+    ],
+    "TermLv2": 20003,
+    "TermMun2": [
+      2,
+      999
+    ],
+    "TermLv3": 20001,
+    "TermMun3": [
+      1000,
+      99999999
+    ]
+  },
+  {
+    "ID": 5,
+    "Name": "TemGift_5",
+    "Res": "cdp_reward_05",
+    "Type": 3,
+    "SaleOff": 2000000,
+    "PurChaseID": 18,
+    "ItemBoxID": 20004,
+    "LimitTime": 30,
+    "CD": 1440,
+    "TermLv1": 10006,
+    "TermMun1": [
+      0,
+      0
+    ],
+    "TermLv2": 20002,
+    "TermMun2": [
+      4,
+      10
+    ],
+    "TermLv3": 20001,
+    "TermMun3": [
+      99,
+      99999999
+    ]
+  },
+  {
+    "ID": 6,
+    "Name": "TemGift_6",
+    "Res": "cdp_reward_04",
+    "Type": 3,
+    "SaleOff": 2200000,
+    "PurChaseID": 19,
+    "ItemBoxID": 20005,
+    "LimitTime": 30,
+    "CD": 1440,
+    "TermLv1": 10008,
+    "TermMun1": [
+      5,
+      99999
+    ],
+    "TermLv2": 20002,
+    "TermMun2": [
+      2,
+      10
+    ],
+    "TermLv3": 0,
+    "TermMun3": []
+  },
+  {
+    "ID": 7,
+    "Name": "TemGift_7",
+    "Res": "cdp_reward_02",
+    "Type": 4,
+    "SaleOff": 3000000,
+    "PurChaseID": 20,
+    "ItemBoxID": 20006,
+    "LimitTime": 30,
+    "CD": 9999999,
+    "TermLv1": 10009,
+    "TermMun1": [
+      200,
+      10000
+    ],
+    "TermLv2": 0,
+    "TermMun2": [],
+    "TermLv3": 0,
+    "TermMun3": []
+  }
+]

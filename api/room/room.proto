@@ -1,0 +1,189 @@
+syntax = "proto3";
+package room;
+
+import "room/rcommon.proto";
+
+option go_package = "room/api;roompb";
+
+enum KickOutReason {
+  KICK_OUT_REASON_BACK_TO_HALL = 0; // 返回大厅
+  KICK_OUT_REASON_STATE_ERROR = 1; // 状态错误
+}
+
+// 场景技能通知
+message NtfRoomSkills {
+  Skill skill = 1; //技能列表
+}
+
+// 场景技能取消通知
+message NtfRoomCancelSkills {
+  int64 owner_id = 1; //技能拥有者id
+  int32 skill_cid = 2; //技能配置id
+  int32 skill_index = 3; //技能序列号
+}
+
+message SkillHit {
+  int64 target_id = 1; // 目标id
+  int32 hp_changed = 2; // 血量变化值
+  int32 left_hp = 3; // 剩余血量
+  repeated Buff add_buffs = 4; //添加BUFF列表
+  repeated int32 remove_buffs = 5; //删除BUFF列表
+  int32 changes_index = 6; //属性变化序列号(每次更改+1)
+  bool is_crit = 7; //是否暴击
+  int32 hp_suck = 8; // 攻击方吸血值
+  int32 left_hp_attacker = 9; //攻击方剩余hp
+  int32 changes_index_attacker = 10; //攻击方属性变化序列号(每次更改+1)
+  repeated Buff add_buffs_attacker = 11; //攻击方添加BUFF列表
+  Vector target_pos = 12; //目标位置 (针对目标隐身状态下被技能命中)
+}
+
+// 场景命中通知
+message NtfRoomHits {
+  repeated SkillHit hits = 1; //命中列表
+  int64 src_id = 2; // 释放着id
+  int32 skill_cid = 3; // 技能配置id
+  int32 skill_index = 4; // 技能序列号
+}
+
+message NtfRoomBuffEffect {
+  int64 target_id = 1; // 目标id
+  Buff buff = 2; //buff
+  map<int32, int32> changes = 3; //属性变化 (1 代表当前血量，101 代表血量变换值)
+  int32 changes_index = 4; //属性变化序列号(每次更改+1)
+  map<int32, int32> skill_cd = 5; // 技能CD时间改变 <技能ID:减少时间(s)>
+}
+message NtfRoomBuffDestroy {
+  int64 target_id = 1; // 目标id
+  int32 buff_id = 2; //buff id
+}
+
+message NtfRoomBuffKnockback {
+  int32 buff_id = 1; // buff id
+  int64 target_id = 2; // 目标id
+  int64 src_id = 3; // 释放者id
+  int32 skill_index = 4; // 技能序列号
+  Vector knockback_pos = 5; //击退的目标位置
+}
+
+message NtfRoomSkillEffect {
+  int64 src_id = 1; // 释放者id
+  int32 effect_cid = 2; // 效果配置id
+  int32 skill_index = 3; // 技能序列号
+  int32 direct = 4; // 方向(弧度)
+  Vector pos = 5; // 位置
+  int64 delay = 6; // 延迟时间(ms)
+}
+
+message NtfRoomSkillEffectActive {
+  int64 src_id = 1; // 释放者id
+  int32 effect_cid = 2; // 效果配置id
+  int32 skill_index = 3; // 技能序列号
+  int32 direct = 4; // 方向(弧度)
+  Vector pos = 5; // 位置
+}
+
+message C2SEnterRoom {
+  string token = 1; //登录获取的token
+  string room_id = 2; // 房间id
+  string room_token = 3; //战斗房间token
+  string country_code = 4; //国家码(CN,US)
+}
+
+message S2CEnterRoom {
+  string room_id = 1;
+  int32 map_id = 2; //地图id
+  repeated ScenePlayer players = 4;
+  int32 play_id = 5; //玩法ID 试炼为999 0为大厅
+}
+message C2SUseSkill {
+  Skill skill = 1;
+}
+message S2CUseSkill {
+  int32 skill_index = 1; //请求id
+  int32 err_code = 2; // 错误码
+  int32 skill_cid = 3; //技能id
+}
+
+// 取消技能释放，客户端在持续释放技能时，如果按下了取消技能的按钮，会发送这个消息
+message C2SCancelSkill {
+  int32 skill_cid = 1; // 技能配置id
+}
+
+// 取消技能释放返回
+message S2CCancelSkill {}
+
+message C2SLeaveRoom {}
+message S2CLeaveRoom {}
+
+message RoomResult {
+  int32 win_group_id = 1; // 胜利阵营id
+  int32 battle_time = 2; // 战斗时长(秒)
+  map<int64, RoleResult> results = 3; //玩家结果
+}
+
+// ScenePlayer 场景角色
+message ScenePlayer {
+  int64 uid = 1;
+  string nickname = 2; // 昵称
+  int32 hero_id = 3; // 英雄id
+  int32 hp = 4; // 血量
+  int32 max_hp = 5; // 最大血量
+  int32 speed = 6; // 速度
+  Vector direction = 7; // 方向
+  Vector pos = 8; // 坐标
+  int32 group_id = 9; // 阵营id
+  map<int32, Buff> buffs = 10; //buff列表
+  int64 pet_profile_id = 11; //宠物外观ID 身体  + 帽子 * 10000 + 翅膀*10000^2 + 武器*10000^3
+  int32 skin_id = 12; //皮肤ID
+}
+
+// 进入场景 客户端loading完毕后会请求这个消息
+message C2SEnterScene {}
+
+message S2CEnterScene {}
+
+// 转场完毕
+message C2SScenePrepared {}
+
+message S2CScenePrepared {}
+
+// 心跳
+message C2SRoomHeartbeat {}
+
+message S2CRoomHeartbeat {}
+
+//发送头顶表情气泡
+message C2SEmojiShow {
+  int32 emoji_id = 1; //要展示的表情ID
+}
+
+//回应头顶表情气泡展示
+message S2CEmojiShow {
+  int32 emoji_id = 1; //表情ID
+}
+
+//广播玩家要展示的表情气泡
+message NtfEmojiShow {
+  int64 player_id = 1; //展示表情气泡的玩家ID
+  int32 emoji_id = 2; //要展示的表情气泡ID
+}
+
+//再来一场
+message C2SBattleAgain {
+  bool ready = 1; //是否准备 true 准备 false 取消
+}
+
+message S2CBattleAgain {
+  bool ready = 1; //是否准备 true 准备 false 取消
+}
+
+//再来一场广播
+message NtfBattleAgain {
+  int64 player_id = 1; //再来一场玩家ID
+  bool ready = 2; //是否准备 true 准备 false 取消
+}
+
+// 踢出房间
+message NtfKickOut {
+  KickOutReason reason = 1; // 踢出原因
+}

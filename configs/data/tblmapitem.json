@@ -1,0 +1,156 @@
+[
+  {
+    "ID": 60004,
+    "Name": "定时炸弹",
+    "Scene": 0,
+    "Res": "60004",
+    "Type": 3,
+    "Radius": 50,
+    "Skill": 11000002,
+    "Drop": 0,
+    "ItemCD": 1000
+  },
+  {
+    "ID": 60005,
+    "Name": "燃烧弹",
+    "Scene": 0,
+    "Res": "60005",
+    "Type": 3,
+    "Radius": 50,
+    "Skill": 11000003,
+    "Drop": 0,
+    "ItemCD": 1000
+  },
+  {
+    "ID": 60006,
+    "Name": "地雷",
+    "Scene": 0,
+    "Res": "60006",
+    "Type": 5,
+    "Radius": 0,
+    "Skill": 11000006,
+    "Drop": 0,
+    "ItemCD": 1000
+  },
+  {
+    "ID": 60007,
+    "Name": "沥青",
+    "Scene": 0,
+    "Res": "60007",
+    "Type": 3,
+    "Radius": 50,
+    "Skill": 11000007,
+    "Drop": 0,
+    "ItemCD": 1000
+  },
+  {
+    "ID": 60008,
+    "Name": "加速",
+    "Scene": 0,
+    "Res": "60008",
+    "Type": 2,
+    "Radius": 50,
+    "Skill": 31000003,
+    "Drop": 0,
+    "ItemCD": 0
+  },
+  {
+    "ID": 60009,
+    "Name": "攻击",
+    "Scene": 0,
+    "Res": "60009",
+    "Type": 2,
+    "Radius": 50,
+    "Skill": 31000004,
+    "Drop": 0,
+    "ItemCD": 0
+  },
+  {
+    "ID": 60010,
+    "Name": "恢复",
+    "Scene": 0,
+    "Res": "60010",
+    "Type": 2,
+    "Radius": 50,
+    "Skill": 31000005,
+    "Drop": 0,
+    "ItemCD": 0
+  },
+  {
+    "ID": 60011,
+    "Name": "狂奔",
+    "Scene": 0,
+    "Res": "60011",
+    "Type": 2,
+    "Radius": 50,
+    "Skill": 31000006,
+    "Drop": 0,
+    "ItemCD": 0
+  },
+  {
+    "ID": 60012,
+    "Name": "狂暴",
+    "Scene": 0,
+    "Res": "60011",
+    "Type": 2,
+    "Radius": 50,
+    "Skill": 31000007,
+    "Drop": 0,
+    "ItemCD": 0
+  },
+  {
+    "ID": 60013,
+    "Name": "石肤",
+    "Scene": 0,
+    "Res": "60013",
+    "Type": 2,
+    "Radius": 50,
+    "Skill": 31000008,
+    "Drop": 0,
+    "ItemCD": 0
+  },
+  {
+    "ID": 65001,
+    "Name": "木箱",
+    "Scene": 0,
+    "Res": "65001",
+    "Type": 4,
+    "Radius": 100,
+    "Skill": 0,
+    "Drop": 500000,
+    "ItemCD": 0
+  },
+  {
+    "ID": 65002,
+    "Name": "木箱",
+    "Scene": 0,
+    "Res": "65001",
+    "Type": 4,
+    "Radius": 100,
+    "Skill": 0,
+    "Drop": 500001,
+    "ItemCD": 0
+  },
+  {
+    "ID": 65003,
+    "Name": "快速火车",
+    "Scene": 0,
+    "Res": "0",
+    "Type": 6,
+    "Radius": 0,
+    "Skill": 11000009,
+    "Drop": 0,
+    "ItemCD": 0
+  },
+  {
+    "ID": 65004,
+    "Name": "慢速火车",
+    "Scene": 0,
+    "Res": "0",
+    "Type": 6,
+    "Radius": 0,
+    "Skill": 11000010,
+    "Drop": 0,
+    "ItemCD": 0
+  }
+]

@@ -1,0 +1,124 @@
+syntax = "proto3";
+package room;
+
+import "room/rcommon.proto";
+
+option go_package = "room/api;roompb";
+
+enum BattleState {
+  Battle_State_None = 0;
+  Battle_State_Loading = 1; //loading
+  Battle_State_Show = 2; //展示
+  Battle_State_Fight = 3; //战斗
+  Battle_State_FinalRound = 4; //决胜局
+  Battle_State_End_Wait = 5; //结束等待
+  Battle_State_End = 6; //结束
+  Battle_State_Suspend = 99; //暂停状态
+}
+
+// 英雄战斗数据
+message MBattleHero {
+  int64 uid = 1; //玩家UID
+  int32 killCount = 2; //击杀数
+  int32 assistCount = 3; //助攻数
+  int32 deathCount = 4; //死亡数
+  int32 totalDamage = 5; //总伤害
+  int32 totalHeal = 6; //总治疗
+  float mvpScore = 7; //最终积分
+  int32 level = 8; // 英雄等级
+  int32 score = 9; // 特殊得分
+}
+
+//复活
+message NtfPVPRevive {
+  int64 uid = 1; //复活者UID
+  Vector pos = 2; //复活位置
+  int32 hp = 3; //血量
+  int32 max_hp = 4; //最大血量
+  int32 changes_index = 5; //属性变化序列号(每次更改+1)
+}
+
+//  战斗同步状态
+message NtfUpdateBattleState {
+  BattleState state = 1; //状态
+  int32 duration = 2; //持续时间(s)
+}
+
+//击杀播报
+message NtfHeroKilled {
+  int64 killed_uid = 1; //被击杀玩家ID
+  int64 kill_uid = 2; //击杀者玩家ID
+  int32 kill_amount = 3; //连杀数
+  repeated int64 helper_uid = 4; //助攻玩家ID
+  map<int32, int32> scores = 5; //比分 key:阵营ID val:得分
+  int32 revive_time = 6; //复活倒计时 毫秒
+}
+
+//战斗结束
+message NtfPVPBattleEnd {
+  int32 win_camp = 1; //胜利阵营
+  repeated MBattleHero hero = 2; //英雄战斗数据
+  repeated Item rewards = 3; //道具奖励
+  int64 mvp = 4; //MVP玩家
+  bool extra = 5; //额外奖励
+}
+
+//战斗初始化信息
+message NtfBattleInitInfo {
+  map<int32, int32> scores = 1; //比分 key:阵营ID val:得分
+  oneof BattleKind {
+    FootballInit football = 2;
+    PieceInit piece = 3;
+    BossChallengeInit boss = 4;
+  }
+}
+
+//足球初始化消息
+message FootballInit {
+  map<int32, Goal> goals = 1; //球门信息 key:阵营ID val:球门信息
+  int32 winPoint = 2; //直接胜利分数
+}
+
+// 夺宝初始化消息
+message PieceInit {
+  map<int32, ZoneCircle> zones = 1; //夺宝区域 key:阵营ID val:夺宝区域
+}
+
+
+message ZoneCircle {
+  int32 camp = 1; //阵营
+  Vector center = 2; //圆心
+  int32 radius = 3; //半径
+}
+
+message Goal {
+  int32 camp = 1; //阵营
+  repeated Vector pos = 2; //球门位置(四个顶点坐标)
+}
+
+// 战况同步消息
+message NtfBattleInfo {
+  map<int32, int32> scores = 1; //比分 key:阵营ID val:得分
+  int64 scorer = 2; //得分者id
+}
+
+
+// boss 挑战
+message BossChallengeInit {
+  int64 bossId = 1; //bossId
+  int32 bossCfgId = 2; //boss配置ID
+  Vector pos = 3; //boss位置
+  int32 faceTo = 4; //boss朝向
+  int32 hp = 5; //boss血量
+  int32 maxHp = 6; //boss最大血量
+}
+
+message NtfBossChallengeDamageUpdate {
+  int64 damage = 1; //伤害累计
+}
+
+// 买活面板
+message NtfReviveImmediatelyPanel {
+  int32 item_id = 1; //道具ID
+  int32 count = 2; //数量
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "ID": 1,
+    "TaskLimit": 1,
+    "GroupID": 1
+  },
+  {
+    "ID": 2,
+    "TaskLimit": 2,
+    "GroupID": 2
+  },
+  {
+    "ID": 3,
+    "TaskLimit": 3,
+    "GroupID": 3
+  },
+  {
+    "ID": 4,
+    "TaskLimit": 1,
+    "GroupID": 4
+  }
+]

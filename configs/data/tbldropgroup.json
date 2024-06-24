@@ -1,0 +1,1460 @@
+[
+  {
+    "ID": 1,
+    "Mark": "机械地图胜利随机掉落",
+    "DropGroupID": 101,
+    "ItemID": 13,
+    "DropWeights": 4000,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 2,
+    "Mark": "机械地图胜利随机掉落",
+    "DropGroupID": 101,
+    "ItemID": 8,
+    "DropWeights": 6000,
+    "MinNum": 3,
+    "MaxNum": 5
+  },
+  {
+    "ID": 3,
+    "Mark": "机械地图失败随机掉落",
+    "DropGroupID": 102,
+    "ItemID": 13,
+    "DropWeights": 3000,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 4,
+    "Mark": "机械地图失败随机掉落",
+    "DropGroupID": 102,
+    "ItemID": 8,
+    "DropWeights": 7000,
+    "MinNum": 2,
+    "MaxNum": 4
+  },
+  {
+    "ID": 5,
+    "Mark": "海岛地图胜利随机掉落",
+    "DropGroupID": 103,
+    "ItemID": 13,
+    "DropWeights": 4000,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 6,
+    "Mark": "海岛地图胜利随机掉落",
+    "DropGroupID": 103,
+    "ItemID": 11,
+    "DropWeights": 6000,
+    "MinNum": 3,
+    "MaxNum": 5
+  },
+  {
+    "ID": 7,
+    "Mark": "海岛地图失败随机掉落",
+    "DropGroupID": 104,
+    "ItemID": 13,
+    "DropWeights": 3000,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 8,
+    "Mark": "海岛地图失败随机掉落",
+    "DropGroupID": 104,
+    "ItemID": 11,
+    "DropWeights": 7000,
+    "MinNum": 2,
+    "MaxNum": 4
+  },
+  {
+    "ID": 9,
+    "Mark": "足球胜利必掉机械",
+    "DropGroupID": 105,
+    "ItemID": 7,
+    "DropWeights": 1,
+    "MinNum": 5,
+    "MaxNum": 7
+  },
+  {
+    "ID": 10,
+    "Mark": "足球胜利必掉海岛",
+    "DropGroupID": 105,
+    "ItemID": 10,
+    "DropWeights": 1,
+    "MinNum": 5,
+    "MaxNum": 7
+  },
+  {
+    "ID": 11,
+    "Mark": "足球胜利随机掉落",
+    "DropGroupID": 106,
+    "ItemID": 13,
+    "DropWeights": 3000,
+    "MinNum": 1,
+    "MaxNum": 2
+  },
+  {
+    "ID": 12,
+    "Mark": "足球胜利随机掉落",
+    "DropGroupID": 106,
+    "ItemID": 8,
+    "DropWeights": 3500,
+    "MinNum": 3,
+    "MaxNum": 5
+  },
+  {
+    "ID": 13,
+    "Mark": "足球胜利随机掉落",
+    "DropGroupID": 106,
+    "ItemID": 11,
+    "DropWeights": 3500,
+    "MinNum": 3,
+    "MaxNum": 5
+  },
+  {
+    "ID": 14,
+    "Mark": "足球失败必掉机械",
+    "DropGroupID": 107,
+    "ItemID": 7,
+    "DropWeights": 1,
+    "MinNum": 2,
+    "MaxNum": 4
+  },
+  {
+    "ID": 15,
+    "Mark": "足球失败必掉海岛",
+    "DropGroupID": 107,
+    "ItemID": 10,
+    "DropWeights": 1,
+    "MinNum": 2,
+    "MaxNum": 4
+  },
+  {
+    "ID": 16,
+    "Mark": "足球失败随机掉落",
+    "DropGroupID": 108,
+    "ItemID": 13,
+    "DropWeights": 2000,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 17,
+    "Mark": "足球失败随机掉落",
+    "DropGroupID": 108,
+    "ItemID": 8,
+    "DropWeights": 4000,
+    "MinNum": 1,
+    "MaxNum": 2
+  },
+  {
+    "ID": 18,
+    "Mark": "足球失败随机掉落",
+    "DropGroupID": 108,
+    "ItemID": 11,
+    "DropWeights": 4000,
+    "MinNum": 1,
+    "MaxNum": 2
+  },
+  {
+    "ID": 9001,
+    "Mark": "【卷毛】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20143,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9002,
+    "Mark": "【卷毛】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20153,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9003,
+    "Mark": "【新兵】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20223,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9004,
+    "Mark": "【新兵】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20233,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9005,
+    "Mark": "【忍者猫】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20443,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9006,
+    "Mark": "【忍者猫】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20453,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9007,
+    "Mark": "【猴子】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20543,
+    "DropWeights": 3,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9008,
+    "Mark": "【猴子】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20553,
+    "DropWeights": 3,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9009,
+    "Mark": "【站长】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20843,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9010,
+    "Mark": "【站长】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20853,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9011,
+    "Mark": "【发明家】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 21043,
+    "DropWeights": 3,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9012,
+    "Mark": "【发明家】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 21053,
+    "DropWeights": 3,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9013,
+    "Mark": "【鲨鱼】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 21243,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9014,
+    "Mark": "【鲨鱼】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 21253,
+    "DropWeights": 4,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9015,
+    "Mark": "【雷】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 21443,
+    "DropWeights": 2,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9016,
+    "Mark": "【雷】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 21453,
+    "DropWeights": 2,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9017,
+    "Mark": "【黄毛】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 21543,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9018,
+    "Mark": "【黄毛】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 21553,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9019,
+    "Mark": "【血蔷薇】1技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20343,
+    "DropWeights": 3,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9020,
+    "Mark": "【血蔷薇】2技能（高）",
+    "DropGroupID": 9000,
+    "ItemID": 20353,
+    "DropWeights": 1,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9101,
+    "Mark": "【卷毛】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20142,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9102,
+    "Mark": "【卷毛】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20152,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9103,
+    "Mark": "【新兵】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20222,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9104,
+    "Mark": "【新兵】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20232,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9105,
+    "Mark": "【忍者猫】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20442,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9106,
+    "Mark": "【忍者猫】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20452,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9107,
+    "Mark": "【猴子】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20542,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9108,
+    "Mark": "【猴子】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20552,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9109,
+    "Mark": "【站长】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20842,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9110,
+    "Mark": "【站长】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20852,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9111,
+    "Mark": "【发明家】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 21042,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9112,
+    "Mark": "【发明家】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 21052,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9113,
+    "Mark": "【鲨鱼】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 21242,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9114,
+    "Mark": "【鲨鱼】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 21252,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9115,
+    "Mark": "【雷】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 21442,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9116,
+    "Mark": "【雷】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 21452,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9117,
+    "Mark": "【黄毛】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 21542,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9118,
+    "Mark": "【黄毛】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 21552,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9119,
+    "Mark": "【血蔷薇】1技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20342,
+    "DropWeights": 26,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9120,
+    "Mark": "【血蔷薇】2技能（中）",
+    "DropGroupID": 9000,
+    "ItemID": 20352,
+    "DropWeights": 6,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9201,
+    "Mark": "【卷毛】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20141,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9202,
+    "Mark": "【卷毛】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20151,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9203,
+    "Mark": "【新兵】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20221,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9204,
+    "Mark": "【新兵】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20231,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9205,
+    "Mark": "【忍者猫】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20441,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9206,
+    "Mark": "【忍者猫】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20451,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9207,
+    "Mark": "【猴子】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20541,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9208,
+    "Mark": "【猴子】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20551,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9209,
+    "Mark": "【站长】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20841,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9210,
+    "Mark": "【站长】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20851,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9211,
+    "Mark": "【发明家】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 21041,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9212,
+    "Mark": "【发明家】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 21051,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9213,
+    "Mark": "【鲨鱼】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 21241,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9214,
+    "Mark": "【鲨鱼】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 21251,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9215,
+    "Mark": "【雷】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 21441,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9216,
+    "Mark": "【雷】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 21451,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9217,
+    "Mark": "【黄毛】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 21541,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9218,
+    "Mark": "【黄毛】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 21551,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9219,
+    "Mark": "【血蔷薇】1技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20341,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9220,
+    "Mark": "【血蔷薇】2技能（低）",
+    "DropGroupID": 9000,
+    "ItemID": 20351,
+    "DropWeights": 188,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9301,
+    "Mark": "【卷毛】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20140,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9302,
+    "Mark": "【卷毛】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20150,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9303,
+    "Mark": "【新兵】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20220,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9304,
+    "Mark": "【新兵】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20230,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9305,
+    "Mark": "【忍者猫】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20440,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9306,
+    "Mark": "【忍者猫】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20450,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9307,
+    "Mark": "【猴子】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20540,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9308,
+    "Mark": "【猴子】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20550,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9309,
+    "Mark": "【站长】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20840,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9310,
+    "Mark": "【站长】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20850,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9311,
+    "Mark": "【发明家】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 21040,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9312,
+    "Mark": "【发明家】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 21050,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9313,
+    "Mark": "【鲨鱼】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 21240,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9314,
+    "Mark": "【鲨鱼】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 21250,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9315,
+    "Mark": "【雷】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 21440,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9316,
+    "Mark": "【雷】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 21450,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9317,
+    "Mark": "【黄毛】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 21540,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9318,
+    "Mark": "【黄毛】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 21550,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9319,
+    "Mark": "【血蔷薇】1技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20340,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 9320,
+    "Mark": "【血蔷薇】2技能（废）",
+    "DropGroupID": 9000,
+    "ItemID": 20350,
+    "DropWeights": 284,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10001,
+    "Mark": "10抽保底【卷毛】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20143,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10002,
+    "Mark": "10抽保底【卷毛】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20153,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10003,
+    "Mark": "10抽保底【新兵】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20223,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10004,
+    "Mark": "10抽保底【新兵】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20233,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10005,
+    "Mark": "10抽保底【忍者猫】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20443,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10006,
+    "Mark": "10抽保底【忍者猫】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20453,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10007,
+    "Mark": "10抽保底【猴子】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20543,
+    "DropWeights": 100,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10008,
+    "Mark": "10抽保底【猴子】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20553,
+    "DropWeights": 100,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10009,
+    "Mark": "10抽保底【站长】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20843,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10010,
+    "Mark": "10抽保底【站长】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20853,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10011,
+    "Mark": "10抽保底【发明家】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 21043,
+    "DropWeights": 150,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10012,
+    "Mark": "10抽保底【发明家】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 21053,
+    "DropWeights": 50,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10013,
+    "Mark": "10抽保底【鲨鱼】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 21243,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10014,
+    "Mark": "10抽保底【鲨鱼】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 21253,
+    "DropWeights": 200,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10015,
+    "Mark": "10抽保底【雷】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 21443,
+    "DropWeights": 35,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10016,
+    "Mark": "10抽保底【雷】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 21453,
+    "DropWeights": 15,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10017,
+    "Mark": "10抽保底【黄毛】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 21543,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10018,
+    "Mark": "10抽保底【黄毛】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 21553,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10019,
+    "Mark": "10抽保底【血蔷薇】1技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20343,
+    "DropWeights": 40,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 10020,
+    "Mark": "10抽保底【血蔷薇】2技能（高）",
+    "DropGroupID": 10000,
+    "ItemID": 20353,
+    "DropWeights": 10,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11001,
+    "Mark": "10抽保底【卷毛】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20142,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11002,
+    "Mark": "10抽保底【卷毛】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20152,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11003,
+    "Mark": "10抽保底【新兵】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20222,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11004,
+    "Mark": "10抽保底【新兵】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20232,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11005,
+    "Mark": "10抽保底【忍者猫】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20442,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11006,
+    "Mark": "10抽保底【忍者猫】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20452,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11007,
+    "Mark": "10抽保底【猴子】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20542,
+    "DropWeights": 150,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11008,
+    "Mark": "10抽保底【猴子】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20552,
+    "DropWeights": 50,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11009,
+    "Mark": "10抽保底【站长】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20842,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11010,
+    "Mark": "10抽保底【站长】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20852,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11011,
+    "Mark": "10抽保底【发明家】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 21042,
+    "DropWeights": 150,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11012,
+    "Mark": "10抽保底【发明家】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 21052,
+    "DropWeights": 50,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11013,
+    "Mark": "10抽保底【鲨鱼】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 21242,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11014,
+    "Mark": "10抽保底【鲨鱼】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 21252,
+    "DropWeights": 650,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11015,
+    "Mark": "10抽保底【雷】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 21442,
+    "DropWeights": 100,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11016,
+    "Mark": "10抽保底【雷】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 21452,
+    "DropWeights": 100,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11017,
+    "Mark": "10抽保底【黄毛】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 21542,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11018,
+    "Mark": "10抽保底【黄毛】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 21552,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11019,
+    "Mark": "10抽保底【血蔷薇】1技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20342,
+    "DropWeights": 120,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 11020,
+    "Mark": "10抽保底【血蔷薇】2技能（中）",
+    "DropGroupID": 10000,
+    "ItemID": 20352,
+    "DropWeights": 80,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 20001,
+    "Mark": "【副本】基础零件",
+    "DropGroupID": 20001,
+    "ItemID": 7,
+    "DropWeights": 2750,
+    "MinNum": 5,
+    "MaxNum": 15
+  },
+  {
+    "ID": 20002,
+    "Mark": "【副本】基础零件",
+    "DropGroupID": 20001,
+    "ItemID": 10,
+    "DropWeights": 2750,
+    "MinNum": 5,
+    "MaxNum": 15
+  },
+  {
+    "ID": 20003,
+    "Mark": "【副本】高级零件",
+    "DropGroupID": 20001,
+    "ItemID": 8,
+    "DropWeights": 1500,
+    "MinNum": 5,
+    "MaxNum": 15
+  },
+  {
+    "ID": 20004,
+    "Mark": "【副本】高级零件",
+    "DropGroupID": 20001,
+    "ItemID": 11,
+    "DropWeights": 1500,
+    "MinNum": 5,
+    "MaxNum": 15
+  },
+  {
+    "ID": 20005,
+    "Mark": "【副本】1小时加速卡",
+    "DropGroupID": 20001,
+    "ItemID": 13,
+    "DropWeights": 1500,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 20006,
+    "Mark": "【副本】3小时加速卡",
+    "DropGroupID": 20001,
+    "ItemID": 14,
+    "DropWeights": 0,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 20101,
+    "Mark": "【副本限领】钻石",
+    "DropGroupID": 20101,
+    "ItemID": 2,
+    "DropWeights": 333,
+    "MinNum": 200,
+    "MaxNum": 200
+  },
+  {
+    "ID": 20102,
+    "Mark": "【副本限领】钻石",
+    "DropGroupID": 20101,
+    "ItemID": 2,
+    "DropWeights": 333,
+    "MinNum": 100,
+    "MaxNum": 100
+  },
+  {
+    "ID": 20103,
+    "Mark": "【副本限领】钻石",
+    "DropGroupID": 20101,
+    "ItemID": 2,
+    "DropWeights": 334,
+    "MinNum": 50,
+    "MaxNum": 50
+  },
+  {
+    "ID": 20104,
+    "Mark": "【副本限领】特级零件（海岛）",
+    "DropGroupID": 20101,
+    "ItemID": 9,
+    "DropWeights": 333,
+    "MinNum": 5,
+    "MaxNum": 5
+  },
+  {
+    "ID": 20105,
+    "Mark": "【副本限领】特级零件（蒸汽）",
+    "DropGroupID": 20101,
+    "ItemID": 12,
+    "DropWeights": 333,
+    "MinNum": 5,
+    "MaxNum": 5
+  },
+  {
+    "ID": 20106,
+    "Mark": "【副本限领】特级零件（海岛）",
+    "DropGroupID": 20101,
+    "ItemID": 9,
+    "DropWeights": 333,
+    "MinNum": 3,
+    "MaxNum": 3
+  },
+  {
+    "ID": 20107,
+    "Mark": "【副本限领】特级零件（蒸汽）",
+    "DropGroupID": 20101,
+    "ItemID": 12,
+    "DropWeights": 333,
+    "MinNum": 3,
+    "MaxNum": 3
+  },
+  {
+    "ID": 20108,
+    "Mark": "【副本限领】特级零件（海岛）",
+    "DropGroupID": 20101,
+    "ItemID": 9,
+    "DropWeights": 334,
+    "MinNum": 2,
+    "MaxNum": 2
+  },
+  {
+    "ID": 20109,
+    "Mark": "【副本限领】特级零件（蒸汽）",
+    "DropGroupID": 20101,
+    "ItemID": 12,
+    "DropWeights": 334,
+    "MinNum": 2,
+    "MaxNum": 2
+  },
+  {
+    "ID": 20110,
+    "Mark": "【副本限领】6小时加速卡",
+    "DropGroupID": 20101,
+    "ItemID": 15,
+    "DropWeights": 500,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 20111,
+    "Mark": "【副本限领】3小时加速卡",
+    "DropGroupID": 20101,
+    "ItemID": 14,
+    "DropWeights": 500,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 20112,
+    "Mark": "【副本限领】祈愿券",
+    "DropGroupID": 20101,
+    "ItemID": 17,
+    "DropWeights": 333,
+    "MinNum": 100,
+    "MaxNum": 100
+  },
+  {
+    "ID": 20113,
+    "Mark": "【副本限领】祈愿券",
+    "DropGroupID": 20101,
+    "ItemID": 17,
+    "DropWeights": 333,
+    "MinNum": 50,
+    "MaxNum": 50
+  },
+  {
+    "ID": 20114,
+    "Mark": "【副本限领】祈愿券",
+    "DropGroupID": 20101,
+    "ItemID": 17,
+    "DropWeights": 334,
+    "MinNum": 30,
+    "MaxNum": 30
+  },
+  {
+    "ID": 20115,
+    "Mark": "【副本限领】蛋",
+    "DropGroupID": 20101,
+    "ItemID": 301,
+    "DropWeights": 3500,
+    "MinNum": 1,
+    "MaxNum": 1
+  },
+  {
+    "ID": 20116,
+    "Mark": "【副本限领】英雄石",
+    "DropGroupID": 20101,
+    "ItemID": 3,
+    "DropWeights": 500,
+    "MinNum": 200,
+    "MaxNum": 200
+  },
+  {
+    "ID": 20117,
+    "Mark": "【副本限领】英雄石",
+    "DropGroupID": 20101,
+    "ItemID": 3,
+    "DropWeights": 500,
+    "MinNum": 100,
+    "MaxNum": 100
+  },
+  {
+    "ID": 20118,
+    "Mark": "【副本限领】英雄石",
+    "DropGroupID": 20101,
+    "ItemID": 3,
+    "DropWeights": 500,
+    "MinNum": 50,
+    "MaxNum": 50
+  }
+]

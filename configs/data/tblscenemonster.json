@@ -1,0 +1,28 @@
+[
+  {
+    "ID": 1,
+    "MonsterID": 1100001,
+    "MapId": 1002,
+    "Type": 1,
+    "Position": [
+      50,
+      5,
+      50
+    ],
+    "Rerisen": [],
+    "DropList": []
+  },
+  {
+    "ID": 3,
+    "MonsterID": 65001,
+    "MapId": 1102,
+    "Type": 1,
+    "Position": [
+      50,
+      50,
+      20
+    ],
+    "Rerisen": [],
+    "DropList": []
+  }
+]

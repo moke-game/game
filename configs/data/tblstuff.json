@@ -1,0 +1,248 @@
+[
+  {
+    "ID": 60001,
+    "Name": "加速",
+    "Des": "移动速度提高30%，持续10秒。",
+    "Res": "60001",
+    "Type": 1,
+    "AutoPick": 1,
+    "Collect": 300,
+    "Radius": 0,
+    "HoldMode": 0,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      30001
+    ],
+    "AISearchType": 1,
+    "CarryOn": 0,
+    "Point": 0
+  },
+  {
+    "ID": 60002,
+    "Name": "攻击",
+    "Des": "攻击提高25%，持续10秒。",
+    "Res": "60002",
+    "Type": 1,
+    "AutoPick": 1,
+    "Collect": 300,
+    "Radius": 0,
+    "HoldMode": 0,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      30002
+    ],
+    "AISearchType": 1,
+    "CarryOn": 0,
+    "Point": 0
+  },
+  {
+    "ID": 60003,
+    "Name": "恢复",
+    "Des": "10秒内回复50%生命，被伤害击中会打断（dot不算）",
+    "Res": "60003",
+    "Type": 1,
+    "AutoPick": 1,
+    "Collect": 300,
+    "Radius": 0,
+    "HoldMode": 0,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      30003
+    ],
+    "AISearchType": 1,
+    "CarryOn": 0,
+    "Point": 0
+  },
+  {
+    "ID": 60004,
+    "Name": "狂奔",
+    "Des": "移动速度提高100%，5%概率摔跟头，持续5秒。",
+    "Res": "60004",
+    "Type": 1,
+    "AutoPick": 1,
+    "Collect": 300,
+    "Radius": 50,
+    "HoldMode": 0,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      31000006
+    ],
+    "AISearchType": 1,
+    "CarryOn": 0,
+    "Point": 0
+  },
+  {
+    "ID": 60005,
+    "Name": "狂暴",
+    "Des": "攻击提高50%，防御降低30%，持续6秒",
+    "Res": "60005",
+    "Type": 1,
+    "AutoPick": 1,
+    "Collect": 300,
+    "Radius": 50,
+    "HoldMode": 0,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      31000007
+    ],
+    "AISearchType": 1,
+    "CarryOn": 0,
+    "Point": 0
+  },
+  {
+    "ID": 60006,
+    "Name": "石肤",
+    "Des": "防御提高60%，免疫大部分控制效果，移动速度降低30%，持续6秒。",
+    "Res": "60006",
+    "Type": 1,
+    "AutoPick": 1,
+    "Collect": 300,
+    "Radius": 50,
+    "HoldMode": 0,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      31000008
+    ],
+    "AISearchType": 1,
+    "CarryOn": 0,
+    "Point": 0
+  },
+  {
+    "ID": 61001,
+    "Name": "珍珠",
+    "Des": "夺宝玩法中的互动道具 将珍珠放到己方大本营算作得分",
+    "Res": "61001",
+    "Type": 3,
+    "AutoPick": 0,
+    "Collect": 400,
+    "Radius": 50,
+    "HoldMode": 1,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      20204,
+      20202
+    ],
+    "AISearchType": 2,
+    "CarryOn": 1,
+    "Point": 10
+  },
+  {
+    "ID": 61002,
+    "Name": "高级宝石",
+    "Des": "宝石大作战玩法中的高级宝石",
+    "Res": "61002",
+    "Type": 3,
+    "AutoPick": 0,
+    "Collect": 400,
+    "Radius": 50,
+    "HoldMode": 1,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      20204,
+      20202
+    ],
+    "AISearchType": 2,
+    "CarryOn": 1,
+    "Point": 5
+  },
+  {
+    "ID": 61003,
+    "Name": "蓝宝石",
+    "Des": "宝石大作战玩法中的普通宝石",
+    "Res": "61003",
+    "Type": 3,
+    "AutoPick": 0,
+    "Collect": 400,
+    "Radius": 50,
+    "HoldMode": 1,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      20204,
+      20202
+    ],
+    "AISearchType": 2,
+    "CarryOn": 1,
+    "Point": 1
+  },
+  {
+    "ID": 61004,
+    "Name": "黄宝石",
+    "Des": "宝石大作战玩法中的普通宝石",
+    "Res": "61004",
+    "Type": 3,
+    "AutoPick": 0,
+    "Collect": 400,
+    "Radius": 50,
+    "HoldMode": 1,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      20204,
+      20202
+    ],
+    "AISearchType": 2,
+    "CarryOn": 1,
+    "Point": 1
+  },
+  {
+    "ID": 61005,
+    "Name": "红宝石",
+    "Des": "宝石大作战玩法中的普通宝石",
+    "Res": "61005",
+    "Type": 3,
+    "AutoPick": 0,
+    "Collect": 400,
+    "Radius": 50,
+    "HoldMode": 1,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      20204,
+      20202
+    ],
+    "AISearchType": 2,
+    "CarryOn": 1,
+    "Point": 1
+  },
+  {
+    "ID": 61006,
+    "Name": "绿宝石",
+    "Des": "宝石大作战玩法中的普通宝石",
+    "Res": "61006",
+    "Type": 3,
+    "AutoPick": 0,
+    "Collect": 400,
+    "Radius": 50,
+    "HoldMode": 1,
+    "Delay": 0,
+    "CD": 0,
+    "EffectID": [],
+    "BuffID": [
+      20204,
+      20202
+    ],
+    "AISearchType": 2,
+    "CarryOn": 1,
+    "Point": 1
+  }
+]

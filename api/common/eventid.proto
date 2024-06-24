@@ -1,0 +1,516 @@
+syntax = "proto3";
+package common;
+
+option go_package = "common/;cpb";
+
+//C2S:5000|C2SPVP:10000
+enum C2S_EVENT {
+  C2S_EVENT_Error = 0;
+  C2S_AccountDel = 5000;
+  C2S_Auth = 5001; //C2SAuth=5001
+  C2S_Logoff = 5002; //C2SLogoff=5002
+  C2S_PlaySelectList = 5004; //C2SMapSelectList=5004
+  C2S_Heartbeat = 5003; //C2SHeartbeat=5003
+  C2S_Init = 5005; //C2SInit=5005
+  C2S_SyncPos = 5006; //C2SSyncPos=5006
+  C2S_ChooseHero = 5007; //C2SChooseHero=5007
+  C2S_SimpleInfo = 5008; //C2SSimpleInfo=5008
+  C2S_NewPlayer = 5010; //C2SNewPlayer=5010
+  C2S_NewPlayerGuide = 5011; //C2SNewPlayerGuide=5011
+  C2S_GetHeroInfo = 5013; //C2SGetHeroInfo=5013
+  C2S_UnlockHero = 5014; //C2SUnlockHero=5014
+  C2S_UpgradeHero = 5015; //C2SUpgradeHero=5015
+  C2S_DiamondExchangeItem = 5016; //C2SDiamondExchangeItem=5016
+  C2S_WatchingKnapsack = 5017; //C2SWatchingKnapsack=5017
+  C2S_RandomPlayerName = 5018; //C2SRandomPlayerName=5018
+  C2S_GetRoomInfo = 5019; //C2SGetRoomInfo = 5019
+  C2S_UpdateProfile = 5020;
+  C2S_TryHero = 5021; //C2S_TryHero=5021
+  C2S_PlayerRename = 5022; //C2S_PlayerRename=5022
+  C2S_GetPlayerDetailInfo = 5023; //C2S_GetPlayerDetailInfo=5023
+  C2S_GetPlayerSetting = 5024; //C2S_GetPlayerSetting=5024
+  C2S_ModifyPlayerSetting = 5025; //C2S_ModifyPlayerSetting=5025
+  C2S_CDKeyReward = 5026; //C2S_CDKeyReward=5026
+  C2S_ActiveTimeLimited = 5027; //C2S_ActiveTimeLimited=5027
+  C2S_UserBindReg = 5028;
+  C2S_UnlockSkin = 5029;
+  C2S_SelectSkin = 5030;
+  C2S_RoomUpdateHeroNotify = 5031;
+  C2S_GetPlayerRoomInfo = 5032;
+  C2S_PlayerLanguage = 5033;
+
+  //--------------- 聊天消息 start---------------------------------
+  C2S_ChatGetEmoji = 15101; //C2S_ChatGetEmoji=15101
+  C2S_CHATMessage = 15001; //C2SCHATMessage=15001
+  //--------------- 聊天消息  end----------------------------------
+
+  //--------------- 好友消息  start--------------------------------
+  C2S_FriendAdd = 15002; //C2SCHATAddFriend=15002
+  C2S_FriendDelete = 15003; //C2SCHATDeleteFriend=15003
+  C2S_FriendGet = 15004; //C2SCHATGetFriend=15004
+  C2S_FriendAgree = 15006; //C2SCHATAgreeFriend=15006
+  C2S_FriendRefuse = 15007; //C2SCHATRefuseFriend=15007
+  C2S_FriendInnerAdd = 15008; //C2SCHATAddFriendInner=15008 废弃
+  C2S_FriendNickName = 15009; //C2SCHATFriendNickName=15009
+  C2S_FriendGetPlayerInfoByCode = 15010; //C2SCHATPlayerSimpleInfoByCode=15010
+  C2S_FriendDeleteBlack = 15011; //C2SCHATRmBlack=15011
+  //--------------- 好友消息  end--------------------------------
+
+  C2S_CHATGetFriendGroup = 15012; //C2SCHATGetFriendGroup=15012
+
+  // 组队(17000-18000) 双数
+  C2S_JoinParty = 17000;
+  C2S_LeaveParty = 17002;
+  C2S_KickParty = 17004;
+  C2S_InviteJoinParty = 17006;
+  C2S_CancelInviteParty = 17008;
+  C2S_READY_PARTY = 17010;
+  C2S_CANCEL_READY_PARTY = 17012;
+  C2S_ChoosePartyMap = 17014;
+  C2S_GetPartyInfo = 17016;
+  C2S_InviteJoinPartyReplay = 17018;
+  C2S_CreateParty = 17020;
+  C2S_ApplyJoinPartyReplay = 17022;
+  C2S_InviteCancel = 17024;
+  C2S_FriendPartyInfo = 17026;
+  C2S_ReadyJoinParty = 17028;
+  C2S_PartyEnlistInfo = 17030;
+  C2S_PartyEnlist = 17032;
+  C2S_QuickJoinEnlist = 17034;
+
+  //匹配
+  C2S_MatchingSingleStart = 16013; //C2SGROUPMatchingStart=16013
+  C2S_MatchingCancel = 16014; //C2SGROUPMatchingCancel=16014
+  C2S_MatchingStatus = 16015;//C2S_MatchingStatus=16015
+
+  //任务相关(18000-19000)双数
+  C2S_GetMission = 18000;
+  C2S_GetMissionReward = 18002;
+  C2S_TouchMission = 18004;
+
+  // 商店,活动相关(19000-20000)双数
+  C2S_ShopProducts = 19000;
+  C2S_ShopBuy = 19002;
+  C2S_CanPurchase = 19004;
+  C2S_Purchase = 19006;
+  C2S_FirstPayActInfo = 19008;
+  C2S_FirstPayActDone = 19010;
+  C2S_Day7ActInfos = 19012;
+  C2S_Day7ActBuy = 19014;
+  C2S_Day7ActReward = 19016;
+  C2S_MonthCardActInfo = 19018;
+  C2S_MonthCardActDone = 19020;
+  C2S_WatchTriggerAct = 19022;
+  C2S_GetCupReward = 19024;
+  C2S_GetCupInfo = 19026;
+  C2S_TriggerActCond = 19028;
+  C2S_SignActInfo = 19030;
+  C2S_SignDayDone = 19032;
+  C2S_SignBuyDay = 19034;
+  C2S_QuestionnaireInfo = 19036;
+  C2S_QuestionnaireComplete = 19038;
+  C2S_QuestionnaireReward = 19040;
+
+  // 房间服务消息(20000-30000)双数
+  C2S_EnterRoom = 20000;
+  C2S_LeaveRoom = 20002;
+  C2S_Move = 20004;
+  C2S_UseSkill = 20006;
+  C2S_RoomHeartbeat = 20008;
+  C2S_CancelSkill = 20010;
+  C2S_MovePrepare = 20012;
+  C2S_BattleAgain = 20014; //C2S_BattleAgain=20014
+  C2S_WatchingBattle = 20016; // 观战
+  C2S_StopWatchingBattle = 20018; // 停止观战
+  C2S_WatchingBattlePrepared = 20020; // 观战准备
+  C2S_ChangeWatchingTarget = 20022; // 切换观战目标
+  C2S_RandomMove = 20024; // 随机移动
+
+  //场景相关(30001-40000)
+  C2S_EnterScene = 30002;
+  C2S_ScenePrepared = 30004;
+  C2S_StopMoving = 30006;
+  C2S_PickupItem = 30008;
+  C2S_UnPickupItem = 30010;
+  C2S_Jump = 30012;
+  C2S_TouchTerrain = 30014;
+  C2S_TouchTerrainEnd = 30016;
+  C2S_ReviveImmediately = 30018; //买活
+
+  //场景交互(50001-60000) 双数
+  C2S_EmojiShow = 50002; //C2S_ChatEmojiShow=40002
+
+  //邮件(60000-70000) 双数
+  C2S_GetMailRewards = 60000;
+  C2S_ReadMail = 60002;
+  C2S_DeleteReadMail = 60004;
+  C2S_WatchMail = 60006;
+
+  //宠物(70000-71000) 双数
+  C2S_GetPetInfo = 70000;
+  C2S_PetHatch = 70002;
+  C2S_CancelHatch = 70004;
+  C2S_PetFeed = 70006;
+  C2S_PetSpeed = 70008;
+  C2S_PetIncubate = 70010;
+  C2S_PetBind = 70012;
+  C2S_PetRelease = 70014;
+  C2S_PetRename = 70016;
+  C2S_UpgradeEggKnapsack = 70018;
+  C2S_PetTask = 70020;
+  C2S_PetTaskDispatch = 70022;
+  C2S_PetTaskReward = 70024;
+  C2S_PetTaskRefresh = 70026;
+  C2S_PetTaskQuick = 70028;
+  C2S_PetTaskUpgrade = 70030;
+  C2S_PetRecast = 70032;
+  C2S_PetRecastReplace = 70034;
+  C2S_PetSkillStudy = 70036;
+  C2S_PetSkillDraw = 70038;
+  C2S_PetSkillReclaim = 70040;
+
+  //现金赛(71000-72000)双数
+  C2S_GetCashBattle = 71002;
+  C2S_GetCashBattleVersus = 71004;
+  C2S_GetCashBattleGuess = 71006;
+  C2S_CashBattleEnter = 71008;
+  C2S_CaseBattleSelectHero = 71010;
+  C2S_CashBattleJoin = 71012;
+  C2S_CashBattleStart = 71014;
+  C2S_CashBattleGratuity = 71016;
+
+  // 排行榜  (72000-73000)双数
+  C2S_GetLeaderboard = 72000;
+  C2S_StarLeaderboard = 72002;
+
+  // boss挑战 (73000-74000)双数
+  C2S_BossMainPanel = 73000;
+  C2S_ChallengeBoss = 73002;
+  C2S_BossChallengeClaimAward = 73004;
+
+  // GM指令
+  C2S_BffGMCommand = 90002;
+}
+
+//S2C:35000|S2CPVP:40000
+enum S2C_EVENT {
+  S2C_EVENT_Error = 0;
+  S2C_AccountDel = 35000;
+  S2C_Auth = 35001; //S2CAuth=35001
+  S2C_Logoff = 35002; //S2CLogoff=35002
+  S2C_BagInfo = 35003; //S2CBagInfo=35003
+  S2C_CoinInfo = 35004; //S2CCoinInfo=35004
+  S2C_Common = 35005; //S2CCommon=35005
+  S2C_Heartbeat = 35006; //S2CHeartbeat=35006
+  S2C_PlaySelectList = 35008; //S2CMapSelectList=35008
+  S2C_SimpleInfo = 35009; //S2CSimpleInfo=35009
+  S2C_Init = 35010; //S2CInit=35010
+  S2C_SyncOnLine = 35011; //S2CSyncOnLine=35011
+  S2C_SyncPos = 35012; //S2CSyncPos=35012
+  S2C_SyncNPC = 35013; //S2CSyncNPC=35013
+  S2C_SyncOffLine = 35014; //S2CSyncOffLine=35014
+  S2C_ChooseHero = 35015; //S2CChooseHero=35015
+  S2C_NewPlayer = 35017; //S2CNewPlayer=35017
+  S2C_NewPlayerGuide = 35018; //S2CNewPlayerGuide=35018
+  S2C_GetHeroInfo = 35020; //S2CGetHeroInfo=35020
+  S2C_UnlockHero = 35021; //S2CUnlockHero=35021
+  S2C_UpgradeHero = 35022; //S2CUpgradeHero=35022
+  S2C_DiamondExchangeItem = 35023; //S2CDiamondExchangeItem=35023
+  S2C_NpcReply = 35024; //S2CNpcReply=35024
+  S2C_WatchingKnapsack = 35025; //S2CWatchingKnapsack=35025
+  S2C_UpdateBattleState = 35026; //S2CUpdateBattleState=35026
+  S2C_RandomPlayerName = 35027; //S2CRandomPlayerName=35027
+  S2C_GetRoomInfo = 35028; //C2SGetRoomInfo = 35028
+  S2C_TryHero = 35029; //S2C_TryHero=35029
+  S2C_PlayerRename = 35030; //S2C_PlayerRename=35030
+  S2C_GetPlayerDetailInfo = 35031; //S2C_GetPlayerDetailInfo=35031
+  S2C_GetPlayerSetting = 35032; //S2C_GetPlayerSetting=35032
+  S2C_ModifyPlayerSetting = 35033; //S2C_ModifyPlayerSetting=35033
+  S2C_CDKeyReward = 35034; //
+  S2C_ActiveTimeLimited = 35035; //S2C_ActiveTimeLimited=35035
+  S2C_UserBindReg = 35036;
+  S2C_UnlockSkin = 35037;
+  S2C_SelectSkin = 35038;
+  S2C_GetPlayerRoomInfo = 35039;
+  S2C_PlayerLanguage = 35040;
+
+  //--------------- 聊天消息 start---------------------------------
+  S2C_ChatGetEmoji = 15102; //S2C_ChatGetEmoji=15102
+  S2C_CHATMessage = 45001; //S2CCHATMessage=45001
+  S2C_CHATReceiveWorldMessage = 45002; //S2CCHATReceiveWorldMessage=45002
+  S2C_CHATReceiveTeamMessage = 45003; //S2CCHATReceiveTeamMessage=45003
+  S2C_CHATReceivePlayerMessage = 45004; //S2CCHATReceivePlayerMessage=45004
+  //--------------- 聊天消息  end----------------------------------
+
+  //--------------- 好友消息  start--------------------------------
+  S2C_FriendAdd = 45005; //S2CCHATAddFriend=45005
+  S2C_FriendAddNotify = 45006; //S2C_FriendAddNotify=45006
+  S2C_FriendDelete = 45007; //S2CCHATDeleteFriend=45006
+  S2C_FriendGet = 45008; //S2CCHATGetFriend=45007
+  S2C_FriendAgree = 45009; //S2CCHATAgreeFriend=45009
+  S2C_FriendRefuse = 45010; //S2CCHATRefuseFriend=45010
+  S2C_FriendNickName = 45011; //S2CCHATFriendNickName=45011
+  S2C_FriendGetPlayerInfoByCode = 45012; //S2CCHATPlayerSimpleInfoByCode=45012
+  S2C_FriendDeleteBlack = 45013; //S2CCHATRmBlack=45013
+
+  //--------------- 好友消息  end--------------------------------
+
+  S2C_CHATGetFriendGroup = 45014; //S2CCHATGetFriendGroup=45014
+
+  S2C_GROUPCreateGroup = 46001; //S2CGROUPCreateGroup=46001
+  S2C_GROUPGetGroup = 46002; //S2CGROUPGetGroup=46002
+  S2C_GROUPAddGroup = 46003; //S2CGROUPAddGroup=46003
+  S2C_GROUPLeaveGroup = 46005; //S2CGROUPLeaveGroup=46005
+  S2C_GROUPUpdatePlayerGroup = 46006; //S2CGROUPUpdatePlayerGroup=46006
+  S2C_GROUPInviteGroup = 46007; //S2CGROUPInviteGroup=46007
+  S2C_GROUPFiledGroup = 46008; //S2CGROUPFiledGroup=46008
+  S2C_GROUPFiledAction = 46009; //S2CGROUPFiledAction=46009
+  S2C_GROUPUpdateRefresh = 46010; //S2CGROUPUpdateRefresh=46010
+  S2C_GROUPUpdateGroup = 46011; //S2CGROUPUpdateGroup=46011
+  S2C_GROUPRmPlayer = 46012; //S2CGROUPRmPlayer=46012
+  S2C_GROUPCancelInviteGroup = 46013; //S2CGROUPCancelInviteGroup=46013
+
+  //--------------- 广播消息 100-2000  start--------------------------------
+  // 组队通知（100-115）
+  NTF_PartyMemberJoin = 100;
+  NTF_PartyMemberLeave = 101;
+  NTF_PartyMemberStatus = 102;
+  NTF_PartyMemberHero = 103;
+  NTF_PartyInfo = 104;
+  NTF_InviteJoinParty = 105;
+  NTF_InviteJoinPartyReplay = 106;
+  NTF_ApplyJoinParty = 107;
+  NTF_ApplyJoinPartyReplay = 108;
+  NTF_PartyInviteCancel = 109;
+  NTF_PartyUpdate = 110;
+  NTF_InviteCancel = 111;
+
+  //匹配通知 (116-119)
+  NTF_MatchingGroupStart = 116;
+  NTF_MatchingSuccess = 117;
+
+  // 房间内通知 (120-200)
+  NTF_RoomSkills = 120;
+  NTF_RoomHits = 121;
+  NTF_RoomBuffEffect = 122;
+  NTF_RoomBuffKnockback = 123;
+  NTF_RoomCancelSkills = 124;
+  NTF_RoomSkillEffect = 125;
+  NTF_RoomSkillEffectActive = 126;
+  NTF_RoomBuffDestroy = 127;
+  NTF_KickOut = 128;
+  NTF_ReviveImmediatelyPanel = 129; //买活面板
+  Ntf_RoomDebug = 200;
+
+  // 场景ntf 200-400
+  NTF_FlashTo = 201;
+  NTF_UnitEnterEyeshot = 202;
+  NTF_PlayerEnterEyeshot = 203;
+  NTF_UnitLeaveEyeshot = 204;
+  NTF_UnitMove = 205;
+  NTF_UnitStopMoving = 206;
+  NTF_MonsterEnterEyeshot = 207;
+  NTF_PlayerUpdateProfile = 208;
+  NTF_ItemDrop = 209;
+  NTF_PickupItem = 210;
+  NTF_UnitMoveBatch = 211;
+  NTF_UnitStopBatch = 212;
+  NTF_AttributeUpdate = 213;
+  NTF_UnPickupItem = 214;
+  NTF_UnitMovementBatch = 215;
+  NTF_UnitJump = 216;
+  NTF_TerrainCollapseWarning = 217;
+  NTF_TerrainCollapse = 218;
+  NTF_WatchingGamePlayerInit = 219;
+  NTF_StopWatching = 220;
+  NTF_ChangeWatchingTarget = 221;
+  NTF_PlayerProperties = 222;
+  NTF_PlayerSelectSkin = 223;
+
+  // 战况ntf 401-500
+  NTF_PVPRevive = 401;
+
+  NTF_UpdateBattleState = 402;
+  NTF_HeroKilled = 403;
+  NTF_PVPBattleEnd = 404;
+
+  NTF_BattleInitInfo = 405;
+  NTF_BattleInfo = 406;
+  NTF_BattleAgain = 407;
+
+  //表情交互广播 501-510
+  NTF_EmojiShow = 501;
+
+  //英雄广播 511-520
+  NTF_HeroCupChange = 511; //英雄奖杯变更
+  NTF_HeroChange = 512;//英雄信息变更
+
+  //邮件广播 521-530
+  NTF_MailChange = 521; //邮件变更
+
+  //任务更新广播 601-610
+  NTF_MissionUpdate = 601; //任务更新
+
+  //宠物相关广播 611-620
+  NTF_PetBindChange = 611; //当前使用的宠物更换广播
+  // 黑名单广播
+  NTF_Blocked = 621; //被加入系统黑名单广播
+
+  // 现金赛广播
+  Ntf_CashBattleReady = 641; //通知选手进入选手准备期
+
+  //红点广播
+  Ntf_NoticeDot = 651; //通知玩家有红点
+
+  //拉取指定玩家到对应场景
+  NTF_PullMember = 661;
+
+  // boss挑战
+  NTF_BossChallengeDamageUpdate = 671; //boss挑战伤害更新
+
+  //npc对话(旁白)
+  NTF_NpcDialogue = 682;// npc对话(旁白)
+
+  //游戏跑马灯
+  NTF_GameNotice = 691;//跑马灯
+
+  //问卷调查
+  NTF_QuestionnaireComplete = 701;//问卷调查
+
+
+
+  //--------------- 广播消息 100-2000  end--------------------------------
+
+  // 组队(16000-17000) 单数
+  S2C_JoinParty = 17001;
+  S2C_LeaveParty = 17003;
+  S2C_KickParty = 17005;
+  S2C_InviteJoinParty = 17007;
+  S2C_CancelInviteParty = 17009;
+  S2C_READY_PARTY = 17011;
+  S2C_CANCEL_READY_PARTY = 17013;
+  S2C_ChoosePartyMap = 17015;
+  S2C_GetPartyInfo = 17017;
+  S2C_InviteJoinPartyReplay = 17019;
+  S2C_CreateParty = 17021;
+  S2C_ApplyJoinPartyReplay = 17023;
+  S2C_InviteCancel = 17025;
+  S2C_FriendPartyInfo = 17027;
+  S2C_ReadyJoinParty = 17029;
+  S2C_PartyEnlistInfo = 17031;
+  S2C_PartyEnlist = 17033;
+  S2C_QuickJoinEnlist = 17035;
+
+  //匹配
+  S2C_MatchingSingleStart = 46014; //S2CGROUPMatchingStart=46014
+  S2C_MatchingCancel = 46015; //S2CGROUPMatchingCancel=46015
+  S2C_MatchingStatus = 46016;//S2C_MatchingStatus=46016
+
+  //任务相关(18000-19000)单数
+  S2C_GetMission = 18001;
+  S2C_GetMissionReward = 18003;
+  S2C_TouchMission = 18005;
+
+  // 商店,活动相关(19000-20000)
+  S2C_ShopProducts = 19001;
+  S2C_ShopBuy = 19003;
+  S2C_CanPurchase = 19005;
+  S2C_Purchase = 19007;
+  S2C_FirstPayActInfo = 19009;
+  S2C_FirstPayActDone = 19011;
+  S2C_Day7ActInfos = 19013;
+  S2C_Day7ActBuy = 19015;
+  S2C_Day7ActReward = 19017;
+  S2C_MonthCardActInfo = 19019;
+  S2C_MonthCardActDone = 19021;
+  S2C_WatchTriggerAct = 19023;
+  S2C_GetCupReward = 19025;
+  S2C_GetCupInfo = 19027;
+  S2C_TriggerActCond = 19029;
+  S2C_SignActInfo = 19031;
+  S2C_SignDayDone = 19033;
+  S2C_SignBuyDay = 19035;
+  S2C_QuestionnaireInfo = 19037;
+  S2C_QuestionnaireComplete = 19039;
+  S2C_QuestionnaireReward = 19041;
+
+  // 房间同步消息(20000-30000)(单数)
+  S2C_EnterRoom = 20001;
+  S2C_LeaveRoom = 20003;
+  S2C_Move = 20005;
+  S2C_UseSkill = 20007;
+  S2C_RoomHeartbeat = 20009;
+  S2C_CancelSkill = 20011;
+  S2C_MovePrepare = 20013;
+  S2C_BattleAgain = 20015; //S2C_BattleAgain=20015
+  S2C_WatchingBattle = 20017; // 观战
+  S2C_StopWatchingBattle = 20019; // 停止观战
+  S2C_WatchingBattlePrepared = 20021; // 观战准备
+  S2C_ChangeWatchingTarget = 20023; // 切换观战目标
+  S2C_RandomMove = 20025; // 随机移动
+
+  // 场景相关(30001-40000)
+  S2C_EnterScene = 30003;
+  S2C_ScenePrepared = 30005;
+  S2C_StopMoving = 30007;
+  S2C_PickupItem = 30009;
+  S2C_UnPickupItem = 30011;
+  S2C_Jump = 30013;
+  S2C_TouchTerrain = 30015;
+  S2C_TouchTerrainEnd = 30017;
+  S2C_ReviveImmediately = 30019; //买活
+
+  //场景交互(50001-60000) 单数
+  S2C_EmojiShow = 50003; //C2S_ChatEmojiShow=50003
+
+  //邮件(60001-70000) 单数
+  S2C_GetMailRewards = 60001;
+  S2C_ReadMail = 60003;
+  S2C_DeleteReadMail = 60005;
+  S2C_WatchMail = 60007;
+
+  //宠物(70000-71000) 单数
+  S2C_GetPetInfo = 70001;
+  S2C_PetHatch = 70003;
+  S2C_CancelHatch = 70005;
+  S2C_PetFeed = 70007;
+  S2C_PetSpeed = 70009;
+  S2C_PetIncubate = 70011;
+  S2C_PetBind = 70013;
+  S2C_PetRelease = 70015;
+  S2C_PetRename = 70017;
+  S2C_UpgradeEggKnapsack = 70019;
+  S2C_PetTask = 70021;
+  S2C_PetTaskDispatch = 70023;
+  S2C_PetTaskReward = 70025;
+  S2C_PetTaskRefresh = 70027;
+  S2C_PetTaskQuick = 70029;
+  S2C_PetTaskUpgrade = 70031;
+  S2C_PetRecast = 70033;
+  S2C_PetRecastReplace = 70035;
+  S2C_PetSkillStudy = 70037;
+  S2C_PetSkillDraw = 70039;
+  S2C_PetSkillReclaim = 70041;
+
+  //现金赛(71000-72000)单数
+  S2C_GetCashBattle = 71001;
+  S2C_GetCashBattleVersus = 71003;
+  S2C_GetCashBattleGuess = 71005;
+  S2C_CashBattleEnter = 71007;
+  S2C_CaseBattleSelectHero = 71009;
+  S2C_CashBattleJoin = 71011;
+  S2C_CashBattleStart = 71013;
+  S2C_CashBattleGratuity = 71015;
+
+  // 排行榜  (72000-73000)单数
+  S2C_GetLeaderboard = 72001;
+  S2C_StarLeaderboard = 72003;
+
+  // boss挑战 (73000-74000)单数
+  S2C_BossMainPanel = 73001;
+  S2C_ChallengeBoss = 73003;
+  S2C_BossChallengeClaimAward = 73005;
+
+  // GM指令
+  S2C_BffGMCommand = 90003;
+}

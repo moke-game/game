@@ -1,0 +1,110 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+
+option go_package = "bff/;bffpb";
+
+message MHero {
+  int32 hero_id = 1;
+  int32 level = 2;
+  float hp = 3; // 血量
+  float attack = 4; // 攻击力
+  float defense = 5; // 防御力
+  float speed = 6; // 移动速度
+  int32 cup = 7; // 奖杯
+  int32 cup_level = 8; // 奖杯等级
+  int32 cur_skin = 9;//当前使用的皮肤
+  repeated int32 common_attack = 10;//普通攻击
+  int32 special_skill_1 = 11;//小招ID
+  int32 special_skill_2 = 12;//大招ID
+  int32 move_skill = 13;//位移技能ID
+}
+
+message MSkin {
+  int32 id = 1;
+  int32 hero_id = 2;
+}
+
+message MHeros {
+  map<int32, MHero> heros = 1;
+  int32 total_cup = 2;//总奖杯数
+  map<int32, MSkin> skins = 3;
+}
+
+//获取玩家英雄信息
+message C2SGetHeroInfo {}
+
+//获取玩家英雄信息返回
+message S2CGetHeroInfo {
+  MHeros hero = 1;
+}
+
+// 解锁英雄
+message C2SUnlockHero {
+  int32 hero_id = 2;
+}
+
+// 解锁英雄返回
+message S2CUnlockHero {
+  int32 hero_id = 2;
+}
+
+// 升级英雄
+message C2SUpgradeHero {
+  int32 hero_id = 1;
+}
+
+// 升级英雄返回
+message S2CUpgradeHero {
+  int32 hero_id = 2;
+  Items rewards = 3; // 升级奖励，仅用于展示
+}
+
+//选择英雄
+message C2SChooseHero {
+  int32 hero_id = 1; //英雄ID
+}
+
+//选择英雄返回
+message S2CChooseHero {
+  int32 hero_id = 1; //英雄ID
+  int32 skin_id = 2; //皮肤ID
+}
+
+//试用英雄
+message C2STryHero{
+  int32 hero_id = 1;//英雄ID
+}
+
+//试用返回
+message S2CTryHero{
+}
+
+//奖杯变动通知
+message NtfHeroCupChange{
+  MHeros hero = 1;
+}
+
+//解锁皮肤
+message C2SUnlockSkin{
+  int32 skin_id = 1;//皮肤ID
+}
+
+message S2CUnlockSkin{
+  int32 skin_id = 1;
+}
+
+//选择皮肤
+message C2SSelectSkin{
+  int32 skin_id = 1;
+}
+
+message S2CSelectSkin{
+  int32 skin_id = 1;
+}
+
+//英雄信息更改广播
+message NtfHeroChange{
+  repeated MHero hero = 1;
+}

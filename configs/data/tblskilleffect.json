@@ -1,0 +1,3006 @@
+[
+  {
+    "ID": 1000111,
+    "Name": "普攻第一段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      60
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000121,
+    "Name": "普攻第二段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.35,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000131,
+    "Name": "普攻第三段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      100
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 1200,
+    "SkillDamage": [
+      1.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000141,
+    "Name": "小招：滑跪",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      400,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 400,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 2,
+    "Speed": 4000,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      10111,
+      10310,
+      10404
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000151,
+    "Name": "大招：巨星",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      800
+    ],
+    "EffectDelay": 0,
+    "Duration": 5500,
+    "Condition": [],
+    "Interval": 500,
+    "MoveType": 2,
+    "Speed": 0,
+    "SkillDamage": [
+      1.25,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 1000211,
+    "Name": "新兵普攻",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      100,
+      100
+    ],
+    "EffectDelay": 0,
+    "Duration": 400,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 4000,
+    "SkillDamage": [
+      1.1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000221,
+    "Name": "新兵小招",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      12002
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000231,
+    "Name": "新兵大招",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      4500,
+      300
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      3.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10106,
+      10306,
+      10406
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10002210,
+    "Name": "1技能进阶沉默效果（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      12002,
+      40210
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10002211,
+    "Name": "1技能进阶沉默效果（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      12002,
+      40211
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10002212,
+    "Name": "1技能进阶沉默效果（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      12002,
+      40212
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10002213,
+    "Name": "1技能进阶沉默效果（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      12002,
+      40213
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10002310,
+    "Name": "2技能进阶增加宽度（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      5500,
+      320
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      3.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10106,
+      10306,
+      10406
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10002311,
+    "Name": "2技能进阶增加宽度（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      5500,
+      330
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      3.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10106,
+      10306,
+      10406
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10002312,
+    "Name": "2技能进阶增加宽度（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      5500,
+      350
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      3.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10106,
+      10306,
+      10406
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10002313,
+    "Name": "2技能进阶增加宽度（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      5500,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      3.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10106,
+      10306,
+      10406
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000411,
+    "Name": "普攻第一段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.4,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000421,
+    "Name": "普攻第二段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000431,
+    "Name": "普攻第三段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      100
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.8,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000441,
+    "Name": "小招",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      200,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 2000,
+    "SkillDamage": [
+      2.2,
+      5
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10102,
+      10302
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000451,
+    "Name": "大招",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      500
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.5,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10112,
+      10308
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10004410,
+    "Name": "1技能进阶减敌攻（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      200,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 2000,
+    "SkillDamage": [
+      2.2,
+      5
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10102,
+      10302,
+      40410
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10004411,
+    "Name": "1技能进阶减敌攻（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      200,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 2000,
+    "SkillDamage": [
+      2.2,
+      5
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10102,
+      10302,
+      40411
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10004412,
+    "Name": "1技能进阶减敌攻（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      200,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 2000,
+    "SkillDamage": [
+      2.2,
+      5
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10102,
+      10302,
+      40412
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10004413,
+    "Name": "1技能进阶减敌攻（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      200,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 2000,
+    "SkillDamage": [
+      2.2,
+      5
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10102,
+      10302,
+      40413
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10004510,
+    "Name": "2技能进阶落地伤血（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      500
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.5,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10112,
+      10308,
+      40420
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10004511,
+    "Name": "2技能进阶落地伤血（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      500
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.5,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10112,
+      10308,
+      40421
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10004512,
+    "Name": "2技能进阶落地伤血（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      500
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.5,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10112,
+      10308,
+      40422
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10004513,
+    "Name": "2技能进阶落地伤血（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      500
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.5,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10112,
+      10308,
+      40423
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 1000511,
+    "Name": "普攻第一段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      20,
+      200
+    ],
+    "EffectDelay": 0,
+    "Duration": 500,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3500,
+    "SkillDamage": [
+      1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000521,
+    "Name": "普攻第二段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      20,
+      200
+    ],
+    "EffectDelay": 0,
+    "Duration": 500,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3650,
+    "SkillDamage": [
+      1.1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000531,
+    "Name": "普攻第三段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      20,
+      200
+    ],
+    "EffectDelay": 0,
+    "Duration": 500,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3800,
+    "SkillDamage": [
+      1.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000541,
+    "Name": "水雷",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      350
+    ],
+    "EffectDelay": 0,
+    "Duration": 300,
+    "Condition": [
+      1,
+      3
+    ],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.4,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 1000542,
+    "Name": "水雷陷阱",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      800
+    ],
+    "EffectDelay": 0,
+    "Duration": 4000,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 200,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      0.55,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [
+      1000542
+    ],
+    "EffectPro": [
+      100
+    ],
+    "Screen": 0
+  },
+  {
+    "ID": 1000551,
+    "Name": "枪舞",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      600
+    ],
+    "EffectDelay": 0,
+    "Duration": 2000,
+    "Condition": [],
+    "Interval": 200,
+    "MoveType": 2,
+    "Speed": 0,
+    "SkillDamage": [
+      0.65,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10005510,
+    "Name": "2技能进阶增伤（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      600
+    ],
+    "EffectDelay": 0,
+    "Duration": 2000,
+    "Condition": [],
+    "Interval": 200,
+    "MoveType": 2,
+    "Speed": 0,
+    "SkillDamage": [
+      0.7,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10005511,
+    "Name": "2技能进阶增伤（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      600
+    ],
+    "EffectDelay": 0,
+    "Duration": 2000,
+    "Condition": [],
+    "Interval": 200,
+    "MoveType": 2,
+    "Speed": 0,
+    "SkillDamage": [
+      0.75,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10005512,
+    "Name": "2技能进阶增伤（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      600
+    ],
+    "EffectDelay": 0,
+    "Duration": 2000,
+    "Condition": [],
+    "Interval": 200,
+    "MoveType": 2,
+    "Speed": 0,
+    "SkillDamage": [
+      0.85,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10005513,
+    "Name": "2技能进阶增伤（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      600
+    ],
+    "EffectDelay": 0,
+    "Duration": 2000,
+    "Condition": [],
+    "Interval": 200,
+    "MoveType": 2,
+    "Speed": 0,
+    "SkillDamage": [
+      1,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 1000811,
+    "Name": "普攻第一段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      800,
+      120
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.4,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000821,
+    "Name": "普攻第二段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      800,
+      120
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000831,
+    "Name": "普攻第三段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      1000,
+      90
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.8,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000841,
+    "Name": "小招",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10108,
+      10308
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 1000851,
+    "Name": "大招",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      300
+    ],
+    "EffectDelay": 0,
+    "Duration": 2500,
+    "Condition": [],
+    "Interval": 200,
+    "MoveType": 2,
+    "Speed": 0,
+    "SkillDamage": [
+      1.2,
+      15
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 13000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001011,
+    "Name": "普攻第一段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001021,
+    "Name": "普攻第二段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001031,
+    "Name": "普攻第三段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.8,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001041,
+    "Name": "小招：手雷",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      300
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 1001051,
+    "Name": "大招：大炮第一炮",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      400
+    ],
+    "EffectDelay": 200,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001052,
+    "Name": "大招：大炮第二炮",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      400
+    ],
+    "EffectDelay": 200,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.4,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001053,
+    "Name": "大招：大炮第三炮",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      600
+    ],
+    "EffectDelay": 200,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.8,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 12000,
+    "BuffID": [
+      10104,
+      10201,
+      10304,
+      10404
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10010410,
+    "Name": "1技能进阶伤害加深（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      300
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      41010
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10010411,
+    "Name": "1技能进阶伤害加深（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      300
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      41011
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10010412,
+    "Name": "1技能进阶伤害加深（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      300
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      41012
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10010413,
+    "Name": "1技能进阶伤害加深（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      300
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      41013
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 1001211,
+    "Name": "普攻第一段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      650,
+      120
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001221,
+    "Name": "普攻第二段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      650,
+      120
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.4,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001231,
+    "Name": "普攻第三段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      650,
+      600
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001241,
+    "Name": "小招：范围穿刺",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      700
+    ],
+    "EffectDelay": 0,
+    "Duration": 1000,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 200,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      11003,
+      10501,
+      10306,
+      10406
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10012410,
+    "Name": "1技能进阶减速（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      700
+    ],
+    "EffectDelay": 0,
+    "Duration": 1000,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 200,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      11003,
+      10501,
+      10306,
+      10406,
+      41210
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10012411,
+    "Name": "1技能进阶减速（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      700
+    ],
+    "EffectDelay": 0,
+    "Duration": 1000,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 200,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      11003,
+      10501,
+      10306,
+      10406,
+      41211
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10012412,
+    "Name": "1技能进阶减速（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      700
+    ],
+    "EffectDelay": 0,
+    "Duration": 1000,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 200,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      11003,
+      10501,
+      10306,
+      10406,
+      41212
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10012413,
+    "Name": "1技能进阶减速（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      700
+    ],
+    "EffectDelay": 0,
+    "Duration": 1000,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 200,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      11003,
+      10501,
+      10306,
+      10406,
+      41213
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 1001411,
+    "Name": "普攻第一段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      70
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001421,
+    "Name": "普攻第二段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      70
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001431,
+    "Name": "普攻第三段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      380
+    ],
+    "EffectDelay": 0,
+    "Duration": 400,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 200,
+    "MoveType": 1,
+    "Speed": 1200,
+    "SkillDamage": [
+      1.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001441,
+    "Name": "小招：旋风冲锋",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      400,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 400,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 2,
+    "Speed": 4000,
+    "SkillDamage": [
+      1.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      10110,
+      10310,
+      10404
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001451,
+    "Name": "大招：雷游",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      800
+    ],
+    "EffectDelay": 0,
+    "Duration": 1500,
+    "Condition": [],
+    "Interval": 400,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.4,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 13000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10014410,
+    "Name": "1技能进阶技能效果（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      400,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 400,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 2,
+    "Speed": 4000,
+    "SkillDamage": [
+      1.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      10110,
+      10310,
+      10404,
+      41410
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10014411,
+    "Name": "1技能进阶技能效果（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      400,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 400,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 2,
+    "Speed": 4000,
+    "SkillDamage": [
+      1.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      10110,
+      10310,
+      10404,
+      41411
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10014412,
+    "Name": "1技能进阶技能效果（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      400,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 400,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 2,
+    "Speed": 4000,
+    "SkillDamage": [
+      1.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      10110,
+      10310,
+      10404,
+      41412
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10014413,
+    "Name": "1技能进阶技能效果（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      400,
+      400
+    ],
+    "EffectDelay": 0,
+    "Duration": 400,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 2,
+    "Speed": 4000,
+    "SkillDamage": [
+      1.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      10110,
+      10310,
+      10404,
+      41413
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10014510,
+    "Name": "2技能进阶技能伤害（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      800
+    ],
+    "EffectDelay": 0,
+    "Duration": 1500,
+    "Condition": [],
+    "Interval": 400,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 13000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10014511,
+    "Name": "2技能进阶技能伤害（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      800
+    ],
+    "EffectDelay": 0,
+    "Duration": 1500,
+    "Condition": [],
+    "Interval": 400,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.55,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 13000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10014512,
+    "Name": "2技能进阶技能伤害（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      800
+    ],
+    "EffectDelay": 0,
+    "Duration": 1500,
+    "Condition": [],
+    "Interval": 400,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.65,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 13000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10014513,
+    "Name": "2技能进阶技能伤害（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      800
+    ],
+    "EffectDelay": 0,
+    "Duration": 1500,
+    "Condition": [],
+    "Interval": 400,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.85,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 13000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001511,
+    "Name": "普攻第一段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      80
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      11008
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001512,
+    "Name": "普攻第二段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      500,
+      80
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.4,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      11008
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1001513,
+    "Name": "普攻第三段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      600,
+      360
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      11008
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000311,
+    "Name": "普攻第一段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      100,
+      150
+    ],
+    "EffectDelay": 0,
+    "Duration": 500,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3500,
+    "SkillDamage": [
+      1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000321,
+    "Name": "普攻第二段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      100,
+      150
+    ],
+    "EffectDelay": 0,
+    "Duration": 500,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3500,
+    "SkillDamage": [
+      1.1,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000331,
+    "Name": "普攻第三段",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      100,
+      200
+    ],
+    "EffectDelay": 0,
+    "Duration": 500,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3500,
+    "SkillDamage": [
+      1.2,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000341,
+    "Name": "技能1：玫瑰波",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      300,
+      250
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3000,
+    "SkillDamage": [
+      0.5,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      11001
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 1000351,
+    "Name": "技能2：玫瑰轰炸",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      350
+    ],
+    "EffectDelay": 0,
+    "Duration": 200,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1.3,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 10003410,
+    "Name": "1技能进阶技能效果（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      300,
+      250
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3000,
+    "SkillDamage": [
+      0.6,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      11001
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10003411,
+    "Name": "1技能进阶技能效果（低）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      300,
+      250
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3000,
+    "SkillDamage": [
+      0.75,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      11001
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10003412,
+    "Name": "1技能进阶技能效果（中）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      300,
+      250
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3000,
+    "SkillDamage": [
+      0.9,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      11001
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 10003413,
+    "Name": "1技能进阶技能效果（高）",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      300,
+      250
+    ],
+    "EffectDelay": 0,
+    "Duration": 800,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 1,
+    "Speed": 3000,
+    "SkillDamage": [
+      1.15,
+      0
+    ],
+    "StrikeDamage": 20000,
+    "ExtraCriticalDamage": 11000,
+    "BuffID": [
+      11002
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 8000011,
+    "Name": "",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      300
+    ],
+    "EffectDelay": 0,
+    "Duration": 200,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      0,
+      0
+    ],
+    "StrikeDamage": 0,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 9000111,
+    "Name": "章鱼矩形攻击",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      4000,
+      1000
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      1,
+      0
+    ],
+    "StrikeDamage": 0,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      10106,
+      10306,
+      10406
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 9000121,
+    "Name": "章鱼扇形喷水",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      3000,
+      60
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      0,
+      0
+    ],
+    "StrikeDamage": 0,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      50003
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 9000122,
+    "Name": "章鱼扇形喷水后虚弱",
+    "TargetType": [
+      3
+    ],
+    "Range": [
+      3,
+      1300,
+      1300
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      0,
+      0
+    ],
+    "StrikeDamage": 0,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      50002
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  },
+  {
+    "ID": 9000131,
+    "Name": "【狂暴】章鱼喷泉",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      2,
+      700
+    ],
+    "EffectDelay": 1500,
+    "Duration": 100,
+    "Condition": [
+      1,
+      1
+    ],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      0,
+      0
+    ],
+    "StrikeDamage": 0,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      50004,
+      10112,
+      10308,
+      11003
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 9000151,
+    "Name": "【狂暴】章鱼矩形攻击",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      3,
+      4000,
+      1000
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      2,
+      0
+    ],
+    "StrikeDamage": 0,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      10106,
+      10306,
+      10406
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 1
+  },
+  {
+    "ID": 9000161,
+    "Name": "【狂暴】章鱼扇形喷水",
+    "TargetType": [
+      1
+    ],
+    "Range": [
+      1,
+      3000,
+      60
+    ],
+    "EffectDelay": 0,
+    "Duration": 0,
+    "Condition": [],
+    "Interval": 0,
+    "MoveType": 0,
+    "Speed": 0,
+    "SkillDamage": [
+      0,
+      0
+    ],
+    "StrikeDamage": 0,
+    "ExtraCriticalDamage": 0,
+    "BuffID": [
+      50006
+    ],
+    "BuffPro": [],
+    "EffectID": [],
+    "EffectPro": [],
+    "Screen": 0
+  }
+]

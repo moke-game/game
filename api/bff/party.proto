@@ -1,0 +1,259 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+
+option go_package = "bff/;bffpb";
+
+enum PartyMemberStatus {
+  STATUS_UNSPECIFIED = 0;
+  STATUS_READY = 1;
+  STATUS_NOT_READY = 2;
+}
+
+enum PartyReplyCode {
+  REPLY_NONE = 0;
+  REPLY_AGREE = 1; //同意
+  REPLY_REFUSE = 2; //拒绝
+  REPLY_REFUSE_SOME_TIME = 3; //一定时间内拒绝
+  REPLY_BUSY = 4; //当前正忙
+}
+
+message PartyMember {
+  PlayerSimpleInfo simple_info = 1;
+  PartyMemberStatus status = 2;
+}
+
+message PartyInfo {
+  string party_id = 1; // 房间id
+  int64 party_owner = 2; // 房主
+  int32 play_id = 3; // 房间地图
+  map<int64, PartyMember> party_members = 4; // 房间成员
+}
+
+// 玩家加入party广播
+message NtfPartyMemberJoin {
+  repeated PartyMember members = 1; // 房间成员信息
+}
+
+// 玩家离开party广播
+message NtfPartyMemberLeave {
+  repeated int64 member_ids = 1; // 离开的玩家id
+  int32 leave_reason = 2; // 离开原因 (1:leave, 2:kick out)
+}
+
+// 玩家准备状态更新广播
+message NtfPartyMemberStatus {
+  map<int64, PartyMemberStatus> status = 1; // 玩家状态
+}
+
+// 玩家英雄更新广播
+message NtfPartyMemberHero {
+  map<int64, int32> heros = 1; // 玩家英雄
+}
+
+// 房间信息更改
+message NtfPartyInfo {
+  int32 play_id = 1; // 地图id
+  int64 owner = 2; // 房主id
+}
+
+// 获取房间信息
+message C2SGetPartyInfo {
+  oneof kind {
+    string party_id = 1; // 房间id
+    int64 member_id = 2; // 玩家id
+  }
+}
+
+// 获取房间信息返回
+message S2CGetPartyInfo {
+  PartyInfo party_info = 1; // 房间信息
+}
+
+//11-30新增协议 单独处理创建组队
+message C2SCreateParty {
+  int32 play_id = 2; // 玩法id (创建时必填)
+}
+
+message S2CCreateParty {
+  PartyInfo party_info = 1; // 房间信息
+}
+
+// 离开party
+message C2SLeaveParty {}
+
+// 离开party返回
+message S2CLeaveParty {}
+
+// 踢出玩家
+message C2SKickParty {
+  int64 member_id = 1;
+}
+
+// 踢出玩家返回
+message S2CKickParty {}
+
+// 准备
+message C2SReadyParty {}
+
+// 准备返回
+message S2CReadyParty {}
+
+// 取消准备
+message C2SCancelReadyParty {}
+
+// 取消准备返回
+message S2CCancelReadyParty {}
+
+// 选择玩法
+message C2SChoosePartyMap {
+  int32 play_id = 1; // 玩法id
+}
+
+// 选择玩法返回
+message S2CChoosePartyMap {}
+
+//----------------------------------------------------------好友队伍信息--------------------------------------------------//
+
+message C2SFriendPartyInfo {}
+
+message S2CFriendPartyInfo {
+  repeated PartyInfo info = 1; //只下发有空位的好友队伍信息
+}
+
+//----------------------------------------------------------申请相关-----------------------------------------------------//
+
+// 申请加入Party
+message C2SJoinParty {
+  string party_id = 1;
+}
+
+// 加入party返回
+message S2CJoinParty {
+  int32 ret_code = 1;
+  string party_id = 2;
+}
+
+//通知队长有人申请入队
+message NtfApplyJoinParty {
+  PlayerSimpleInfo simple_info = 1; //申请人信息
+}
+
+//队长对加入申请回应
+message C2SApplyJoinPartyReplay {
+  int32 replay_code = 1; //1=同意 2=拒绝 3=一定时间内拒绝再次申请
+  int64 player_id = 2; //申请玩家ID
+}
+
+//回应返回
+message S2CApplyJoinPartyReplay {
+  int32 ret_code = 1; //同cpb.error code
+  int64 player_id = 2; //申请玩家ID
+}
+
+//队长回应通知申请人
+message NtfApplyJoinPartyReplay {
+  int32 replay_code = 1; //1=同意 2=拒绝 3=一定时间内拒绝再次申请
+  string party_id = 2; //队伍ID
+  PlayerSimpleInfo simple_info = 3; //队长信息
+}
+
+//确认加入队伍
+message C2SReadyJoinParty {
+  string party_id = 1; //队伍ID
+}
+
+//确认加入队伍
+message S2CReadyJoinParty {}
+
+//队伍信息更新通知
+message NtfPartyUpdate {
+  PartyInfo partyInfo = 1; //队伍信息
+}
+//-----------------------------------------------------------邀请相关----------------------------------------------------//
+
+// 邀请玩家加入party
+message C2SInviteJoinParty {
+  int64 player_id = 1; //被邀请的玩家ID
+  int32 play_id = 2; // 玩法id (没有队伍时根据玩法ID创建玩法)
+}
+
+// 邀请返回
+message S2CInviteJoinParty {
+  int32 ret_code = 1; // 1=同意 2=拒绝 3=一定时间内拒绝再次被邀请 其它同cpb.error code
+  int64 player_id = 2; //被邀请的玩家ID
+  int32 countdown = 3; //邀请失效倒计时 秒
+}
+
+// 通知被邀请玩家邀请信息
+message NtfInviteJoinParty {
+  PlayerSimpleInfo simple_info = 1; //邀请人信息
+  PartyInfo party_info = 2; //房间信息
+  int32 countdown = 3; //邀请失效倒计时 秒
+}
+
+// 回应邀请
+message C2SInviteJoinPartyReplay {
+  int32 replay_code = 1; //1=同意 2=拒绝 3=一定时间内拒绝再次被邀请
+  int64 player_id = 2; // 邀请人id
+}
+
+//
+message S2CInviteJoinPartyReplay {}
+
+// 被邀请玩家回应信息通知
+message NtfInviteJoinPartyReplay {
+  PlayerSimpleInfo simple_info = 1; //被邀请人信息
+  int32 replay_code = 2; //1=同意 2=拒绝 3=一定时间内拒绝再次被邀请
+}
+
+// 取消邀请
+message C2SInviteCancel {
+  int64 player_id = 1; //被邀请人ID
+}
+
+// 取消邀请回应
+message S2CInviteCancel {}
+
+// 通知被邀请玩家取消邀请
+message NtfInviteCancel {
+  PlayerSimpleInfo simple_info = 1; //被邀请人信息
+  PartyInfo party_info = 2; //房间信息
+}
+
+//----------------------------------------------------------招募相关-----------------------------------------------------//
+
+message PartyEnlistInfo {
+  string party_id = 1; // 房间id
+  int64 party_owner = 2; // 房主ID
+  string owner_name = 3; //房主昵称
+  string owner_icon = 4; //房主头像
+  int32 hero_cup = 5; //房主奖杯数
+  int32 play_id = 6; // 房间玩法ID
+  int32 max_member = 7; //最大成员数
+  int32 cur_member = 8; //当前成员数
+}
+
+//获取招募信息
+message C2SPartyEnlistInfo {}
+
+message S2CPartyEnlistInfo {
+  repeated PartyEnlistInfo enlist_info = 1; //招募消息
+}
+
+// 发布招募信息
+message C2SPartyEnlist {
+  int32 play_id = 1;
+}
+
+message S2CPartyEnlist {
+  int32 ret_code = 1; //操作code 同error_code
+}
+
+message C2SQuickJoinEnlist {}
+
+message S2CQuickJoinEnlist {
+  int32 ret_code = 1;
+  string party_id = 2;
+}

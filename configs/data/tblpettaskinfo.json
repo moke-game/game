@@ -1,0 +1,322 @@
+[
+  {
+    "ID": 1,
+    "Name": "PetTask_Name_1",
+    "Desp": "PetTask_Desp_1",
+    "Quality": 5,
+    "Duration": 240,
+    "PetRequest": 3,
+    "PartRequest": 2,
+    "Reward": [
+      {
+        "id": 15,
+        "num": 1
+      }
+    ],
+    "Weight": 25
+  },
+  {
+    "ID": 2,
+    "Name": "PetTask_Name_2",
+    "Desp": "PetTask_Desp_2",
+    "Quality": 5,
+    "Duration": 240,
+    "PetRequest": 3,
+    "PartRequest": 2,
+    "Reward": [
+      {
+        "id": 17,
+        "num": 50
+      }
+    ],
+    "Weight": 25
+  },
+  {
+    "ID": 3,
+    "Name": "PetTask_Name_3",
+    "Desp": "PetTask_Desp_3",
+    "Quality": 5,
+    "Duration": 240,
+    "PetRequest": 1,
+    "PartRequest": 1,
+    "Reward": [
+      {
+        "id": 3,
+        "num": 500
+      }
+    ],
+    "Weight": 50
+  },
+  {
+    "ID": 4,
+    "Name": "PetTask_Name_4",
+    "Desp": "PetTask_Desp_4",
+    "Quality": 4,
+    "Duration": 180,
+    "PetRequest": 3,
+    "PartRequest": 1,
+    "Reward": [
+      {
+        "id": 9,
+        "num": 2
+      }
+    ],
+    "Weight": 40
+  },
+  {
+    "ID": 5,
+    "Name": "PetTask_Name_5",
+    "Desp": "PetTask_Desp_5",
+    "Quality": 4,
+    "Duration": 180,
+    "PetRequest": 3,
+    "PartRequest": 1,
+    "Reward": [
+      {
+        "id": 12,
+        "num": 2
+      }
+    ],
+    "Weight": 40
+  },
+  {
+    "ID": 6,
+    "Name": "PetTask_Name_6",
+    "Desp": "PetTask_Desp_6",
+    "Quality": 4,
+    "Duration": 180,
+    "PetRequest": 2,
+    "PartRequest": 1,
+    "Reward": [
+      {
+        "id": 3,
+        "num": 400
+      }
+    ],
+    "Weight": 40
+  },
+  {
+    "ID": 7,
+    "Name": "PetTask_Name_7",
+    "Desp": "PetTask_Desp_7",
+    "Quality": 4,
+    "Duration": 180,
+    "PetRequest": 3,
+    "PartRequest": 1,
+    "Reward": [
+      {
+        "id": 1,
+        "num": 800
+      }
+    ],
+    "Weight": 40
+  },
+  {
+    "ID": 8,
+    "Name": "PetTask_Name_8",
+    "Desp": "PetTask_Desp_8",
+    "Quality": 4,
+    "Duration": 180,
+    "PetRequest": 3,
+    "PartRequest": 1,
+    "Reward": [
+      {
+        "id": 14,
+        "num": 1
+      }
+    ],
+    "Weight": 40
+  },
+  {
+    "ID": 9,
+    "Name": "PetTask_Name_9",
+    "Desp": "PetTask_Desp_9",
+    "Quality": 3,
+    "Duration": 120,
+    "PetRequest": 2,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 8,
+        "num": 2
+      }
+    ],
+    "Weight": 65
+  },
+  {
+    "ID": 10,
+    "Name": "PetTask_Name_10",
+    "Desp": "PetTask_Desp_10",
+    "Quality": 3,
+    "Duration": 120,
+    "PetRequest": 2,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 11,
+        "num": 2
+      }
+    ],
+    "Weight": 65
+  },
+  {
+    "ID": 11,
+    "Name": "PetTask_Name_11",
+    "Desp": "PetTask_Desp_11",
+    "Quality": 3,
+    "Duration": 120,
+    "PetRequest": 2,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 3,
+        "num": 200
+      }
+    ],
+    "Weight": 65
+  },
+  {
+    "ID": 12,
+    "Name": "PetTask_Name_12",
+    "Desp": "PetTask_Desp_12",
+    "Quality": 3,
+    "Duration": 120,
+    "PetRequest": 2,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 1,
+        "num": 400
+      }
+    ],
+    "Weight": 65
+  },
+  {
+    "ID": 13,
+    "Name": "PetTask_Name_13",
+    "Desp": "PetTask_Desp_13",
+    "Quality": 3,
+    "Duration": 120,
+    "PetRequest": 2,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 13,
+        "num": 1
+      }
+    ],
+    "Weight": 20
+  },
+  {
+    "ID": 14,
+    "Name": "PetTask_Name_14",
+    "Desp": "PetTask_Desp_14",
+    "Quality": 3,
+    "Duration": 120,
+    "PetRequest": 1,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 13,
+        "num": 1
+      }
+    ],
+    "Weight": 20
+  },
+  {
+    "ID": 15,
+    "Name": "PetTask_Name_15",
+    "Desp": "PetTask_Desp_15",
+    "Quality": 2,
+    "Duration": 60,
+    "PetRequest": 1,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 7,
+        "num": 5
+      }
+    ],
+    "Weight": 66
+  },
+  {
+    "ID": 16,
+    "Name": "PetTask_Name_16",
+    "Desp": "PetTask_Desp_16",
+    "Quality": 2,
+    "Duration": 60,
+    "PetRequest": 1,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 11,
+        "num": 5
+      }
+    ],
+    "Weight": 66
+  },
+  {
+    "ID": 17,
+    "Name": "PetTask_Name_17",
+    "Desp": "PetTask_Desp_17",
+    "Quality": 2,
+    "Duration": 60,
+    "PetRequest": 1,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 3,
+        "num": 100
+      }
+    ],
+    "Weight": 67
+  },
+  {
+    "ID": 18,
+    "Name": "PetTask_Name_18",
+    "Desp": "PetTask_Desp_18",
+    "Quality": 2,
+    "Duration": 60,
+    "PetRequest": 1,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 1,
+        "num": 200
+      }
+    ],
+    "Weight": 67
+  },
+  {
+    "ID": 19,
+    "Name": "PetTask_Name_19",
+    "Desp": "PetTask_Desp_19",
+    "Quality": 2,
+    "Duration": 60,
+    "PetRequest": 1,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 3,
+        "num": 100
+      }
+    ],
+    "Weight": 67
+  },
+  {
+    "ID": 20,
+    "Name": "PetTask_Name_20",
+    "Desp": "PetTask_Desp_20",
+    "Quality": 2,
+    "Duration": 60,
+    "PetRequest": 1,
+    "PartRequest": 0,
+    "Reward": [
+      {
+        "id": 1,
+        "num": 200
+      }
+    ],
+    "Weight": 67
+  }
+]

@@ -1,0 +1,111 @@
+syntax = "proto3";
+package bff;
+
+option go_package = "bff/;bffpb";
+
+enum Platform {
+  Platform_None = 0;
+  Platform_AppStore = 1; // AppStore
+  Platform_GooglePlay = 2; // GooglePlay
+}
+
+enum ItemType {
+  None = 0;
+  kCoin = 1; // 金币
+  kDiamond = 2; // 钻石
+  kHeroCoin = 3; // 英雄币
+  kBadge = 4; // 徽章
+  kHeroExp = 5; // 英雄券
+  kStar = 6; // 段位星星
+  kPassExp = 7; // 通行证经验
+  kPetFeed = 8; // 宠物喂养素材
+  kPetEgg = 9; // 宠物蛋
+  kSpeedCard = 10; // 加速卡
+  kHero = 11; // 英雄
+  kPetStone = 12; // 技能石
+}
+
+//组队状态
+enum GroupType {
+  GROUP_WAIT = 0; //等待
+  GROUP_fight = 1; //战斗
+}
+
+//队伍信息
+message GroupInfo {
+  int64 groupUid = 1;
+  int64 createUid = 2; //创建者id(队长id)
+  int64 createTime = 3; //创建时间
+  repeated int64 members = 4; //成员id列表
+  int32 groupState = 5; //队伍状态
+  string groupCode = 6; //队伍code
+  map<int64, bool> matchReady = 7; //队员准备状态
+  int32 playMap = 8; //玩法id
+}
+
+//个人队伍信息
+message PlayerGroupInfo {
+  int64 uid = 1;
+  int64 groupUid = 2;
+  //  int32 pLayerGroupState = 3; //个人组队状态（0:无状态,1:有弹窗没有处理，不能被邀请）
+  map<int64, int64> retCD = 3; //发送邀请消息的cd时间(同一被邀请用户不能小于5秒)
+  map<int64, int64> rspCD = 4; //拒绝cd时间(十分钟内不在接收某用户的邀请)
+}
+
+//好友队伍信息
+message FriendGroupInfo {
+  int64 uid = 1;
+  //  string nickname = 2; //别名
+  //  PlayerSimpleInfo info = 3;
+  GroupInfo group = 2; //队伍信息
+  repeated PlayerSimpleInfo gpInfos = 3; //队伍成员
+}
+
+//队伍简要信息
+message GroupSimpleInfo {
+  int64 createUid = 1; //队长id
+  repeated int64 members = 2; //成员id列表
+}
+
+//匹配后队伍信息
+message MatchGroupInfo {
+  repeated PlayerSimpleInfo infos = 1; //成员id列表
+  bool IsRoBot = 2; // 是否补充机器人
+  repeated int64 addRewardUids = 3; //需要增加奖励的成员id
+  GroupSimpleInfo gsi = 4; //每队最多只有一个队伍信息
+}
+
+//匹配后房间信息
+message MatchRoomInfo {
+  int32 playMapId = 1; //玩法id
+  repeated MatchGroupInfo groups = 2; //队伍信息
+  bool IsRoBot = 3; // 是否补充机器人队伍
+}
+
+message Item {
+  int64 id = 1; //唯一id
+  int32 config_id = 2; // 类型 config_id
+  int32 num = 3; // 数量
+  int64 expired = 4; // 过期时间
+}
+
+message Items {
+  map<int64, Item> items = 1;
+}
+
+//用户基本信息
+message PlayerSimpleInfo {
+  int64 uid = 1; //UID
+  string name = 2; //昵称
+  string head = 3; //头像
+  int32 level = 4; //等级
+  int32 hero_id = 5; //英雄ID
+  int32 line = 6; //分线
+  bool online = 7; //是否在线
+  int32 state = 8; //状态 0:正常 1:战斗, 2组队
+  string party_id = 9; //队伍ID 只有状态为组队时有值
+  int32 last_login_time = 10; //最后登录时间
+  int32 hero_cup = 11; // 英雄的总奖杯数 暂时废弃
+  int64 pet_profile_id = 12; //宠物外观组合ID 身体  + 帽子 * 10000 + 翅膀*10000^2 + 武器*10000^3
+  int32 skin_id = 13; //皮肤ID
+}

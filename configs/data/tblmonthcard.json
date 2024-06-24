@@ -1,0 +1,40 @@
+[
+  {
+    "ID": 1,
+    "Name": "Mouth_CardName1",
+    "CardType": 1,
+    "Duration": 30,
+    "BuyReward": [
+      {
+        "id": 2,
+        "num": 90
+      }
+    ],
+    "DayReward": [
+      {
+        "id": 2,
+        "num": 30
+      }
+    ],
+    "PurchaseID": 12
+  },
+  {
+    "ID": 2,
+    "Name": "Mouth_CardName2",
+    "CardType": 2,
+    "Duration": 30,
+    "BuyReward": [
+      {
+        "id": 2,
+        "num": 180
+      }
+    ],
+    "DayReward": [
+      {
+        "id": 2,
+        "num": 72
+      }
+    ],
+    "PurchaseID": 13
+  }
+]

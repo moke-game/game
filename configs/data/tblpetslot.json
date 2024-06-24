@@ -1,0 +1,27 @@
+[
+  {
+    "ID": 1,
+    "CostID": 0,
+    "CostNum": 0
+  },
+  {
+    "ID": 2,
+    "CostID": 1,
+    "CostNum": 1000
+  },
+  {
+    "ID": 3,
+    "CostID": 2,
+    "CostNum": 100
+  },
+  {
+    "ID": 4,
+    "CostID": 2,
+    "CostNum": 200
+  },
+  {
+    "ID": 5,
+    "CostID": 2,
+    "CostNum": 500
+  }
+]

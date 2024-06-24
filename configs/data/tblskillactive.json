@@ -1,0 +1,8923 @@
+[
+  {
+    "ID": 20101,
+    "Name": "通用技能",
+    "Describe": "闪避",
+    "Icon": "blink",
+    "Clip": 1,
+    "CD": 5000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10203
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      800,
+      100
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 20102,
+    "Name": "通用技能",
+    "Describe": "疾跑",
+    "Icon": "blink",
+    "Clip": 1,
+    "CD": 5000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 0,
+    "PreState": [],
+    "StateBuff": [],
+    "BuffSelf": [
+      11009
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      0,
+      4
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100011,
+    "Name": "Skill_100011_name",
+    "Describe": "Skill_100011_desp",
+    "Icon": "jimmy_attack",
+    "Clip": 1,
+    "CD": 500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      60
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000111
+    ],
+    "EffectTime": [
+      150
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      200,
+      250
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100012,
+    "Name": "普攻第二段",
+    "Describe": "",
+    "Icon": "jimmy_attack",
+    "Clip": 1,
+    "CD": 400,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 400,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000121
+    ],
+    "EffectTime": [
+      150
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      300,
+      250
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100013,
+    "Name": "普攻第三段",
+    "Describe": "",
+    "Icon": "jimmy_attack",
+    "Clip": 1,
+    "CD": 1000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 1000,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      100
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000131
+    ],
+    "EffectTime": [
+      350
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100014,
+    "Name": "Skill_100014_name",
+    "Describe": "Skill_100014_desp",
+    "Icon": "jimmy_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000141
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1600,
+    "MoveTime": [
+      100,
+      420
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100015,
+    "Name": "Skill_100015_name",
+    "Describe": "Skill_100015_desp",
+    "Icon": "jimmy_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 5500,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 5433,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10204,
+      10207
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000151
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100016,
+    "Name": "巨星浮空",
+    "Describe": "",
+    "Icon": "",
+    "Clip": 1,
+    "CD": 5000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 5000,
+    "PreState": [
+      0,
+      1
+    ],
+    "StateBuff": [
+      10002
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 1,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000140,
+    "Name": "Skill_100014_name",
+    "Describe": "Skill_100014_desp",
+    "Icon": "jimmy_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40110
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000141
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1600,
+    "MoveTime": [
+      100,
+      420
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000141,
+    "Name": "Skill_100014_name",
+    "Describe": "Skill_100014_desp",
+    "Icon": "jimmy_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40111
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000141
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1600,
+    "MoveTime": [
+      100,
+      420
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000142,
+    "Name": "Skill_100014_name",
+    "Describe": "Skill_100014_desp",
+    "Icon": "jimmy_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40112
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000141
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1600,
+    "MoveTime": [
+      100,
+      420
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000143,
+    "Name": "Skill_100014_name",
+    "Describe": "Skill_100014_desp",
+    "Icon": "jimmy_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40113
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000141
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1600,
+    "MoveTime": [
+      100,
+      420
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000150,
+    "Name": "Skill_100015_name",
+    "Describe": "Skill_100015_desp",
+    "Icon": "jimmy_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 5500,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 5433,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10204,
+      40120
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000151
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000151,
+    "Name": "Skill_100015_name",
+    "Describe": "Skill_100015_desp",
+    "Icon": "jimmy_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 5500,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 5433,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10204,
+      40121
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000151
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000152,
+    "Name": "Skill_100015_name",
+    "Describe": "Skill_100015_desp",
+    "Icon": "jimmy_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 5500,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 5433,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10204,
+      40122
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000151
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000153,
+    "Name": "Skill_100015_name",
+    "Describe": "Skill_100015_desp",
+    "Icon": "jimmy_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 5500,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 5433,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10204,
+      40123
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000151
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100021,
+    "Name": "Skill_100021_name",
+    "Describe": "Skill_100021_desp",
+    "Icon": "rokkie_attack",
+    "Clip": 1,
+    "CD": 600,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      100
+    ],
+    "RangeSpeed": 4000,
+    "SkillEffect": [
+      1000211
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100022,
+    "Name": "Skill_100022_name",
+    "Describe": "Skill_100022_desp",
+    "Icon": "rokkie_skill1",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 766,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000221
+    ],
+    "EffectTime": [
+      1000
+    ],
+    "Condition": 0,
+    "Distance": -400,
+    "MoveTime": [
+      500,
+      0
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100023,
+    "Name": "Skill_100023_name",
+    "Describe": "Skill_100023_desp",
+    "Icon": "rokkie_skill2",
+    "Clip": 1,
+    "CD": 8000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2000,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      4500,
+      300
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000231
+    ],
+    "EffectTime": [
+      1400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      7,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000220,
+    "Name": "Skill_100022_name",
+    "Describe": "Skill_100022_desp",
+    "Icon": "rokkie_skill1",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 766,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10002210
+    ],
+    "EffectTime": [
+      1000
+    ],
+    "Condition": 0,
+    "Distance": -400,
+    "MoveTime": [
+      500,
+      0
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000221,
+    "Name": "Skill_100022_name",
+    "Describe": "Skill_100022_desp",
+    "Icon": "rokkie_skill1",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 766,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10002211
+    ],
+    "EffectTime": [
+      1000
+    ],
+    "Condition": 0,
+    "Distance": -400,
+    "MoveTime": [
+      500,
+      0
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000222,
+    "Name": "Skill_100022_name",
+    "Describe": "Skill_100022_desp",
+    "Icon": "rokkie_skill1",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 766,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10002212
+    ],
+    "EffectTime": [
+      1000
+    ],
+    "Condition": 0,
+    "Distance": -400,
+    "MoveTime": [
+      500,
+      0
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000223,
+    "Name": "Skill_100022_name",
+    "Describe": "Skill_100022_desp",
+    "Icon": "rokkie_skill1",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 766,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      3000,
+      30
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10002213
+    ],
+    "EffectTime": [
+      1000
+    ],
+    "Condition": 0,
+    "Distance": -400,
+    "MoveTime": [
+      500,
+      0
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000230,
+    "Name": "Skill_100023_name",
+    "Describe": "Skill_100023_desp",
+    "Icon": "rokkie_skill2",
+    "Clip": 1,
+    "CD": 8000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2000,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      5500,
+      320
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10002310
+    ],
+    "EffectTime": [
+      1400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      7,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000231,
+    "Name": "Skill_100023_name",
+    "Describe": "Skill_100023_desp",
+    "Icon": "rokkie_skill2",
+    "Clip": 1,
+    "CD": 8000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2000,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      5500,
+      330
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10002311
+    ],
+    "EffectTime": [
+      1400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      7,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000232,
+    "Name": "Skill_100023_name",
+    "Describe": "Skill_100023_desp",
+    "Icon": "rokkie_skill2",
+    "Clip": 1,
+    "CD": 8000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2000,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      5500,
+      350
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10002312
+    ],
+    "EffectTime": [
+      1400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      7,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000233,
+    "Name": "Skill_100023_name",
+    "Describe": "Skill_100023_desp",
+    "Icon": "rokkie_skill2",
+    "Clip": 1,
+    "CD": 8000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2000,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      5500,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10002313
+    ],
+    "EffectTime": [
+      1400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      7,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100031,
+    "Name": "Skill_100031_name",
+    "Describe": "Skill_100031_desp",
+    "Icon": "Ishmaili_attack",
+    "Clip": 0,
+    "CD": 350,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 400,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1750,
+      150
+    ],
+    "RangeSpeed": 3500,
+    "SkillEffect": [
+      1000311
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100032,
+    "Name": "普攻第二段",
+    "Describe": "",
+    "Icon": "Ishmaili_attack",
+    "Clip": 0,
+    "CD": 350,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 433,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1750,
+      150
+    ],
+    "RangeSpeed": 3500,
+    "SkillEffect": [
+      1000321
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100033,
+    "Name": "普攻第三段",
+    "Describe": "",
+    "Icon": "Ishmaili_attack",
+    "Clip": 0,
+    "CD": 550,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 633,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      13001
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1750,
+      200
+    ],
+    "RangeSpeed": 3500,
+    "SkillEffect": [
+      1000331
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100034,
+    "Name": "Skill_100034_name",
+    "Describe": "Skill_100034_desp",
+    "Icon": "Ishmaili_skill1",
+    "Clip": 0,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      13001
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      2400,
+      250
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      1000341
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100035,
+    "Name": "Skill_100035_name",
+    "Describe": "Skill_100035_desp",
+    "Icon": "Ishmaili_skill2",
+    "Clip": 0,
+    "CD": 0,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 466,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      350
+    ],
+    "RangeSpeed": 4000,
+    "SkillEffect": [
+      1000351,
+      1000351,
+      1000351,
+      1000351
+    ],
+    "EffectTime": [
+      0,
+      200,
+      400,
+      600
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 13001,
+    "IsInterrupt": 1,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000340,
+    "Name": "Skill_100034_name",
+    "Describe": "Skill_100034_desp",
+    "Icon": "Ishmaili_skill1",
+    "Clip": 0,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      13001
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      2400,
+      250
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      10003410
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000341,
+    "Name": "Skill_100034_name",
+    "Describe": "Skill_100034_desp",
+    "Icon": "Ishmaili_skill1",
+    "Clip": 0,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      13001
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      2400,
+      250
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      10003411
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000342,
+    "Name": "Skill_100034_name",
+    "Describe": "Skill_100034_desp",
+    "Icon": "Ishmaili_skill1",
+    "Clip": 0,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      13001
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      2400,
+      250
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      10003412
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000343,
+    "Name": "Skill_100034_name",
+    "Describe": "Skill_100034_desp",
+    "Icon": "Ishmaili_skill1",
+    "Clip": 0,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      13001
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      2400,
+      250
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      10003413
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000330,
+    "Name": "",
+    "Describe": "",
+    "Icon": "Ishmaili_attack",
+    "Clip": 0,
+    "CD": 550,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 633,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40320
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1750,
+      200
+    ],
+    "RangeSpeed": 3500,
+    "SkillEffect": [
+      1000331
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000331,
+    "Name": "",
+    "Describe": "",
+    "Icon": "Ishmaili_attack",
+    "Clip": 0,
+    "CD": 550,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 633,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40321
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1750,
+      200
+    ],
+    "RangeSpeed": 3500,
+    "SkillEffect": [
+      1000331
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000332,
+    "Name": "",
+    "Describe": "",
+    "Icon": "Ishmaili_attack",
+    "Clip": 0,
+    "CD": 550,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 633,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40322
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1750,
+      200
+    ],
+    "RangeSpeed": 3500,
+    "SkillEffect": [
+      1000331
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000333,
+    "Name": "",
+    "Describe": "",
+    "Icon": "Ishmaili_attack",
+    "Clip": 0,
+    "CD": 550,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 633,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40323
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1750,
+      200
+    ],
+    "RangeSpeed": 3500,
+    "SkillEffect": [
+      1000331
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000345,
+    "Name": "Skill_100034_name",
+    "Describe": "Skill_100034_desp",
+    "Icon": "Ishmaili_skill1",
+    "Clip": 0,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40320
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      2400,
+      250
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      1000341
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000346,
+    "Name": "Skill_100034_name",
+    "Describe": "Skill_100034_desp",
+    "Icon": "Ishmaili_skill1",
+    "Clip": 0,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40321
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      2400,
+      250
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      1000341
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000347,
+    "Name": "Skill_100034_name",
+    "Describe": "Skill_100034_desp",
+    "Icon": "Ishmaili_skill1",
+    "Clip": 0,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40322
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      2400,
+      250
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      1000341
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000348,
+    "Name": "Skill_100034_name",
+    "Describe": "Skill_100034_desp",
+    "Icon": "Ishmaili_skill1",
+    "Clip": 0,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40323
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      2400,
+      250
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      1000341
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000350,
+    "Name": "Skill_100035_name",
+    "Describe": "Skill_100035_desp",
+    "Icon": "Ishmaili_skill2",
+    "Clip": 0,
+    "CD": 0,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 466,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      350
+    ],
+    "RangeSpeed": 4000,
+    "SkillEffect": [
+      1000351,
+      1000351,
+      1000351,
+      1000351
+    ],
+    "EffectTime": [
+      0,
+      200,
+      400,
+      600
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 40320,
+    "IsInterrupt": 1,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000351,
+    "Name": "Skill_100035_name",
+    "Describe": "Skill_100035_desp",
+    "Icon": "Ishmaili_skill2",
+    "Clip": 0,
+    "CD": 0,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 466,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      350
+    ],
+    "RangeSpeed": 4000,
+    "SkillEffect": [
+      1000351,
+      1000351,
+      1000351,
+      1000351
+    ],
+    "EffectTime": [
+      0,
+      200,
+      400,
+      600
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 40321,
+    "IsInterrupt": 1,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000352,
+    "Name": "Skill_100035_name",
+    "Describe": "Skill_100035_desp",
+    "Icon": "Ishmaili_skill2",
+    "Clip": 0,
+    "CD": 0,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 466,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      350
+    ],
+    "RangeSpeed": 4000,
+    "SkillEffect": [
+      1000351,
+      1000351,
+      1000351,
+      1000351
+    ],
+    "EffectTime": [
+      0,
+      200,
+      400,
+      600
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 40322,
+    "IsInterrupt": 1,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000353,
+    "Name": "Skill_100035_name",
+    "Describe": "Skill_100035_desp",
+    "Icon": "Ishmaili_skill2",
+    "Clip": 0,
+    "CD": 0,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 466,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      350
+    ],
+    "RangeSpeed": 4000,
+    "SkillEffect": [
+      1000351,
+      1000351,
+      1000351,
+      1000351
+    ],
+    "EffectTime": [
+      0,
+      200,
+      400,
+      600
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 40323,
+    "IsInterrupt": 1,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100041,
+    "Name": "Skill_100041_name",
+    "Describe": "Skill_100041_desp",
+    "Icon": "cat_attack",
+    "Clip": 1,
+    "CD": 550,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 566,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000411
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      100,
+      150
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100042,
+    "Name": "普攻第二段",
+    "Describe": "",
+    "Icon": "cat_attack",
+    "Clip": 1,
+    "CD": 600,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 633,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000421
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      100,
+      150
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100043,
+    "Name": "普攻第三段",
+    "Describe": "",
+    "Icon": "cat_attack",
+    "Clip": 1,
+    "CD": 750,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 800,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      100
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000431
+    ],
+    "EffectTime": [
+      400
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      0,
+      200
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100044,
+    "Name": "Skill_100044_name",
+    "Describe": "Skill_100044_desp",
+    "Icon": "cat_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000441
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100045,
+    "Name": "Skill_100045_name",
+    "Describe": "Skill_100045_desp",
+    "Icon": "cat_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      500
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000451
+    ],
+    "EffectTime": [
+      400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000440,
+    "Name": "Skill_100044_name",
+    "Describe": "Skill_100044_desp",
+    "Icon": "cat_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      10004410
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000441,
+    "Name": "Skill_100044_name",
+    "Describe": "Skill_100044_desp",
+    "Icon": "cat_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      10004411
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000442,
+    "Name": "Skill_100044_name",
+    "Describe": "Skill_100044_desp",
+    "Icon": "cat_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      10004412
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000443,
+    "Name": "Skill_100044_name",
+    "Describe": "Skill_100044_desp",
+    "Icon": "cat_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      10004413
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000450,
+    "Name": "Skill_100045_name",
+    "Describe": "Skill_100045_desp",
+    "Icon": "cat_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      500
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10004510
+    ],
+    "EffectTime": [
+      400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000451,
+    "Name": "Skill_100045_name",
+    "Describe": "Skill_100045_desp",
+    "Icon": "cat_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      500
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10004511
+    ],
+    "EffectTime": [
+      400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000452,
+    "Name": "Skill_100045_name",
+    "Describe": "Skill_100045_desp",
+    "Icon": "cat_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      500
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10004512
+    ],
+    "EffectTime": [
+      400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000453,
+    "Name": "Skill_100045_name",
+    "Describe": "Skill_100045_desp",
+    "Icon": "cat_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      500
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10004513
+    ],
+    "EffectTime": [
+      400
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100051,
+    "Name": "Skill_100051_name",
+    "Describe": "Skill_100051_desp",
+    "Icon": "captain_attack",
+    "Clip": 1,
+    "CD": 500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      200
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      1000511
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": -80,
+    "MoveTime": [
+      300,
+      200
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100052,
+    "Name": "普攻第二段",
+    "Describe": "",
+    "Icon": "captain_attack",
+    "Clip": 1,
+    "CD": 500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      200
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      1000521
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": -80,
+    "MoveTime": [
+      200,
+      200
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100053,
+    "Name": "普攻第三段",
+    "Describe": "",
+    "Icon": "captain_attack",
+    "Clip": 1,
+    "CD": 500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 700,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1600,
+      200
+    ],
+    "RangeSpeed": 3000,
+    "SkillEffect": [
+      1000531
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": -100,
+    "MoveTime": [
+      100,
+      500
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      3,
+      8
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100054,
+    "Name": "Skill_100054_name",
+    "Describe": "Skill_100054_desp",
+    "Icon": "captain_skill1",
+    "Clip": 1,
+    "CD": 9000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000541
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100055,
+    "Name": "Skill_100055_name",
+    "Describe": "Skill_100055_desp",
+    "Icon": "captain_skill2",
+    "Clip": 1,
+    "CD": 12000,
+    "CDDelay": 2833,
+    "PreStart": 533,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2300,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10204
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1200,
+      600
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000551
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000540,
+    "Name": "Skill_100054_name",
+    "Describe": "Skill_100054_desp",
+    "Icon": "captain_skill1",
+    "Clip": 1,
+    "CD": 6000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40510
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000541
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000541,
+    "Name": "Skill_100054_name",
+    "Describe": "Skill_100054_desp",
+    "Icon": "captain_skill1",
+    "Clip": 1,
+    "CD": 6000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40511
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000541
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000542,
+    "Name": "Skill_100054_name",
+    "Describe": "Skill_100054_desp",
+    "Icon": "captain_skill1",
+    "Clip": 1,
+    "CD": 6000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40512
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000541
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000543,
+    "Name": "Skill_100054_name",
+    "Describe": "Skill_100054_desp",
+    "Icon": "captain_skill1",
+    "Clip": 1,
+    "CD": 6000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40513
+    ],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      400
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1000541
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000550,
+    "Name": "Skill_100055_name",
+    "Describe": "Skill_100055_desp",
+    "Icon": "captain_skill2",
+    "Clip": 1,
+    "CD": 12000,
+    "CDDelay": 0,
+    "PreStart": 533,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2300,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10204
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1200,
+      600
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10005510
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000551,
+    "Name": "Skill_100055_name",
+    "Describe": "Skill_100055_desp",
+    "Icon": "captain_skill2",
+    "Clip": 1,
+    "CD": 12000,
+    "CDDelay": 0,
+    "PreStart": 533,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2300,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10204
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1200,
+      600
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10005511
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000552,
+    "Name": "Skill_100055_name",
+    "Describe": "Skill_100055_desp",
+    "Icon": "captain_skill2",
+    "Clip": 1,
+    "CD": 12000,
+    "CDDelay": 0,
+    "PreStart": 533,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2300,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10204
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1200,
+      600
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10005512
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000553,
+    "Name": "Skill_100055_name",
+    "Describe": "Skill_100055_desp",
+    "Icon": "captain_skill2",
+    "Clip": 1,
+    "CD": 12000,
+    "CDDelay": 0,
+    "PreStart": 533,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2300,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10202,
+      10204
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1200,
+      600
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10005513
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100081,
+    "Name": "Skill_100081_name",
+    "Describe": "Skill_100081_desp",
+    "Icon": "edward_attack",
+    "Clip": 1,
+    "CD": 750,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 766,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      800,
+      120
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000811
+    ],
+    "EffectTime": [
+      350
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      200,
+      100
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100082,
+    "Name": "",
+    "Describe": "",
+    "Icon": "edward_attack",
+    "Clip": 1,
+    "CD": 700,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 733,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      800,
+      120
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000821
+    ],
+    "EffectTime": [
+      250
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      0,
+      133
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100083,
+    "Name": "",
+    "Describe": "",
+    "Icon": "edward_attack",
+    "Clip": 1,
+    "CD": 1100,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 1200,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      1000,
+      90
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000831
+    ],
+    "EffectTime": [
+      250
+    ],
+    "Condition": 0,
+    "Distance": 150,
+    "MoveTime": [
+      0,
+      150
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100084,
+    "Name": "Skill_100084_name",
+    "Describe": "Skill_100084_desp",
+    "Icon": "edward_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2200,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10203
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000841
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      4,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100085,
+    "Name": "Skill_100085_name",
+    "Describe": "Skill_100085_desp",
+    "Icon": "edward_skill2",
+    "Clip": 1,
+    "CD": 18000,
+    "CDDelay": 3500,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 3500,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10206,
+      10204
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1,
+      300
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000851
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000840,
+    "Name": "Skill_100084_name",
+    "Describe": "Skill_100084_desp",
+    "Icon": "edward_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10203
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40810
+    ],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000841
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      4,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000841,
+    "Name": "Skill_100084_name",
+    "Describe": "Skill_100084_desp",
+    "Icon": "edward_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10203
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40811
+    ],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000841
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      4,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000842,
+    "Name": "Skill_100084_name",
+    "Describe": "Skill_100084_desp",
+    "Icon": "edward_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10203
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40812
+    ],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000841
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      4,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000843,
+    "Name": "Skill_100084_name",
+    "Describe": "Skill_100084_desp",
+    "Icon": "edward_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10203
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [
+      40813
+    ],
+    "IsTargetMark": 1,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000841
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      4,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000850,
+    "Name": "Skill_100085_name",
+    "Describe": "Skill_100085_desp",
+    "Icon": "edward_skill2",
+    "Clip": 1,
+    "CD": 18000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 3500,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10206,
+      10204
+    ],
+    "BuffSelf": [
+      40820
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1,
+      300
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000851
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000851,
+    "Name": "Skill_100085_name",
+    "Describe": "Skill_100085_desp",
+    "Icon": "edward_skill2",
+    "Clip": 1,
+    "CD": 18000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 3500,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10206,
+      10204
+    ],
+    "BuffSelf": [
+      40821
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1,
+      300
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000851
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000852,
+    "Name": "Skill_100085_name",
+    "Describe": "Skill_100085_desp",
+    "Icon": "edward_skill2",
+    "Clip": 1,
+    "CD": 18000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 3500,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10206,
+      10204
+    ],
+    "BuffSelf": [
+      40822
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1,
+      300
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000851
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1000853,
+    "Name": "Skill_100085_name",
+    "Describe": "Skill_100085_desp",
+    "Icon": "edward_skill2",
+    "Clip": 1,
+    "CD": 18000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 3500,
+    "PreState": [
+      1,
+      0
+    ],
+    "StateBuff": [
+      10206,
+      10204
+    ],
+    "BuffSelf": [
+      40823
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1,
+      300
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1000851
+    ],
+    "EffectTime": [
+      1100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100101,
+    "Name": "Skill_100101_name",
+    "Describe": "Skill_100101_desp",
+    "Icon": "inventor_attack",
+    "Clip": 1,
+    "CD": 550,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 666,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001011
+    ],
+    "EffectTime": [
+      250
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      200,
+      250
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100102,
+    "Name": "普攻第二段",
+    "Describe": "",
+    "Icon": "inventor_attack",
+    "Clip": 1,
+    "CD": 500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001021
+    ],
+    "EffectTime": [
+      250
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      300,
+      250
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100103,
+    "Name": "普攻第三段",
+    "Describe": "",
+    "Icon": "inventor_attack",
+    "Clip": 1,
+    "CD": 700,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 800,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      90
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001031
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100104,
+    "Name": "Skill_100104_name",
+    "Describe": "Skill_100104_desp",
+    "Icon": "inventor_skill1",
+    "Clip": 1,
+    "CD": 7000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 533,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      300
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      1001041
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100105,
+    "Name": "Skill_100105_name",
+    "Describe": "Skill_100105_desp",
+    "Icon": "inventor_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2900,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      2,
+      2000
+    ],
+    "AutoLock": 1,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 1,
+    "Range": [
+      2,
+      2000,
+      400
+    ],
+    "RangeSpeed": 20000,
+    "SkillEffect": [
+      1001051,
+      1001052,
+      1001053
+    ],
+    "EffectTime": [
+      500,
+      1100,
+      1700
+    ],
+    "Condition": 1,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [
+      38,
+      36
+    ],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001040,
+    "Name": "Skill_100104_name",
+    "Describe": "Skill_100104_desp",
+    "Icon": "inventor_skill1",
+    "Clip": 1,
+    "CD": 7000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 533,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      300
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      10010410
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001041,
+    "Name": "Skill_100104_name",
+    "Describe": "Skill_100104_desp",
+    "Icon": "inventor_skill1",
+    "Clip": 1,
+    "CD": 7000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 533,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      300
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      10010411
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001042,
+    "Name": "Skill_100104_name",
+    "Describe": "Skill_100104_desp",
+    "Icon": "inventor_skill1",
+    "Clip": 1,
+    "CD": 7000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 533,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      300
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      10010412
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001043,
+    "Name": "Skill_100104_name",
+    "Describe": "Skill_100104_desp",
+    "Icon": "inventor_skill1",
+    "Clip": 1,
+    "CD": 7000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 533,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1600,
+      300
+    ],
+    "RangeSpeed": 2000,
+    "SkillEffect": [
+      10010413
+    ],
+    "EffectTime": [
+      100
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001050,
+    "Name": "Skill_100105_name",
+    "Describe": "Skill_100105_desp",
+    "Icon": "inventor_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2900,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [
+      41020
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      2,
+      2000
+    ],
+    "AutoLock": 1,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 1,
+    "Range": [
+      2,
+      2000,
+      400
+    ],
+    "RangeSpeed": 20000,
+    "SkillEffect": [
+      1001051,
+      1001052,
+      1001053
+    ],
+    "EffectTime": [
+      500,
+      1100,
+      1700
+    ],
+    "Condition": 1,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [
+      38,
+      36
+    ],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001051,
+    "Name": "Skill_100105_name",
+    "Describe": "Skill_100105_desp",
+    "Icon": "inventor_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2900,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [
+      41021
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      2,
+      2000
+    ],
+    "AutoLock": 1,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 1,
+    "Range": [
+      2,
+      2000,
+      400
+    ],
+    "RangeSpeed": 20000,
+    "SkillEffect": [
+      1001051,
+      1001052,
+      1001053
+    ],
+    "EffectTime": [
+      500,
+      1100,
+      1700
+    ],
+    "Condition": 1,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [
+      38,
+      36
+    ],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001052,
+    "Name": "Skill_100105_name",
+    "Describe": "Skill_100105_desp",
+    "Icon": "inventor_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2900,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [
+      41022
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      2,
+      2000
+    ],
+    "AutoLock": 1,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 1,
+    "Range": [
+      2,
+      2000,
+      400
+    ],
+    "RangeSpeed": 20000,
+    "SkillEffect": [
+      1001051,
+      1001052,
+      1001053
+    ],
+    "EffectTime": [
+      500,
+      1100,
+      1700
+    ],
+    "Condition": 1,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [
+      38,
+      36
+    ],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001053,
+    "Name": "Skill_100105_name",
+    "Describe": "Skill_100105_desp",
+    "Icon": "inventor_skill2",
+    "Clip": 1,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2900,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [
+      41023
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      2,
+      2000
+    ],
+    "AutoLock": 1,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 1,
+    "Range": [
+      2,
+      2000,
+      400
+    ],
+    "RangeSpeed": 20000,
+    "SkillEffect": [
+      1001051,
+      1001052,
+      1001053
+    ],
+    "EffectTime": [
+      500,
+      1100,
+      1700
+    ],
+    "Condition": 1,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [
+      38,
+      36
+    ],
+    "AiType": [
+      1,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100121,
+    "Name": "Skill_100121_name",
+    "Describe": "Skill_100121_desp",
+    "Icon": "shark_attack",
+    "Clip": 0,
+    "CD": 600,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 700,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      650,
+      120
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001211
+    ],
+    "EffectTime": [
+      350
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      500,
+      100
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100122,
+    "Name": "普攻第二段",
+    "Describe": "",
+    "Icon": "shark_attack",
+    "Clip": 0,
+    "CD": 500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 550,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      650,
+      120
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001221
+    ],
+    "EffectTime": [
+      250
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      0,
+      133
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100123,
+    "Name": "普攻第三段",
+    "Describe": "",
+    "Icon": "shark_attack",
+    "Clip": 0,
+    "CD": 700,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 800,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      650,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001231
+    ],
+    "EffectTime": [
+      250
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      300,
+      150
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100124,
+    "Name": "Skill_100124_name",
+    "Describe": "Skill_100124_desp",
+    "Icon": "shark_skill1",
+    "Clip": 0,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      700,
+      360
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001241
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100125,
+    "Name": "Skill_100125_name",
+    "Describe": "Skill_100125_desp",
+    "Icon": "shark_skill2",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 15000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11010
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      5
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001240,
+    "Name": "Skill_100124_name",
+    "Describe": "Skill_100124_desp",
+    "Icon": "shark_skill1",
+    "Clip": 0,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      700,
+      360
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10012410
+    ],
+    "EffectTime": [
+      600
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001241,
+    "Name": "Skill_100124_name",
+    "Describe": "Skill_100124_desp",
+    "Icon": "shark_skill1",
+    "Clip": 0,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      700,
+      360
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10012411
+    ],
+    "EffectTime": [
+      600
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001242,
+    "Name": "Skill_100124_name",
+    "Describe": "Skill_100124_desp",
+    "Icon": "shark_skill1",
+    "Clip": 0,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      700,
+      360
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10012412
+    ],
+    "EffectTime": [
+      600
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001243,
+    "Name": "Skill_100124_name",
+    "Describe": "Skill_100124_desp",
+    "Icon": "shark_skill1",
+    "Clip": 0,
+    "CD": 13000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      700,
+      360
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10012413
+    ],
+    "EffectTime": [
+      600
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001250,
+    "Name": "Skill_100125_name",
+    "Describe": "Skill_100125_desp",
+    "Icon": "shark_skill2",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 20000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11010,
+      41220
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      5
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001251,
+    "Name": "Skill_100125_name",
+    "Describe": "Skill_100125_desp",
+    "Icon": "shark_skill2",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 20000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11010,
+      41221
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      5
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001252,
+    "Name": "Skill_100125_name",
+    "Describe": "Skill_100125_desp",
+    "Icon": "shark_skill2",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 20000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11010,
+      41222
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      5
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001253,
+    "Name": "Skill_100125_name",
+    "Describe": "Skill_100125_desp",
+    "Icon": "shark_skill2",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 20000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11010,
+      41223
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      5
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100141,
+    "Name": "Skill_100141_name",
+    "Describe": "Skill_100141_desp",
+    "Icon": "kaminari_attack",
+    "Clip": 1,
+    "CD": 500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 400,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      70
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001411
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      250,
+      100
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100142,
+    "Name": "普攻第二段",
+    "Describe": "",
+    "Icon": "kaminari_attack",
+    "Clip": 1,
+    "CD": 500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      70
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001421
+    ],
+    "EffectTime": [
+      300
+    ],
+    "Condition": 0,
+    "Distance": 100,
+    "MoveTime": [
+      150,
+      100
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100143,
+    "Name": "普攻第三段",
+    "Describe": "",
+    "Icon": "kaminari_attack",
+    "Clip": 1,
+    "CD": 500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 600,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      380
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001431
+    ],
+    "EffectTime": [
+      10
+    ],
+    "Condition": 0,
+    "Distance": 80,
+    "MoveTime": [
+      100,
+      250
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      3,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100144,
+    "Name": "Skill_100144_name",
+    "Describe": "Skill_100144_desp",
+    "Icon": "kaminari_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 700,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1200,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001441
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1200,
+    "MoveTime": [
+      100,
+      315
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100145,
+    "Name": "Skill_100145_name",
+    "Describe": "Skill_100145_desp",
+    "Icon": "kaminari_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 1400,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 1400,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10208,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001451
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100146,
+    "Name": "大招：雷游浮空",
+    "Describe": "在选择释放位置时浮空",
+    "Icon": "",
+    "Clip": 1,
+    "CD": 5000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 5000,
+    "PreState": [
+      0,
+      1
+    ],
+    "StateBuff": [
+      10002,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 1,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001440,
+    "Name": "Skill_100144_name",
+    "Describe": "Skill_100144_desp",
+    "Icon": "kaminari_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 700,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1200,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10014410
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1200,
+    "MoveTime": [
+      100,
+      315
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001441,
+    "Name": "Skill_100144_name",
+    "Describe": "Skill_100144_desp",
+    "Icon": "kaminari_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 700,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1200,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10014411
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1200,
+    "MoveTime": [
+      100,
+      315
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001442,
+    "Name": "Skill_100144_name",
+    "Describe": "Skill_100144_desp",
+    "Icon": "kaminari_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 700,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1200,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10014412
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1200,
+    "MoveTime": [
+      100,
+      315
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001443,
+    "Name": "Skill_100144_name",
+    "Describe": "Skill_100144_desp",
+    "Icon": "kaminari_skill1",
+    "Clip": 1,
+    "CD": 10000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 700,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10203,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      1200,
+      400
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10014413
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 1200,
+    "MoveTime": [
+      100,
+      315
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      4,
+      8,
+      9
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001450,
+    "Name": "Skill_100145_name",
+    "Describe": "Skill_100145_desp",
+    "Icon": "kaminari_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 1400,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10002,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10014510
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001451,
+    "Name": "Skill_100145_name",
+    "Describe": "Skill_100145_desp",
+    "Icon": "kaminari_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 1400,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10002,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10014511
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001452,
+    "Name": "Skill_100145_name",
+    "Describe": "Skill_100145_desp",
+    "Icon": "kaminari_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 1400,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10002,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10014512
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001453,
+    "Name": "Skill_100145_name",
+    "Describe": "Skill_100145_desp",
+    "Icon": "kaminari_skill2",
+    "Clip": 1,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 1400,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10002,
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      100,
+      800
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      10014513
+    ],
+    "EffectTime": [
+      50
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      1,
+      5,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100151,
+    "Name": "Skill_100151_name",
+    "Describe": "Skill_100151_desp",
+    "Icon": "vincent_attack",
+    "Clip": 0,
+    "CD": 450,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11008
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      80
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001511
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 50,
+    "MoveTime": [
+      100,
+      200
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100152,
+    "Name": "普攻第二段",
+    "Describe": "",
+    "Icon": "vincent_attack",
+    "Clip": 0,
+    "CD": 400,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 433,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11008
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      500,
+      80
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001512
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 50,
+    "MoveTime": [
+      100,
+      200
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100153,
+    "Name": "普攻第三段",
+    "Describe": "",
+    "Icon": "vincent_attack",
+    "Clip": 0,
+    "CD": 450,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11008
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      600,
+      360
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      1001513
+    ],
+    "EffectTime": [
+      200
+    ],
+    "Condition": 0,
+    "Distance": 40,
+    "MoveTime": [
+      100,
+      200
+    ],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100154,
+    "Name": "Skill_100154_name",
+    "Describe": "Skill_100154_desp",
+    "Icon": "vincent_skill1",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 5000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11004
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 100155,
+    "Name": "Skill_100155_name",
+    "Describe": "Skill_100155_desp",
+    "Icon": "vincent_skill2",
+    "Clip": 0,
+    "CD": 5000,
+    "CDDelay": 8000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 0,
+    "PreState": [],
+    "StateBuff": [],
+    "BuffSelf": [
+      11005
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001540,
+    "Name": "Skill_100154_name",
+    "Describe": "Skill_100154_desp",
+    "Icon": "vincent_skill1",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 5000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11004,
+      41510
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001541,
+    "Name": "Skill_100154_name",
+    "Describe": "Skill_100154_desp",
+    "Icon": "vincent_skill1",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 5000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11004,
+      41511
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001542,
+    "Name": "Skill_100154_name",
+    "Describe": "Skill_100154_desp",
+    "Icon": "vincent_skill1",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 5000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11004,
+      41512
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001543,
+    "Name": "Skill_100154_name",
+    "Describe": "Skill_100154_desp",
+    "Icon": "vincent_skill1",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 5000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      11004,
+      41513
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001550,
+    "Name": "Skill_100155_name",
+    "Describe": "Skill_100155_desp",
+    "Icon": "vincent_skill2",
+    "Clip": 0,
+    "CD": 5000,
+    "CDDelay": 8000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 0,
+    "PreState": [],
+    "StateBuff": [],
+    "BuffSelf": [
+      11005,
+      41520
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001551,
+    "Name": "Skill_100155_name",
+    "Describe": "Skill_100155_desp",
+    "Icon": "vincent_skill2",
+    "Clip": 0,
+    "CD": 5000,
+    "CDDelay": 8000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 0,
+    "PreState": [],
+    "StateBuff": [],
+    "BuffSelf": [
+      11005,
+      41521
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001552,
+    "Name": "Skill_100155_name",
+    "Describe": "Skill_100155_desp",
+    "Icon": "vincent_skill2",
+    "Clip": 0,
+    "CD": 5000,
+    "CDDelay": 8000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 0,
+    "PreState": [],
+    "StateBuff": [],
+    "BuffSelf": [
+      11005,
+      41522
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 1001553,
+    "Name": "Skill_100155_name",
+    "Describe": "Skill_100155_desp",
+    "Icon": "vincent_skill2",
+    "Clip": 0,
+    "CD": 5000,
+    "CDDelay": 8000,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 0,
+    "PreState": [],
+    "StateBuff": [],
+    "BuffSelf": [
+      11005,
+      41523
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 800001,
+    "Name": "",
+    "Describe": "",
+    "Icon": "",
+    "Clip": 0,
+    "CD": 1500,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      3
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 2,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      1500,
+      300
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      8000011
+    ],
+    "EffectTime": [
+      150
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [
+      2,
+      6
+    ],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 900010,
+    "Name": "",
+    "Describe": "",
+    "Icon": "",
+    "Clip": 0,
+    "CD": 9000000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 0,
+    "PreState": [],
+    "StateBuff": [],
+    "BuffSelf": [
+      50001
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 900011,
+    "Name": "BossSkill_900011_name",
+    "Describe": "BossSkill_900011_desp",
+    "Icon": "kraken_skill1",
+    "Clip": 0,
+    "CD": 8000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 1,
+    "PrepareTime": 2500,
+    "PreDuration": 3000,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10201
+    ],
+    "BuffSelf": [
+      50008
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      4000,
+      1000
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      9000111
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 900012,
+    "Name": "BossSkill_900012_name",
+    "Describe": "BossSkill_900012_desp",
+    "Icon": "kraken_skill2",
+    "Clip": 0,
+    "CD": 20000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 1,
+    "PrepareTime": 2500,
+    "PreDuration": 8500,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10201
+    ],
+    "BuffSelf": [
+      50002
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      3000,
+      60
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      9000121,
+      9000122
+    ],
+    "EffectTime": [
+      0,
+      2000
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 900013,
+    "Name": "BossSkill_900013_name",
+    "Describe": "BossSkill_900013_desp",
+    "Icon": "kraken_skill3",
+    "Clip": 0,
+    "CD": 12000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 1833,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      2
+    ],
+    "AutoLock": 1,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [
+      2,
+      6000,
+      700
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      9000131
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 900014,
+    "Name": "",
+    "Describe": "",
+    "Icon": "kraken_skill4",
+    "Clip": 0,
+    "CD": 9000000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 0,
+    "PrepareTime": 0,
+    "PreDuration": 2233,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205
+    ],
+    "BuffSelf": [
+      50005
+    ],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 0,
+    "RestockMark": 0,
+    "ShowRange": 0,
+    "Range": [],
+    "RangeSpeed": 0,
+    "SkillEffect": [],
+    "EffectTime": [],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 900015,
+    "Name": "",
+    "Describe": "",
+    "Icon": "",
+    "Clip": 0,
+    "CD": 6000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 1,
+    "PrepareTime": 1500,
+    "PreDuration": 2300,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10201
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      3,
+      4000,
+      1000
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      9000151
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  },
+  {
+    "ID": 900016,
+    "Name": "",
+    "Describe": "",
+    "Icon": "",
+    "Clip": 0,
+    "CD": 15000,
+    "CDDelay": 0,
+    "PreStart": 0,
+    "FireWarning": 1,
+    "PrepareTime": 1500,
+    "PreDuration": 3366,
+    "PreState": [
+      0,
+      0
+    ],
+    "StateBuff": [
+      10205,
+      10201
+    ],
+    "BuffSelf": [],
+    "SelfBuffHit": [],
+    "IsTargetMark": 0,
+    "IsSuspendMark": 0,
+    "SkillType": [
+      0
+    ],
+    "AutoLock": 0,
+    "ChooseMark": 1,
+    "RestockMark": 1,
+    "ShowRange": 0,
+    "Range": [
+      1,
+      3000,
+      60
+    ],
+    "RangeSpeed": 0,
+    "SkillEffect": [
+      9000121
+    ],
+    "EffectTime": [
+      0
+    ],
+    "Condition": 0,
+    "Distance": 0,
+    "MoveTime": [],
+    "JumpRes": "",
+    "JumpDel": 0,
+    "HangRes": "",
+    "HangBone": 0,
+    "CameraSet": [],
+    "AiType": [],
+    "BuffConsume": 0,
+    "IsInterrupt": 0,
+    "TriggerAction": [],
+    "SkillLogicType": 0
+  }
+]

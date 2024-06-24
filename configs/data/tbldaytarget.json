@@ -1,0 +1,163 @@
+[
+  {
+    "ID": 1,
+    "TaskID": [
+      100000,
+      100010,
+      100020,
+      100030,
+      100040,
+      100050,
+      100060,
+      100070,
+      100080,
+      100090
+    ],
+    "CoinGiftID": 37,
+    "ItemID1": 1,
+    "CoinGiftOriginal": 1250,
+    "CoinGiftCurrent": 1000,
+    "DiamondGiftID": 38,
+    "ItemID2": 2,
+    "DiamondGiftOriginal": 625,
+    "DiamondGiftCurrent": 500
+  },
+  {
+    "ID": 2,
+    "TaskID": [
+      100100,
+      100110,
+      100120,
+      100130,
+      100140,
+      100150,
+      100160,
+      100170,
+      100180,
+      100190
+    ],
+    "CoinGiftID": 39,
+    "ItemID1": 1,
+    "CoinGiftOriginal": 1250,
+    "CoinGiftCurrent": 1000,
+    "DiamondGiftID": 40,
+    "ItemID2": 2,
+    "DiamondGiftOriginal": 625,
+    "DiamondGiftCurrent": 500
+  },
+  {
+    "ID": 3,
+    "TaskID": [
+      100200,
+      100210,
+      100220,
+      100230,
+      100240,
+      100250,
+      100260,
+      100270,
+      100280,
+      100290
+    ],
+    "CoinGiftID": 41,
+    "ItemID1": 1,
+    "CoinGiftOriginal": 1250,
+    "CoinGiftCurrent": 1000,
+    "DiamondGiftID": 42,
+    "ItemID2": 2,
+    "DiamondGiftOriginal": 625,
+    "DiamondGiftCurrent": 500
+  },
+  {
+    "ID": 4,
+    "TaskID": [
+      100300,
+      100310,
+      100320,
+      100330,
+      100340,
+      100350,
+      100360,
+      100370,
+      100380,
+      100390
+    ],
+    "CoinGiftID": 43,
+    "ItemID1": 1,
+    "CoinGiftOriginal": 1250,
+    "CoinGiftCurrent": 1000,
+    "DiamondGiftID": 44,
+    "ItemID2": 2,
+    "DiamondGiftOriginal": 625,
+    "DiamondGiftCurrent": 500
+  },
+  {
+    "ID": 5,
+    "TaskID": [
+      100400,
+      100410,
+      100420,
+      100430,
+      100440,
+      100450,
+      100460,
+      100470,
+      100480,
+      100490
+    ],
+    "CoinGiftID": 45,
+    "ItemID1": 1,
+    "CoinGiftOriginal": 1250,
+    "CoinGiftCurrent": 1000,
+    "DiamondGiftID": 46,
+    "ItemID2": 2,
+    "DiamondGiftOriginal": 625,
+    "DiamondGiftCurrent": 500
+  },
+  {
+    "ID": 6,
+    "TaskID": [
+      100500,
+      100510,
+      100520,
+      100530,
+      100540,
+      100550,
+      100560,
+      100570,
+      100580,
+      100590
+    ],
+    "CoinGiftID": 47,
+    "ItemID1": 1,
+    "CoinGiftOriginal": 1250,
+    "CoinGiftCurrent": 1000,
+    "DiamondGiftID": 48,
+    "ItemID2": 2,
+    "DiamondGiftOriginal": 625,
+    "DiamondGiftCurrent": 500
+  },
+  {
+    "ID": 7,
+    "TaskID": [
+      100600,
+      100610,
+      100620,
+      100630,
+      100640,
+      100650,
+      100660,
+      100670,
+      100680,
+      100690
+    ],
+    "CoinGiftID": 49,
+    "ItemID1": 1,
+    "CoinGiftOriginal": 1250,
+    "CoinGiftCurrent": 1000,
+    "DiamondGiftID": 50,
+    "ItemID2": 2,
+    "DiamondGiftOriginal": 625,
+    "DiamondGiftCurrent": 500
+  }
+]

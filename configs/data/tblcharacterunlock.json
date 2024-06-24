@@ -1,0 +1,176 @@
+[
+  {
+    "ID": 10001,
+    "Name": "Character_10001_name",
+    "UnlockInfo": [],
+    "UnlockType": 2,
+    "Goto": 1,
+    "GotoPara": [
+      "MedalRoadPanel",
+      "8"
+    ],
+    "Desc": "Character_Unlock_2",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  },
+  {
+    "ID": 10002,
+    "Name": "Character_10002_name",
+    "UnlockInfo": [],
+    "UnlockType": 1,
+    "Goto": 0,
+    "GotoPara": [],
+    "Desc": "",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  },
+  {
+    "ID": 10003,
+    "Name": "Character_10003_name",
+    "UnlockInfo": [],
+    "UnlockType": 5,
+    "Goto": 1,
+    "GotoPara": [
+      "ShopUI"
+    ],
+    "Desc": "Character_Unlock_7",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  },
+  {
+    "ID": 10004,
+    "Name": "Character_10004_name",
+    "UnlockInfo": [],
+    "UnlockType": 3,
+    "Goto": 1,
+    "GotoPara": [
+      "CycleActivityPanel",
+      "SevenDay"
+    ],
+    "Desc": "Character_Unlock_3",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  },
+  {
+    "ID": 10005,
+    "Name": "Character_10005_name",
+    "UnlockInfo": [],
+    "UnlockType": 2,
+    "Goto": 1,
+    "GotoPara": [
+      "MedalRoadPanel",
+      "15"
+    ],
+    "Desc": "Character_Unlock_2",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  },
+  {
+    "ID": 10008,
+    "Name": "Character_10008_name",
+    "UnlockInfo": [],
+    "UnlockType": 2,
+    "Goto": 1,
+    "GotoPara": [
+      "MedalRoadPanel",
+      "20"
+    ],
+    "Desc": "Character_Unlock_2",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  },
+  {
+    "ID": 10010,
+    "Name": "Character_10010_name",
+    "UnlockInfo": [],
+    "UnlockType": 2,
+    "Goto": 1,
+    "GotoPara": [
+      "MedalRoadPanel",
+      "1"
+    ],
+    "Desc": "Character_Unlock_2",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  },
+  {
+    "ID": 10012,
+    "Name": "Character_10012_name",
+    "UnlockInfo": [],
+    "UnlockType": 7,
+    "Goto": 1,
+    "GotoPara": [
+      "CycleActivityPanel",
+      "Sign"
+    ],
+    "Desc": "Character_Unlock_6",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  },
+  {
+    "ID": 10014,
+    "Name": "Character_10014_name",
+    "UnlockInfo": [],
+    "UnlockType": 4,
+    "Goto": 1,
+    "GotoPara": [
+      "ChargeFirst"
+    ],
+    "Desc": "Character_Unlock_4",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  },
+  {
+    "ID": 10015,
+    "Name": "Character_10015_name",
+    "UnlockInfo": [],
+    "UnlockType": 6,
+    "Goto": 3,
+    "GotoPara": [
+      "Character_UnlockTips_1"
+    ],
+    "Desc": "Character_Unlock_5",
+    "ReHave": [
+      {
+        "id": 3,
+        "num": 300
+      }
+    ]
+  }
+]

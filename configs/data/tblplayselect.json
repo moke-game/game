@@ -1,0 +1,607 @@
+[
+  {
+    "ID": 1,
+    "Name": "BattleName1",
+    "Info": "BattleInfo1",
+    "UnderlayColor": "#ff0000",
+    "Res": "1",
+    "Display": 1,
+    "BattleMode": 1,
+    "Gameplay": "free4all",
+    "GameTime": 180000,
+    "MapID": [
+      11101,
+      11102
+    ],
+    "MapWeight": [
+      1,
+      1
+    ],
+    "MatchType": 1,
+    "Team": 2,
+    "Member": 3,
+    "Rebirth": 1,
+    "RebirthBuff": [
+      10003
+    ],
+    "ReviveTimes": -1,
+    "ReviveWait": 6000,
+    "Mode": 1,
+    "Rewards1": [
+      {
+        "id": 4,
+        "num": 10
+      },
+      {
+        "id": 4,
+        "num": 5
+      }
+    ],
+    "Rewards2": [
+      {
+        "id": 1,
+        "num": 100
+      },
+      {
+        "id": 1,
+        "num": 40
+      }
+    ],
+    "Rewards3": [
+      {
+        "mapId": 11101,
+        "rank": 1,
+        "dropId": 101
+      },
+      {
+        "mapId": 11101,
+        "rank": 2,
+        "dropId": 102
+      },
+      {
+        "mapId": 11102,
+        "rank": 1,
+        "dropId": 103
+      },
+      {
+        "mapId": 11102,
+        "rank": 2,
+        "dropId": 104
+      }
+    ],
+    "RewardsMatch": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "RewardsMvp": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "WinPoint": 15,
+    "MVPRule": 1,
+    "Extratime": 0,
+    "IntTime": 0,
+    "GameplayBuff": [],
+    "BeginTime": "",
+    "EndTime": "",
+    "FeatureID": 1,
+    "BotBehavior": [],
+    "RevailConsume": []
+  },
+  {
+    "ID": 2,
+    "Name": "BattleName2",
+    "Info": "BattleInfo2",
+    "UnderlayColor": "#e400ff",
+    "Res": "2",
+    "Display": 1,
+    "BattleMode": 1,
+    "Gameplay": "onepiece",
+    "GameTime": 180000,
+    "MapID": [
+      21101,
+      21102
+    ],
+    "MapWeight": [
+      1,
+      1
+    ],
+    "MatchType": 1,
+    "Team": 2,
+    "Member": 3,
+    "Rebirth": 1,
+    "RebirthBuff": [
+      10003
+    ],
+    "ReviveTimes": -1,
+    "ReviveWait": 6000,
+    "Mode": 1,
+    "Rewards1": [
+      {
+        "id": 4,
+        "num": 10
+      },
+      {
+        "id": 4,
+        "num": 5
+      }
+    ],
+    "Rewards2": [
+      {
+        "id": 1,
+        "num": 100
+      },
+      {
+        "id": 1,
+        "num": 40
+      }
+    ],
+    "Rewards3": [
+      {
+        "mapId": 21101,
+        "rank": 1,
+        "dropId": 101
+      },
+      {
+        "mapId": 21101,
+        "rank": 2,
+        "dropId": 102
+      },
+      {
+        "mapId": 21102,
+        "rank": 1,
+        "dropId": 103
+      },
+      {
+        "mapId": 21102,
+        "rank": 2,
+        "dropId": 104
+      }
+    ],
+    "RewardsMatch": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "RewardsMvp": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "WinPoint": 30,
+    "MVPRule": 2,
+    "Extratime": 0,
+    "IntTime": 0,
+    "GameplayBuff": [],
+    "BeginTime": "",
+    "EndTime": "",
+    "FeatureID": 2,
+    "BotBehavior": [],
+    "RevailConsume": []
+  },
+  {
+    "ID": 3,
+    "Name": "BattleName3",
+    "Info": "BattleInfo3",
+    "UnderlayColor": "#0084ff",
+    "Res": "3",
+    "Display": 1,
+    "BattleMode": 2,
+    "Gameplay": "football",
+    "GameTime": 180000,
+    "MapID": [
+      31103
+    ],
+    "MapWeight": [
+      1
+    ],
+    "MatchType": 1,
+    "Team": 2,
+    "Member": 3,
+    "Rebirth": 5,
+    "RebirthBuff": [],
+    "ReviveTimes": -1,
+    "ReviveWait": 6000,
+    "Mode": 1,
+    "Rewards1": [
+      {
+        "id": 4,
+        "num": 10
+      },
+      {
+        "id": 4,
+        "num": 5
+      }
+    ],
+    "Rewards2": [
+      {
+        "id": 1,
+        "num": 100
+      },
+      {
+        "id": 1,
+        "num": 40
+      }
+    ],
+    "Rewards3": [
+      {
+        "mapId": 31103,
+        "rank": 1,
+        "dropId": 105
+      },
+      {
+        "mapId": 31103,
+        "rank": 2,
+        "dropId": 107
+      }
+    ],
+    "RewardsMatch": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "RewardsMvp": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "WinPoint": 5,
+    "MVPRule": 3,
+    "Extratime": 60000,
+    "IntTime": 10000,
+    "GameplayBuff": [
+      20203
+    ],
+    "BeginTime": "2024-01-01 00:00:00",
+    "EndTime": "2024-12-01 00:00:00",
+    "FeatureID": 3,
+    "BotBehavior": [],
+    "RevailConsume": []
+  },
+  {
+    "ID": 5,
+    "Name": "BattleName5",
+    "Info": "BattleInfo5",
+    "UnderlayColor": "",
+    "Res": "5",
+    "Display": 1,
+    "BattleMode": 1,
+    "Gameplay": "gemarium",
+    "GameTime": 180000,
+    "MapID": [
+      51101,
+      51102
+    ],
+    "MapWeight": [
+      1,
+      1
+    ],
+    "MatchType": 1,
+    "Team": 2,
+    "Member": 3,
+    "Rebirth": 1,
+    "RebirthBuff": [
+      10003
+    ],
+    "ReviveTimes": -1,
+    "ReviveWait": 6000,
+    "Mode": 1,
+    "Rewards1": [
+      {
+        "id": 4,
+        "num": 10
+      },
+      {
+        "id": 4,
+        "num": 5
+      }
+    ],
+    "Rewards2": [
+      {
+        "id": 1,
+        "num": 100
+      },
+      {
+        "id": 1,
+        "num": 40
+      }
+    ],
+    "Rewards3": [
+      {
+        "mapId": 51101,
+        "rank": 1,
+        "dropId": 101
+      },
+      {
+        "mapId": 51101,
+        "rank": 2,
+        "dropId": 102
+      },
+      {
+        "mapId": 51102,
+        "rank": 1,
+        "dropId": 103
+      },
+      {
+        "mapId": 51102,
+        "rank": 2,
+        "dropId": 104
+      }
+    ],
+    "RewardsMatch": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "RewardsMvp": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "WinPoint": 20,
+    "MVPRule": 5,
+    "Extratime": 0,
+    "IntTime": 0,
+    "GameplayBuff": [],
+    "BeginTime": "",
+    "EndTime": "",
+    "FeatureID": 1,
+    "BotBehavior": [],
+    "RevailConsume": []
+  },
+  {
+    "ID": 997,
+    "Name": "FirstCombat",
+    "Info": "FirstCombatInfo",
+    "UnderlayColor": "",
+    "Res": "",
+    "Display": 0,
+    "BattleMode": 4,
+    "Gameplay": "firstcombat",
+    "GameTime": 60000,
+    "MapID": [
+      11101
+    ],
+    "MapWeight": [
+      1
+    ],
+    "MatchType": 0,
+    "Team": 2,
+    "Member": 3,
+    "Rebirth": 1,
+    "RebirthBuff": [
+      10003
+    ],
+    "ReviveTimes": -1,
+    "ReviveWait": 6000,
+    "Mode": 1,
+    "Rewards1": [
+      {
+        "id": 4,
+        "num": 10
+      },
+      {
+        "id": 4,
+        "num": 5
+      }
+    ],
+    "Rewards2": [
+      {
+        "id": 1,
+        "num": 100
+      },
+      {
+        "id": 1,
+        "num": 40
+      }
+    ],
+    "Rewards3": [
+      {
+        "mapId": 11101,
+        "rank": 1,
+        "dropId": 101
+      },
+      {
+        "mapId": 11101,
+        "rank": 2,
+        "dropId": 102
+      },
+      {
+        "mapId": 11102,
+        "rank": 1,
+        "dropId": 103
+      },
+      {
+        "mapId": 11102,
+        "rank": 2,
+        "dropId": 104
+      }
+    ],
+    "RewardsMatch": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "RewardsMvp": [
+      {
+        "id": 1,
+        "num": 10
+      }
+    ],
+    "WinPoint": 10,
+    "MVPRule": 1,
+    "Extratime": 0,
+    "IntTime": 0,
+    "GameplayBuff": [],
+    "BeginTime": "",
+    "EndTime": "",
+    "FeatureID": 0,
+    "BotBehavior": [
+      11003,
+      11001
+    ],
+    "RevailConsume": []
+  },
+  {
+    "ID": 998,
+    "Name": "SoloName",
+    "Info": "SoloInfo",
+    "UnderlayColor": "",
+    "Res": "",
+    "Display": 0,
+    "BattleMode": 3,
+    "Gameplay": "cashsolo",
+    "GameTime": 540000,
+    "MapID": [
+      41104
+    ],
+    "MapWeight": [
+      1
+    ],
+    "MatchType": 0,
+    "Team": 2,
+    "Member": 1,
+    "Rebirth": 3,
+    "RebirthBuff": [
+      10003
+    ],
+    "ReviveTimes": 0,
+    "ReviveWait": 3000,
+    "Mode": 1,
+    "Rewards1": [],
+    "Rewards2": [],
+    "Rewards3": [],
+    "RewardsMatch": [],
+    "RewardsMvp": [],
+    "WinPoint": 3,
+    "MVPRule": 0,
+    "Extratime": 0,
+    "IntTime": 0,
+    "GameplayBuff": [],
+    "BeginTime": "",
+    "EndTime": "",
+    "FeatureID": 0,
+    "BotBehavior": [],
+    "RevailConsume": []
+  },
+  {
+    "ID": 999,
+    "Name": "TrainMapName1",
+    "Info": "TrainMapInfo1",
+    "UnderlayColor": "",
+    "Res": "",
+    "Display": 0,
+    "BattleMode": 1,
+    "Gameplay": "trialhero",
+    "GameTime": 300000,
+    "MapID": [
+      1002
+    ],
+    "MapWeight": [
+      1
+    ],
+    "MatchType": 0,
+    "Team": 0,
+    "Member": 0,
+    "Rebirth": 0,
+    "RebirthBuff": [],
+    "ReviveTimes": 0,
+    "ReviveWait": 3000,
+    "Mode": 0,
+    "Rewards1": [],
+    "Rewards2": [],
+    "Rewards3": [],
+    "RewardsMatch": [],
+    "RewardsMvp": [],
+    "WinPoint": 0,
+    "MVPRule": 0,
+    "Extratime": 0,
+    "IntTime": 0,
+    "GameplayBuff": [],
+    "BeginTime": "",
+    "EndTime": "",
+    "FeatureID": 0,
+    "BotBehavior": [],
+    "RevailConsume": []
+  },
+  {
+    "ID": 201,
+    "Name": "BossName1",
+    "Info": "BossInfo1",
+    "UnderlayColor": "",
+    "Res": "201",
+    "Display": 0,
+    "BattleMode": 5,
+    "Gameplay": "bosschallenge",
+    "GameTime": 180000,
+    "MapID": [
+      2011105
+    ],
+    "MapWeight": [
+      1
+    ],
+    "MatchType": 0,
+    "Team": 1,
+    "Member": 1,
+    "Rebirth": 1,
+    "RebirthBuff": [],
+    "ReviveTimes": -1,
+    "ReviveWait": 10000,
+    "Mode": 0,
+    "Rewards1": [],
+    "Rewards2": [],
+    "Rewards3": [],
+    "RewardsMatch": [],
+    "RewardsMvp": [],
+    "WinPoint": 0,
+    "MVPRule": 0,
+    "Extratime": 0,
+    "IntTime": 0,
+    "GameplayBuff": [],
+    "BeginTime": "",
+    "EndTime": "",
+    "FeatureID": 0,
+    "BotBehavior": [],
+    "RevailConsume": [
+      {
+        "id": 1,
+        "num": 200
+      },
+      {
+        "id": 1,
+        "num": 300
+      },
+      {
+        "id": 1,
+        "num": 600
+      },
+      {
+        "id": 1,
+        "num": 1000
+      },
+      {
+        "id": 1,
+        "num": 1500
+      },
+      {
+        "id": 1,
+        "num": 2000
+      },
+      {
+        "id": 1,
+        "num": 3000
+      }
+    ]
+  }
+]

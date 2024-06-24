@@ -1,0 +1,10 @@
+[
+  {
+    "ID": 1,
+    "ResID": 17,
+    "SingleConsume": 10,
+    "TenTimesConsume": 100,
+    "DropID": 9000,
+    "TenTimesDropID": 10000
+  }
+]

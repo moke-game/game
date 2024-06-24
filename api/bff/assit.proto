@@ -1,0 +1,116 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+
+option go_package = "bff/;bffpb";
+
+message C2SPlaySelectList{
+
+}
+
+message S2CPlaySelectList{
+  repeated PlayData play_list = 1;          //玩法列表 playSelect中的ID
+}
+
+message PlayData{
+  int32 play_id = 1;
+  int32 play_mode = 2;//0=常规玩法 1=限时玩法
+  int32 count_down = 3;//结束倒计时 play_mode为1时有效 秒
+  int32 start_count_down = 4;//开始时间倒计时 play_mode为1时有效 秒
+}
+
+message C2SGetPlayerSetting{
+
+}
+
+message S2CGetPlayerSetting{
+  bool not_allow_friend = 1;
+}
+
+message C2SModifyPlayerSetting{
+  bool not_allow_friend = 1;
+}
+
+message S2CModifyPlayerSetting{
+  bool not_allow_friend = 1;
+}
+
+message C2SCDKeyReward{
+  string cd_key = 1;
+}
+
+message S2CCDKeyReward{
+  int32 ret_code = 1;//领取状态 同ERROR_CODE
+}
+
+
+//获取限时活动列表
+message C2SActiveTimeLimited{
+
+}
+
+message S2CActiveTimeLimited{
+  repeated int32 active_id = 1;//限时活动ID 暂定现金SOLO赛为101
+}
+
+enum NoticeDotType{
+  DOT_NONE = 0;
+  DOT_MAIL = 11;//邮件
+}
+
+//服务器主动推送红点消息
+message NTFNoticeDot{
+  NoticeDotType dot_type = 1;//红点类型
+  int32 num = 2;//数量(需要数量的红点就填 不需要数量的红点忽略)
+}
+
+message C2SPlayerLanguage{
+  string language = 1;//玩家当前设置的语言代码
+}
+
+message S2CPlayerLanguage{
+
+}
+
+enum GameNoticeType{
+  NOTICE_NONE = 0;
+  NOTICE_SYSTEM = 1;//系统跑马灯
+  NOTICE_GAME = 2;//玩家触发的跑马灯
+}
+
+enum GameNoticeDataType{
+  DATA_NONE = 0;
+  DATA_STRING = 1;//字符串
+  DATA_KEY = 2;//多语言KEY
+}
+
+enum GameNoticeCategory{
+  GN_NONE = 0;
+  GN_FIRST_CHARGE = 1;//首充获得雷
+  GN_ADVANCED_FIRST_CHARGE = 2;//高级首充获得皮肤
+  GN_SHOP_BUY_GIFT = 3;//商城购买血蔷薇礼包
+  GN_PET_RECAST = 4;//星使洗练出橙色装备
+  GN_PET_DRAW = 5;//星魂祈愿出橙色星魂
+  GN_PET_INCUBATE = 6;//星魂培育出橙色装备
+  GN_RANK_PERSONAL_SHOOT = 7;//个人射手榜第一名人员交替(日榜第一天开始发布)
+  GN_RANK_PERSONAL_KILL = 8;//个人击杀榜第一名人员交替(周榜第二天开始发布)
+  GN_RANK_PERSONAL_BOSS = 9;//个人BOSS榜第一名人员交替(周榜第二天开始发布)
+}
+
+message NTFGameNotice{
+  GameNoticeType notice_type = 1;
+  GameNotice content = 2;//跑马灯内容
+  repeated GameNotice params = 3;//跑马灯参数
+  int32 amount = 4;//播放次数
+  int32 delay = 5;//播放间隔 毫秒
+}
+
+message GameNotice{
+  GameNoticeDataType data_type = 1;
+  string data = 2;
+}
+
+message GameNoticeMsg{
+  map<string, GameNotice> notice_map = 1;
+}

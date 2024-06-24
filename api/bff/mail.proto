@@ -1,0 +1,65 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+
+option go_package = "bff/;bffpb";
+
+enum MailStatus {
+  UNREAD = 0; // 未读
+  READ = 1; // 已读
+  REWARDED = 2; // 已领取
+  DELETED = 3; // 已删除
+}
+message Mail {
+  int64 id = 1; // 邮件唯一id
+  int32 theme = 2; // 邮件主题
+  string body = 3; //邮件内容
+  int64 date = 4; // 邮件发送时间
+  int64 expire = 5; // 邮件过期时间
+  string from = 6; // 邮件发送者
+  Items rewards = 7; // 邮件附件奖励
+  MailStatus status = 8; // 邮件状态
+  string title = 9; // 邮件标题
+  string template = 10; // 邮件模板 (如果不为空,使用模板生成邮件内容)
+  repeated string params = 11; // 邮件模板参数 (如果模板不为空,则需要传入参数)
+}
+
+// 邮件变化通知
+message NtfMailChange {
+  map<int64, Mail> mails = 1;
+}
+
+// watch邮件变化
+message C2SWatchMail {
+  string language = 1; // 语言
+}
+
+// watch邮件变化返回
+message S2CWatchMail {}
+
+// 获取邮件奖励请求
+message C2SGetMailRewards {
+  repeated int64 ids = 1; // 为空时表示领取所有邮件附件
+}
+
+// 获取邮件奖励返回
+message S2CGetMailRewards {
+  Items rewards = 1;
+}
+
+// 读取邮件请求
+message C2SReadMail {
+  repeated int64 ids = 1; // 为空时表示读取所有邮件
+}
+
+// 读取邮件返回
+message S2CReadMail {}
+
+// 删除已读邮件请求
+message C2SDeleteReadMail {
+  repeated int64 ids = 1; // 为空时表示删除所有邮件
+}
+
+// 删除已读邮件返回
+message S2CDeleteReadMail {}

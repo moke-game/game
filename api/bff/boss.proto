@@ -1,0 +1,43 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+
+option go_package = "bff/;bffpb";
+
+// 请求boss挑战主面板
+message C2SBossMainPanel {
+
+}
+
+// boss挑战主面板返回
+message S2CBossMainPanel {
+  int64 top_damage = 1; // 本周最高伤害
+  int32 rank = 2; // 本周排名
+  int64 damage = 3; // 本周伤害
+  int32 award_step = 4 ; // 领奖进度 (位运算1111代表四个阶段都领取了)
+  int32 challenge_count = 5; // 已挑战次数
+  int32 max_challenge_count = 6; // 最大挑战次数
+  int64 settle_time = 7; // 结算时间戳(毫秒)
+}
+
+// 挑战boss
+message C2SChallengeBoss {
+}
+
+// 挑战boss返回
+message S2CChallengeBoss {
+  int32 ret_code = 1;
+}
+
+// 领取奖励
+message C2SBossChallengeClaimAward {
+  int32 step = 1; // 领取第几阶段的奖励
+}
+
+// 领取奖励返回
+message S2CBossChallengeClaimAward {
+  int32 ret_code = 1;
+  int32 step = 2;
+  Items rewards = 3;
+}

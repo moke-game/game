@@ -1,0 +1,164 @@
+[
+  {
+    "ID": 1,
+    "Name": "",
+    "Text": "",
+    "Type": 1,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "玩法：死亡"
+  },
+  {
+    "ID": 2,
+    "Name": "BattleName2",
+    "Text": "BattleInfo2",
+    "Type": 2,
+    "MoneySettings": [],
+    "DefaultSystem": 0,
+    "Desc": "玩法：夺宝"
+  },
+  {
+    "ID": 3,
+    "Name": "BattleName3",
+    "Text": "BattleInfo3",
+    "Type": 3,
+    "MoneySettings": [],
+    "DefaultSystem": 0,
+    "Desc": "玩法：足球"
+  },
+  {
+    "ID": 4,
+    "Name": "Chat_Title",
+    "Text": "Chat_Desp_GrowthRoad",
+    "Type": 4,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "聊天"
+  },
+  {
+    "ID": 5,
+    "Name": "Team_Label_Title",
+    "Text": "Team_Desp_GrowthRoad",
+    "Type": 5,
+    "MoneySettings": [],
+    "DefaultSystem": 0,
+    "Desc": "组队"
+  },
+  {
+    "ID": 6,
+    "Name": "Pet_Label_Pet",
+    "Text": "Pet_Desp_GrowthRoad",
+    "Type": 6,
+    "MoneySettings": [],
+    "DefaultSystem": 0,
+    "Desc": "宠物"
+  },
+  {
+    "ID": 7,
+    "Name": "Friend_Btn_Friends",
+    "Text": "Friend_Desp_GrowthRoad",
+    "Type": 7,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "好友"
+  },
+  {
+    "ID": 8,
+    "Name": "",
+    "Text": "",
+    "Type": 8,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "battlepass"
+  },
+  {
+    "ID": 9,
+    "Name": "",
+    "Text": "",
+    "Type": 9,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "商城"
+  },
+  {
+    "ID": 10,
+    "Name": "",
+    "Text": "",
+    "Type": 10,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "大厅"
+  },
+  {
+    "ID": 11,
+    "Name": "",
+    "Text": "",
+    "Type": 11,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "英雄"
+  },
+  {
+    "ID": 12,
+    "Name": "",
+    "Text": "",
+    "Type": 12,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "签到"
+  },
+  {
+    "ID": 13,
+    "Name": "",
+    "Text": "",
+    "Type": 13,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "成长之路"
+  },
+  {
+    "ID": 14,
+    "Name": "",
+    "Text": "",
+    "Type": 14,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "邮件"
+  },
+  {
+    "ID": 15,
+    "Name": "",
+    "Text": "",
+    "Type": 15,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "活动"
+  },
+  {
+    "ID": 16,
+    "Name": "",
+    "Text": "",
+    "Type": 16,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "每日任务"
+  },
+  {
+    "ID": 17,
+    "Name": "",
+    "Text": "",
+    "Type": 17,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "赛季"
+  },
+  {
+    "ID": 18,
+    "Name": "",
+    "Text": "",
+    "Type": 18,
+    "MoneySettings": [],
+    "DefaultSystem": 1,
+    "Desc": "首充"
+  }
+]

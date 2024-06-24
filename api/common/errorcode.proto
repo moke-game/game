@@ -1,0 +1,210 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "common/;cpb";
+
+enum ERRORCODE {
+  SUCCESS = 0; //通用成功
+
+  //common
+  RPC_ERROR = 100; //RPC调用失败
+  WATCH_ERROR = 101; //watch调用失败
+  PROTO_UNMARSHAL_ERROR = 102; // 协议反序列化失败
+  PARAM_ERROR = 103; //参数错误
+  BE_BLOCKED = 104; //被封号
+  MQ_SUBSCRIBE_ERROR = 105; //订阅mq失败
+  NOT_ENOUGH = 106; //资源不足
+  ALREADY_REWARDED = 107; //已经领取完成
+  FEATURE_NOT_OPEN = 108; //功能未开放
+
+  //pvp
+  PVP_USE_SKILL_ERROR = 999; //技能释放失败
+
+  //game主体
+  LOGIN_AUTH_ERROR = 1000; //登录异常
+  COMMON_ERROR = 1001; //通用异常
+  NO_USER = 1003; //没有玩家信息
+  CONF_ERROR = 1005; //数据有误
+  CONFIG_NOT_FOUND = 1006; //没有找到配置的excel
+  CHAT_SEND_ME = 1007; //单人聊天不能给自己发送
+  CHAT_CD = 1008; //聊天cd时间未到
+  CLIENT_PARAMETER_ERROR = 1009; //客户端参数错误
+  PLAYER_NOT_LOGIN = 1010; //用户没有在线
+  LOGIN_SERVER_FULL = 1011; //服务器满载
+  PLAYER_NOT_EXIST = 1012; //用户不存在
+  PLAYER_NAME_EXIST = 1013; // 角色名已存在
+  PLAYER_NAME_ILLEGAL = 1014; // 角色名非法
+  PLAYER_NAME_LEN_ILLEGAL = 1015; // 角色名长度非法
+  PLAYER_HERO_ILLEGAL = 1016; // 英雄非法
+  CREATE_PLAYER_FAIL = 1017; // 角色创建失败
+  CHAT_BLOCKED = 1018; // 聊天被禁言
+  Enter_ROOM_ERROR = 1019; // 进入房间失败
+
+
+  //资源缺少
+  DIAMOND_LESS = 1020; //缺少钻石
+  COIN_LESS = 1021; //缺少货币
+  ITEM_LESS = 1023; //缺少道具
+  DAY7_ACT_COIN_LESS = 1027; //七天活动积分不足
+  CAN_NOT_STAR = 1028; //点赞失败
+
+  //登录相关
+  CONN_ATTR_ERROR = 1100; // 获取会员属性失败
+  CONN_UID_EMPTY = 1101; // 会话中uid为空
+  CLIENT_IS_INVALID = 1102; // 无效的客户端
+  BIND_LOGIN_USER_EXIST = 1103; // 用户绑定登录 登录的用户已存在 绑定失败
+  PROFILE_REQ_ERROR = 1124; // 玩家数据请求失败
+  PROFILE_NOT_FOUND = 1125; // 玩家数据不存在
+
+  //支付相关
+  PLATFORM_CLIENT_NULL = 1200; //渠道验单sdk为空
+  PLATFORM_CONFIG_NULL = 1201; //渠道不存在
+  PAY_VERIFY_HTTP_FAIL = 1202; //渠道验单http请求异常
+  PAY_VERIFY_RESP_FAIL = 1203; //渠道验单返回格式异常
+  PAY_VERIFY_TRANS_NULL = 1204; //渠道订单为空
+  PAY_VERIFY_PRODUCT_NEQ = 1205; //渠道订单中商品不符
+  PAY_VERIFY_NO_PAYED = 1206; //渠道订单未支付
+  PAY_ORDER_CREATE_FAIL = 1210; //支付成功创建订单失败
+  PAY_ORDER_RETRY_CNT_TOO_MUCH = 1211; //重试次数过多 销单
+  PAY_ORDER_EXIST = 1212; //订单已存在 不继续发货 走补单流程
+  PAY_BUY_LIMIT_TOO_MUCH = 1220; //超出购买次数
+  PAY_BUY_NO_START = 1221; //购买的商品未开始销售
+  PAY_BUY_IS_END = 1222; //购买的商品已结束
+
+  //活动相关
+  FIRST_PAY_LOCKING = 1230; //首充三天活动 档位未解锁
+  FIRST_PAY_DAY_FINISHED = 1231; //首充三天活动 该天奖励已领取
+  MONTH_CARD_PAY_LOCKING = 1240; //月卡 档位未解锁
+  MONTH_CARD_DAY_NO_READY = 1241; //月卡 该天数不能领取
+  ACTIVITY_NOT_RUNNING = 1250; //活动未在进行中
+  SIGN_FINISHED = 1251; //签到已完成
+  SIGN_NEED_BUY = 1252; //需要补签
+  QUESTIONNAIRE_NOT_COMPLETE = 1253;//问卷调查未完成
+  QUESTIONNAIRE_REWARD_REPEAT = 1254;//奖励已经领取过
+
+  //队伍相关
+  GROUP_NOT_EXIST = 2000; //队伍不存在+
+  GROUP_NOT_LEADER = 2001; //不是队长不能操作
+  GROUP_IN_GROUP = 2002; //已经在队伍中
+  GROUP_MAX = 2003; //队伍已满员
+  GROUP_INVITEG_CD = 2004; //邀请用户cd时间还没有到
+  GROUP_INVITEG_REFUSE_CD = 2005; //对方十分钟内拒绝您的邀请
+  GROUP_NOT_JOIN = 2006; //还没有加入队伍
+  PLAYER_NOT_IN_GROUP = 2007; //玩家不在队伍中
+  GROUP_FIGHT = 2008; //队伍战斗中,不允许操作
+  GROUP_MATCHING = 2009; //队伍匹配中,不允许操作
+  GROUP_HE_IN_GROUP = 2010; //对方已有队伍
+  GROUP_REFUSE_INVITE = 2011; //拒绝邀请
+  GROUP_REFUSE_JOIN = 2012; //拒绝申请加入队伍
+  GROUP_NOT_ENLIST = 2013; //没有满足条件的招募队伍
+  PLAYER_IS_PLAYING = 2014; //玩家正在战斗中
+
+  //好友相关
+  FRIEND_ALREADY_APPLY = 2100; //已经申请过，不能重复申请
+  FRIEND_IS_REPEAT = 2101; //已经是好友，不能重复添加
+  FRIEND_NOT_EXIST = 2102; //好友不存在
+  FRIEND_MY_COUNT_MAX = 2103; //好友数量已经达到上限
+  FRIEND_YOU_COUNT_MAX = 2104; //对方好友数量已经达到上限
+  FRIEND_IN_MY_BLACKLIST = 2106; //对方已经在我的黑名单中
+  FRIEND_IN_YOU_BLACKLIST = 2107; //我已经在对方的黑名单中
+  FRIEND_NOT_IN_REQUEST = 2108; //邀请超时 or 对方没有在我的邀请列表中
+  FRIEND_NOT_ALLOW_ADD = 2109; //对方不允许添加好友
+
+  //匹配相关
+  MATCHING_IN_MATCHING = 2200; //已经在匹配中
+  MATCHING_NOT_IN_MATCHING = 2201; //没有在匹配中
+  MATCHING_MAP_NOT_EXIST = 2202; //地图或者匹配类型错误
+  MATCHING_NOT_ACTION = 2203; //匹配中不能操作
+  MATCHING_GROUP_IN_MATCHING = 2204; //队伍已经在匹配中
+  MATCHING_GROUP_JOIN_MATCHING = 2205; //队伍开始匹配--服务器专用
+
+  //pvp
+  PVP_ROOM_NOT_EXIST = 2300; //房间已销毁
+  PVP_ROOM_STATE_ERROR = 2301; //战斗未完成
+  PVP_ROOM_SKILL_CD = 2302; //技能cd中
+  PVP_MOVE_FORBIDDEN = 2304; // 禁止移动
+
+  //英雄培养相关
+  HERO_NOT_EXIST = 2400; //角色不存在
+  HERO_HAS_BEEN_UNLOCKED = 2401; //角色已经解锁
+  HERO_NOT_UNLOCKED = 2402; //角色未解锁
+  HERO_LEVEL_UPPER_LIMIT = 2403; //角色已达到上限
+  HERO_REQ_ERROR = 2404; //角色请求错误
+
+  //皮肤相关
+  SKIN_IS_UNLOCKED = 2430; //皮肤已解锁
+  SKIN_IS_UNLOCKING = 2431; //皮肤未解锁
+
+  // 场景
+  SCENE_PICKUP_TOO_FAR = 2501; //  超出拾取范围
+  SCENE_PICKUP_NOT_EXIST = 2502; // 拾取物品不存在
+  SCENE_IS_NIL = 2503; // 场景为空
+  SCENE_OPERATION_FORBIDDEN = 2504; // 场景操作禁止
+  SCENE_TERRAIN_NOT_FOUND = 2505; // 地形错误
+
+
+  //任务
+  MISSION_NOT_ACTIVATING = 2601; //任务未激活
+  MISSION_EXPIRED = 2602; //任务过期
+  MISSION_NOT_ACHIEVED = 2603; //任务目标未达成
+  MISSION_NOT_REWARD_REPEAT = 2604; //任务奖励重复领取
+
+  //Player 相关
+  PLAYER_DEAD = 2701; //玩家已死亡
+  PLAYER_STATE_ERROR = 2702; //玩家状态错误
+  PLAYER_NOT_IN_SCENE = 2703; //玩家不在场景中
+  PLAYER_POSITION_ERROR = 2704; //玩家位置错误
+  PLAYER_CANT_REVIVE = 2705; //玩家无法复活
+
+  // 技能相关
+  SKILL_NOT_EXIST = 2801; // 技能不存在
+  SKILL_TARGET_POS_ILLEGAL = 2802; // 技能目标位置非法
+  SKILL_TARGET_POS_NOT_IN_RANGE = 2803; // 技能目标位置不在范围内
+
+  //宠物相关
+  PET_EGG_INVALID = 2901; //宠物蛋无效 不存在 过期等
+  PET_EGG_FEED_UPPER_LIMIT = 2902; //部位喂养到达上限
+  PET_EGG_TIME_UPPER_LIMIT = 2903; //宠物蛋孵化时间已经上限
+  PET_EGG_TIME_INSUFFICIENT = 2904; //宠物蛋孵化时间不足
+  PET_NOT_FOUND = 2905; //宠物不存在
+  PET_EGG_CANT_CANCEL = 2906; //时间已满 不允许取消孵化
+  PET_TASK_NOT_FOUND = 2907; //任务不存在
+  PET_TASK_REWARD_REPEAT = 2908; //奖励重复领取
+  PET_TASK_PET_INSUFFICIENT = 2909; //任务要求的宠物数量不足
+  PET_TASK_QUALITY_INSUFFICIENT = 2910; //任务要求的宠物橙色部件数量不足
+  PET_TASK_NEED_TIME_INSUFFICIENT = 2911; //任务要求的时间不足
+  PET_TASK_PET_REPEAT = 2912; //任务派遣的宠物重复
+  PET_TASK_TASK_REPEAT = 2913; //任务执行重复
+  PET_TASK_TASK_STATUS_INVALID = 2914; //任务状态不对
+  PET_TASK_TASK_EXTENSION_MAX = 2915; //任务扩展上限
+  PET_RECAST_NOT_FOUND = 2916; //洗练数据不存在
+  PET_RELEASE_TASK_PROCESSING = 2917; //宠物正在派遣中,无法放生
+  PET_TASK_UNABLE_REFRESH = 2918; //任务已经无法刷新 所有任务在进行中或已经完成
+
+  //CDK相关
+  CODE_NET_ERROR = 3001; //网络错误,请重试
+  CODE_CODE_INVALID = 3002; //CDKey无效或已过期
+  CODE_CODE_REPEAT = 3003; //重复兑换
+
+  //改名相关
+  RENAME_LENGTH_MAX = 3101; //昵称长度上限
+  RENAME_NOT_ALLOW = 3102; //昵称不合法
+  RENAME_REPEAT = 3103; //昵称重复
+
+  //现金赛相关
+  CASH_BATTLE_CONDITIONS_INSUFFICIENT = 3201; //参赛条件不足
+  CASH_BATTLE_JOIN_REPEAT = 3202; //重复报名
+
+  // 观战
+  WATCHING_NOT_ALLOW = 3301; //不允许观战
+  WATCHING_NOT_EXIST = 3302; //观战目标非法
+  WATCHING_ALREADY_IN = 3303; //已在观战中
+  WATCHING_NOT_START = 3304; // 比赛暂未开始
+
+  // boss 挑战
+  BOSS_CHALLENGE_TIMES_LIMIT = 3401; //boss挑战次数不足
+  BOSS_CHALLENGE_DATA_NOT_FOUND = 3402; //boss挑战数据不存在
+  BOSS_CHALLENGE_AWARD_CLAIMED = 3403; //boss挑战奖励已领取
+  BOSS_CHALLENGE_DAMAGE_NOT_ENOUGH = 3404; //boss挑战伤害不足
+}

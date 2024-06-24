@@ -1,0 +1,59 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+import "bff/mission.proto";
+
+option go_package = "bff/;bffpb";
+
+//************************** 商店虚拟货币礼包兑换 **************************/
+message ShopProduct {
+  int32 shop_id = 1;
+  int32 item_box_id = 2; //礼包ID
+  int64 expire = 3; //剩余可购买时间 0为不限制
+  int32 buy_cnt = 4; //已购买次数
+  int32 buy_limit = 5; //可购买次数
+  int32 buy_expire = 6; //限购下次刷新倒计时
+  bool is_double = 7; //是否双倍奖励
+}
+//API: 商品列表
+message C2SShopProducts {}
+message S2CShopProducts {
+  map<int32, ShopProduct> list = 1;//key为ShopId
+}
+//API: 购买非货币商品
+message C2SShopBuy {
+  int32 shop_id = 1; //商品ID
+  int32 item_box_id = 2; //礼包ID 未启用
+}
+message S2CShopBuy {
+  int32 shop_id = 1;
+  Items items = 2; //获得的道具，只用作显示
+}
+
+//************************** 商店实体货币礼包兑换 **************************/
+//API: 检查是否能货币购买
+message C2SCanPurchase {
+  int32 purchase_id = 1; //支付表主键ID
+}
+message S2CCanPurchase {
+  int32 purchase_id = 1; //支付表主键ID
+  int32 status = 2; //0:可以购买 1:有未处理的订单 不能购买
+  //2:游客不能购买
+  //3:该商品为一次性类 已购买 不能重复购买
+  //4:首充三天活动 第一档未激活 第二档不能购买
+}
+//API: 渠道付款成功回调
+message C2SPurchase {
+  Platform platform = 1; //平台 id
+  int32 purchase_id = 2; //支付表主键ID
+  string transaction_id = 3; //第三方交易ID(苹果专用)
+  string receipt = 4; //支付凭证
+}
+message S2CPurchase {
+  int32 code = 1; //0:订单成功
+  string error = 2;
+  int32 purchase_id = 3; //支付表主键ID
+  bool finish = 4; //客户端是否销单 true:销单
+  Items items = 5; //获得的道具，只用作显示
+}

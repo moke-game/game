@@ -1,0 +1,45 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+
+option go_package = "bff/;bffpb";
+
+message Mission {
+  int32 id = 1;
+  map<int32, int32> progress = 2; //进度
+  int32 status = 3; //状态 0=未解锁 1=进行中 2=完成可领奖 3=已结束 4=已过期
+  int64 countdown = 4; //任务过期倒计时 秒 为-1则表示无过期时间
+  int32 task_type = 5; //任务类型
+}
+
+message MissionData {
+  map<int32, Mission> missions = 1; //在进行中的任务
+}
+
+message C2SGetMission {
+  int32 task_type = 1; //0=全部任务 1=主线 11=日常 12=周常
+}
+
+message S2CGetMission {
+  int32 task_type = 1; //0=全部任务 1=主线 11=日常 12=周常
+  MissionData mission_data = 2;
+  int64 daily_reset_time = 3; //日常任务重置时间
+}
+
+message C2SGetMissionReward {
+  int32 mission_id = 1;
+}
+
+message S2CGetMissionReward {
+  int32 mission_id = 1;
+  Items reward = 2; //任务奖励
+}
+
+message NtfMissionUpdate {
+  MissionData mission = 1;
+}
+
+message C2STouchMission {}
+
+message S2CTouchMission {}

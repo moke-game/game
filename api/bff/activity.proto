@@ -1,0 +1,218 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+import "bff/mission.proto";
+
+option go_package = "bff/;bffpb";
+
+//************************** 签到活动 **************************/
+//API: 获取签到活动信息
+message C2SSignActInfo {
+  int32 act_id = 1; //活动ID
+}
+message S2CSignActInfo {
+  int32 act_id = 1; //活动ID
+  bool running = 2; //活动是否进行中
+  int32 buyed_cnt = 3; //已补签天数
+  int64 expire_day = 4; //跨天倒计时秒数
+  int64 expire_act = 5; //活动倒计时秒数
+  repeated int32 days = 6; //签到状态 key=天数  value= -1:未到签到时间 0:未签到可以补签 1:可以签到 2:已签到
+}
+
+//API: 领取签到奖励
+message C2SSignDayDone {
+  int32 day = 1; //第一天是 1
+  int32 act_id = 2; //活动ID
+}
+message S2CSignDayDone {
+  int32 day = 1;
+  int32 act_id = 2; //活动ID
+  Items items = 3; //领取的奖励物品
+  bool hero_rehave = 4; //英雄已存在 发送别的道具奖励
+}
+
+//API: 补签天数
+message C2SSignBuyDay {
+  int32 day = 1; //第一天是 1
+  int32 act_id = 2; //活动ID
+}
+message S2CSignBuyDay {
+  int32 day = 1;
+  int32 act_id = 2; //活动ID
+  Items add_items = 3; //领取的物品
+  Items sub_items = 4; //消耗的钻石或者金币
+  bool hero_rehave = 5; //英雄已存在 发送别的道具奖励
+}
+
+//************************** 条件触发活动 **************************/
+message TriggerAct {
+  int32 act_id = 1; //活动表ID
+  int32 purchase_id = 2; //支付表ID
+  int64 expire = 3; //倒计时秒数
+}
+
+//API: 消耗行为资源不足 客户端上报触发
+message C2STriggerActCond {
+  int32 trigger_id = 1; //触发id  只能传10010-10012
+}
+message S2CTriggerActCond {}
+
+//API: 触发条件活动详细信息 会监听后续相关变化
+message C2SWatchTriggerAct {}
+message S2CWatchTriggerAct {
+  repeated TriggerAct infos = 1; //key:标签类型
+  bool notify = 2; //是否为服务端单向通知
+}
+
+//************************** 月卡充值 **************************/
+message MonthCardAct {
+  int32 act_id = 1; //活动ID
+  int32 day = 2; //剩余领奖天数
+  bool ready = 3; //是否可领取
+  int32 purchase_id = 4; //支付表Id
+  int64 purchase_time = 5; //支付解锁时间 >0即为解锁
+}
+
+//API: 月卡活动详细信息
+message C2SMonthCardActInfo {}
+message S2CMonthCardActInfo {
+  map<int32, MonthCardAct> infos = 1; //key:月卡表ID
+  int64 refresh_time = 2; //下个刷新时间点倒计时秒数
+}
+
+//API: 月卡活动领取奖励
+message C2SMonthCardActDone {
+  int32 act_id = 1; //活动ID
+}
+message S2CMonthCardActDone {
+  int32 act_id = 1; //活动ID
+  int32 day = 2; //剩余领奖天数
+  Items items = 3; //获得的道具，只用作显示
+  int64 refresh_time = 4; //下个刷新时间点倒计时秒数
+}
+
+//************************** 七日目标任务 **************************/
+message Day7Act {
+  int32 day = 1;
+  map<int32, int64> item_boxs = 2; //礼包状态 key:礼包ID value:礼包状态{0:未购买,>0:已购买}
+  map<int32, Mission> tasks = 3; //任务信息
+}
+message Day7ActCoin {
+  int32 lv = 1;
+  int32 count = 2; //数量
+  int32 state = 3; //0:不可领取 1:可领取 2:已领取
+}
+
+//API: 七日活动详情
+message C2SDay7ActInfos {}
+message S2CDay7ActInfos {
+  int32 coin_cnt = 1;
+  repeated Day7Act list = 2; //开发解锁的天数
+  repeated Day7ActCoin coin_acts = 3;
+  int64 refresh_time = 4; //下个刷新时间点倒计时秒数
+  bool close = 5; //是否关闭 1:已关闭
+  int64 expire = 6;//活动倒计秒数
+}
+
+//API: 金币钻石礼包兑换
+message C2SDay7ActBuy {
+  int32 day = 1; //第几天的礼包 1开始
+  int32 item_box_id = 2; //礼包Id
+}
+message S2CDay7ActBuy {
+  int32 day = 1;
+  int32 item_box_id = 2;
+  Items items = 3; //兑换的物品
+}
+
+//API: 积分阶段礼包领取
+message C2SDay7ActReward {
+  int32 lv = 1; //领取第几级的奖品
+}
+message S2CDay7ActReward {
+  int32 lv = 1;
+  Items items = 2;
+}
+
+//************************** 首充三天活动 **************************/
+message FirstPayAct {
+  int32 act_id = 1; //活动ID
+  int32 purchase_id = 2; //支付表Id 0:为任意支付解锁
+  int64 purchase_time = 3; //支付解锁时间 >0即为解锁
+  map<int32, int64> days = 4; //{day:donetime} day为第几天  donetime>0为已领取
+}
+
+//API: 首充三天活动详细信息
+message C2SFirstPayActInfo {}
+message S2CFirstPayActInfo {
+  map<int32, FirstPayAct> infos = 1;
+}
+
+//API: 首充三天活动领取奖励
+message C2SFirstPayActDone {
+  int32 act_id = 1; //活动ID
+  int32 day = 2; //领取第几天奖励
+}
+message S2CFirstPayActDone {
+  int32 act_id = 1; //活动ID
+  int32 day = 2; //领取第几天奖励
+  Items items = 3; //获得的道具，只用作显示
+}
+
+// ************************** 成长之路 **************************/
+
+// API: 领取成长之路奖励
+message C2SGetCupReward {
+  int32 id = 1; // 领取的奖励id
+}
+
+message S2CGetCupReward {
+  Items rewards = 1; // 获得的道具
+  repeated int32 feature = 2; // 功能特性
+  int32 id = 3; // 领取的奖励id
+}
+
+// API: 获取成长之路信息
+message C2SGetCupInfo {}
+
+message S2CGetCupInfo {
+  repeated int32 rewarded = 1; // 已经领取的奖励id
+}
+
+
+// ************************** 问卷调查 **************************/
+
+//问卷调查信息
+message C2SQuestionnaireInfo{
+
+}
+
+//问卷调查信息返回
+message S2CQuestionnaireInfo{
+  int32 questionnaire_metal = 1;//问卷调查需要的勋章数
+  int32 status = 2;//问卷调查状态 0=活动未开启 1=已经解锁 2=已经完成未领奖 3=已经领取奖励
+  repeated Item reward = 3;//奖励内容
+}
+
+//问卷调查答题完成
+message C2SQuestionnaireComplete{
+
+}
+
+message S2CQuestionnaireComplete{
+
+}
+
+//问卷调查领取奖励
+message C2SQuestionnaireReward{
+
+}
+
+message S2CQuestionnaireReward{
+  repeated Item items = 1;//领取获得的问卷调查奖励物品
+}
+
+message NTFQuestionnaireComplete{
+
+}

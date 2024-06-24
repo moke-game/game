@@ -1,0 +1,306 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+
+option go_package = "bff/;bffpb";
+
+enum EPetPart{
+  Part_None = 0;
+  Part_Body = 1;//部位 身体
+  Part_Head = 2;//部位 头(帽子)
+  Part_Wing = 3;//部位 翅膀
+  Part_Weapon = 4;//部位 武器
+}
+
+message Pet {
+  int64 id = 1;//宠物ID
+  string name = 2;//宠物昵称
+  int32 bind_hero = 3;//绑定的英雄ID 未绑定任何英雄时为0
+  map<int32, int32> total_attribute = 4;//宠物附加属性总值 key:属性ID value:属性值*10000
+  map<int32, PetPart> parts = 5;//各部件信息 key:部位
+  int32 rename_count = 6;//改名次数
+  map<int32, PetPart> recast_part = 7;//上一次洗练未应用的部件
+  map<int32, int32> skill_stone = 8;//当前宠物身上的石头 key:技能插槽序号 从1开始 暂时只有1
+}
+
+message PetPart{
+  int32 config_id = 1;
+  map<int32, int32> attribute = 2;//属性 key:属性ID value:属性值*10000
+  int32 power_value = 3;//战力值(时尚值)
+}
+
+
+//孵化中的蛋
+message Egg{
+  int64 id = 1;//蛋ID
+  int32 config_id = 2;//配置表中的ID
+  int64 need_time = 3;//孵化所需要的时间 秒
+  int64 used_time = 4;//当前用时 秒
+  repeated EggProgress progress = 5;//喂养进度 身体 头(帽子) 翅膀 武器
+}
+
+message EggProgress{
+  map<int32, int32> planet_progress = 1;//各星球喂养占比 key 星球ID value 喂养值
+}
+
+//获取当前所有的宠物信息
+message C2SGetPetInfo{
+
+}
+
+message S2CGetPetInfo{
+  int32 egg_knapsack = 1;//蛋孵化槽
+  repeated Egg eggs = 2;//孵化中的蛋
+  repeated Pet pets = 3;//宠物信息
+}
+
+//孵化蛋
+message C2SPetHatch{
+  int64 item_id = 1;//要孵化的蛋(道具)ID
+}
+
+message S2CPetHatch{
+  Egg egg = 1;//孵化蛋信息
+}
+
+//取消孵化中的蛋
+message C2SCancelHatch{
+  int64 egg_id = 1;//要取消孵化的蛋ID
+}
+
+message S2CCancelHatch{
+  int64 egg_id = 1;//取消孵化的蛋ID
+}
+
+//喂养蛋
+message C2SPetFeed{
+  int64 egg_id = 1;//蛋ID
+  EPetPart part = 2;//喂养部位 1=身体 2=头(帽子) 3=翅膀 4=武器
+  repeated Item item = 3;//喂养道具
+}
+
+message S2CPetFeed{
+  int64 egg_id = 1;
+  EPetPart part = 2;//喂养部位 1=身体 2=头(帽子) 3=翅膀 4=武器
+  EggProgress progress = 3;//喂养后的进度信息
+}
+
+//使用加速道具
+message C2SPetSpeed{
+  int64 egg_id = 1;//蛋ID
+  Item item = 2;//加速道具ID
+}
+
+message S2CPetSpeed{
+  int64 egg_id = 1;//蛋ID
+  int64 need_time = 2;//孵化所需要的时间 秒
+  int64 used_time = 3;//当前用时 秒
+}
+
+//确认蛋孵化成宠物
+message C2SPetIncubate{
+  int64 egg_id = 1;//蛋ID
+}
+
+message S2CPetIncubate{
+  Pet pet = 1;//孵化出的宠物信息
+}
+
+//宠物绑定英雄
+message C2SPetBind{
+  int64 pet_id = 1;//宠物ID
+  int32 hero_id = 2;//要绑定/解绑的英雄ID
+  bool bind = 3;//true 绑定 false 解绑
+}
+
+message S2CPetBind{
+  int64 pet_id = 1;//宠物ID
+  int32 bind_hero_id = 2;//绑定英雄ID 有可能为0
+  int32 unbind_hero_id = 3;//解绑的英雄ID 有可能为0
+  bool bind = 4;//true 绑定 false 解绑
+}
+
+//放生宠物
+message C2SPetRelease{
+  int64 pet_id = 1;//放生的宠物ID
+}
+
+message S2CPetRelease{
+  int64 pet_id = 1;//放生的宠物ID
+  repeated Item items = 2;//放生获得的道具
+}
+
+//宠物修改名字
+message C2SPetRename{
+  int64 pet_id = 1;//要修改名字的宠物ID
+  string name = 2;//要修改成的名字
+}
+
+message S2CPetRename{
+  int64 pet_id = 1;//修改名字的宠物ID
+  string name = 2;//修改后的名字
+}
+
+//扩展孵化槽
+message C2SUpgradeEggKnapsack{
+
+}
+
+message S2CUpgradeEggKnapsack{
+  Item item = 1;//消耗的道具
+  int32 egg_knapsack = 2;//槽的数量
+}
+
+message NTFPetBindChange{
+  int64 uid = 1;//玩家ID
+  int64 pet_profile_id = 2;//宠物外观组合ID 身体  + 帽子 * 10000 + 翅膀*10000^2 + 武器*10000^3
+}
+
+//*********************************************************宠物任务相关*************************************************************//
+
+enum PetTaskStatus{
+  Task_Idle = 0;//0=未开始
+  Task_Progressing = 1;//1=进行中
+  Task_Complete = 2;//2=已完成可领取奖励
+  Task_Finish = 3;//3=已结束
+}
+
+//获取当前宠物任务
+message C2SPetTask{
+
+}
+
+message S2CPetTask{
+  repeated PetTask pet_task = 1;
+  int32 refresh_count = 2;//当前任务已经刷新次数
+  int32 refresh_countdown = 3;//系统刷新倒计时
+}
+
+message PetTask{
+  string id = 1;//任务唯一ID
+  int32 task_id = 2;//任务config id
+  PetTaskStatus task_status = 3;//任务状态
+  int32 countdown = 4;//任务完成倒计时 秒
+  repeated int64 pet_id = 5;//在执行任务的宠物ID
+}
+
+//派遣
+message C2SPetTaskDispatch{
+  repeated PetTaskDispatch dispatch = 1;
+}
+
+message S2CPetTaskDispatch{
+  repeated PetTaskDispatch dispatch = 1;
+}
+
+message PetTaskDispatch{
+  string id = 1;//任务唯一ID
+  repeated int64 pet_id = 2;//要派遣的宠物ID
+}
+
+//领取任务奖励
+message C2SPetTaskReward{
+  string id = 1;//要领取奖励的任务ID 不填(空)为一键领取
+}
+
+message S2CPetTaskReward{
+  repeated PetTaskReward task_reward = 1;//获得的奖励
+}
+
+message PetTaskReward{
+  string id = 1;//任务唯一ID
+  repeated Item item = 2;
+}
+
+//任务刷新
+message C2SPetTaskRefresh{
+
+}
+
+message S2CPetTaskRefresh{
+
+}
+
+//任务加速
+message C2SPetTaskQuick{
+  string task_id = 1;
+}
+
+message S2CPetTaskQuick{
+  PetTask pet_task = 1;
+}
+
+//升级任务槽位数量
+message C2SPetTaskUpgrade{
+
+}
+
+message S2CPetTaskUpgrade{
+  PetTask pet_task = 1;
+}
+
+
+//*********************************************************宠物洗练相关*************************************************************//
+
+//宠物洗练
+message C2SPetRecast{
+  int64 pet_id = 1;//宠物ID
+  repeated EPetPart lock_part = 2;//锁定的部位
+  int32 design_id = 3;//设计图道具ID 只有使用设计图时有用
+}
+
+message S2CPetRecast{
+  int64 pet_id = 1;//宠物ID
+  map<int32, PetPart> parts = 2;//洗练后的部件信息
+}
+
+//宠物洗练确认替换
+message C2SPetRecastReplace{
+  int64 pet_id = 1;//宠物ID
+  bool is_replace = 2;//true 替换 false 取消
+}
+
+message S2CPetRecastReplace{
+  int64 pet_id = 1;//宠物ID
+  bool is_replace = 2;//true 替换 false 取消
+  map<int32, int32> total_attribute = 3;//宠物附加属性总值 key:属性ID value:属性值*10000
+  map<int32, PetPart> parts = 4;//各部件信息 key:部位
+}
+
+//*********************************************************宠物技能相关*************************************************************//
+
+//学习技能
+message C2SPetSkillStudy{
+  int32 item_id = 1;//要消耗的技能石ID
+  int64 pet_id = 2;//要学习技能的宠物ID
+}
+
+message S2CPetSkillStudy{
+  int32 item_id = 1;
+  int64 pet_id = 2;
+}
+
+//抽取技能石
+message C2SPetSkillDraw{
+  int32 amount = 1;//抽取次数
+}
+
+message S2CPetSkillDraw{
+  repeated Item item = 1;//抽取获得的道具
+}
+
+//技能石回收
+message C2SPetSkillReclaim{
+  repeated Item item = 1;//要回收的技能石
+}
+
+message S2CPetSkillReclaim{
+  repeated Item item = 1;//回收获得的道具
+}
+
+
+
+
+
+

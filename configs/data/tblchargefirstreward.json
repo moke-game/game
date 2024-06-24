@@ -1,0 +1,38 @@
+[
+  {
+    "ID": 1,
+    "ActID": 1,
+    "Day": 1,
+    "ItemBoxID": 31
+  },
+  {
+    "ID": 2,
+    "ActID": 1,
+    "Day": 2,
+    "ItemBoxID": 32
+  },
+  {
+    "ID": 3,
+    "ActID": 1,
+    "Day": 3,
+    "ItemBoxID": 33
+  },
+  {
+    "ID": 4,
+    "ActID": 2,
+    "Day": 1,
+    "ItemBoxID": 34
+  },
+  {
+    "ID": 5,
+    "ActID": 2,
+    "Day": 2,
+    "ItemBoxID": 35
+  },
+  {
+    "ID": 6,
+    "ActID": 2,
+    "Day": 3,
+    "ItemBoxID": 36
+  }
+]

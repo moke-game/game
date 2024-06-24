@@ -1,0 +1,1402 @@
+[
+  {
+    "ID": 301,
+    "Name": "Item_13_name",
+    "Res": "301",
+    "IncubateTime": 21600,
+    "AvatarLimit": [
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "IncubateAvatar1": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 10001
+      },
+      {
+        "planetId": 1,
+        "rate": 999,
+        "randomId": 10001
+      },
+      {
+        "planetId": 2,
+        "rate": 999,
+        "randomId": 10001
+      },
+      {
+        "planetId": 1,
+        "rate": 3999,
+        "randomId": 10000
+      },
+      {
+        "planetId": 2,
+        "rate": 3999,
+        "randomId": 10000
+      },
+      {
+        "planetId": 1,
+        "rate": 7499,
+        "randomId": 10003
+      },
+      {
+        "planetId": 2,
+        "rate": 7499,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 10005
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 10004
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 10007
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 10006
+      }
+    ],
+    "IncubateAvatar2": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 20001
+      },
+      {
+        "planetId": 1,
+        "rate": 999,
+        "randomId": 20001
+      },
+      {
+        "planetId": 2,
+        "rate": 999,
+        "randomId": 20001
+      },
+      {
+        "planetId": 1,
+        "rate": 3999,
+        "randomId": 20000
+      },
+      {
+        "planetId": 2,
+        "rate": 3999,
+        "randomId": 20000
+      },
+      {
+        "planetId": 1,
+        "rate": 7499,
+        "randomId": 20003
+      },
+      {
+        "planetId": 2,
+        "rate": 7499,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 20005
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 20004
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 20007
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 20006
+      }
+    ],
+    "IncubateAvatar3": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 30001
+      },
+      {
+        "planetId": 1,
+        "rate": 999,
+        "randomId": 30001
+      },
+      {
+        "planetId": 2,
+        "rate": 999,
+        "randomId": 30001
+      },
+      {
+        "planetId": 1,
+        "rate": 3999,
+        "randomId": 30000
+      },
+      {
+        "planetId": 2,
+        "rate": 3999,
+        "randomId": 30000
+      },
+      {
+        "planetId": 1,
+        "rate": 7499,
+        "randomId": 30003
+      },
+      {
+        "planetId": 2,
+        "rate": 7499,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 30005
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 30004
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 30007
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 30006
+      }
+    ],
+    "IncubateAvatar4": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 40001
+      },
+      {
+        "planetId": 1,
+        "rate": 999,
+        "randomId": 40001
+      },
+      {
+        "planetId": 2,
+        "rate": 999,
+        "randomId": 40001
+      },
+      {
+        "planetId": 1,
+        "rate": 3999,
+        "randomId": 40000
+      },
+      {
+        "planetId": 2,
+        "rate": 3999,
+        "randomId": 40000
+      },
+      {
+        "planetId": 1,
+        "rate": 7499,
+        "randomId": 40003
+      },
+      {
+        "planetId": 2,
+        "rate": 7499,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 40005
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 40004
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 40007
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 40006
+      }
+    ],
+    "FeedValue": [
+      {
+        "partId": 0,
+        "planetId": 0,
+        "value": 0
+      }
+    ],
+    "CountDown": 0
+  },
+  {
+    "ID": 302,
+    "Name": "Item_14_name",
+    "Res": "302",
+    "IncubateTime": 3600,
+    "AvatarLimit": [
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "IncubateAvatar1": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50001
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 10001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 10001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 10002
+      }
+    ],
+    "IncubateAvatar2": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50002
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 20001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 20001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 20002
+      }
+    ],
+    "IncubateAvatar3": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50003
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 30001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 30001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 30002
+      }
+    ],
+    "IncubateAvatar4": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50004
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 40001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 40001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 40002
+      }
+    ],
+    "FeedValue": [
+      {
+        "partId": 0,
+        "planetId": 2,
+        "value": 5000
+      }
+    ],
+    "CountDown": 0
+  },
+  {
+    "ID": 303,
+    "Name": "Item_15_name",
+    "Res": "303",
+    "IncubateTime": 1800,
+    "AvatarLimit": [
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "IncubateAvatar1": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50001
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 10001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 10001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 10002
+      }
+    ],
+    "IncubateAvatar2": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50002
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 20001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 20001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 20002
+      }
+    ],
+    "IncubateAvatar3": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50003
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 30001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 30001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 30002
+      }
+    ],
+    "IncubateAvatar4": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50004
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 40001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 40001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 40002
+      }
+    ],
+    "FeedValue": [
+      {
+        "partId": 0,
+        "planetId": 1,
+        "value": 5000
+      }
+    ],
+    "CountDown": 7200
+  },
+  {
+    "ID": 304,
+    "Name": "Item_16_name",
+    "Res": "304",
+    "IncubateTime": 3600,
+    "AvatarLimit": [
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "IncubateAvatar1": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50001
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 10001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 10001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 10002
+      }
+    ],
+    "IncubateAvatar2": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50002
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 20001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 20001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 20002
+      }
+    ],
+    "IncubateAvatar3": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50003
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 30001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 30001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 30002
+      }
+    ],
+    "IncubateAvatar4": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50004
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 40001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 40001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 40002
+      }
+    ],
+    "FeedValue": [
+      {
+        "partId": 0,
+        "planetId": 2,
+        "value": 10000
+      }
+    ],
+    "CountDown": 7200
+  },
+  {
+    "ID": 305,
+    "Name": "Item_17_name",
+    "Res": "305",
+    "IncubateTime": 345600,
+    "AvatarLimit": [
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "IncubateAvatar1": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50001
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 10001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 10002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 10001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 10002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 10002
+      }
+    ],
+    "IncubateAvatar2": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50002
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 20001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 20002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 20001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 20002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 20002
+      }
+    ],
+    "IncubateAvatar3": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50003
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 30001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 30002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 30001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 30002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 30002
+      }
+    ],
+    "IncubateAvatar4": [
+      {
+        "planetId": 0,
+        "rate": 0,
+        "randomId": 50004
+      },
+      {
+        "planetId": 1,
+        "rate": 2000,
+        "randomId": 40001
+      },
+      {
+        "planetId": 1,
+        "rate": 5000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 7000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 9000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 9999,
+        "randomId": 40002
+      },
+      {
+        "planetId": 1,
+        "rate": 10000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 2000,
+        "randomId": 40001
+      },
+      {
+        "planetId": 2,
+        "rate": 5000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 7000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 9000,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 9999,
+        "randomId": 40002
+      },
+      {
+        "planetId": 2,
+        "rate": 10000,
+        "randomId": 40002
+      }
+    ],
+    "FeedValue": [
+      {
+        "partId": 4,
+        "planetId": 1,
+        "value": 10000
+      }
+    ],
+    "CountDown": 7200
+  }
+]

@@ -1,0 +1,29 @@
+syntax = "proto3";
+package bff;
+
+import "bff/bcommon.proto";
+
+option go_package = "bff/;bffpb";
+
+message MKnapsack {
+  map<int64, Item> items = 1;
+  map<int32, bool> features = 2; // 功能特性
+}
+
+// watching 背包请求
+message C2SWatchingKnapsack {}
+
+// watching 背包返回
+message S2CWatchingKnapsack {
+  MKnapsack knapsack = 1; // 第一次全量返回，之后变化增量更新
+}
+
+// 兑换货币
+message C2SDiamondExchangeItem {
+  Items item = 1; //兑换的道具
+}
+
+// 兑换货币返回
+message S2CDiamondExchangeItem {
+  Items item = 2; //兑换的道具
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "ID": 10001,
+    "Rewards1": [],
+    "Amount": 0,
+    "Rewards2": [
+      {
+        "itemId": 7,
+        "itemAmount": 3,
+        "weight": 10000
+      },
+      {
+        "itemId": 301,
+        "itemAmount": 1,
+        "weight": 1500
+      },
+      {
+        "itemId": 8,
+        "itemAmount": 2,
+        "weight": 5000
+      },
+      {
+        "itemId": 9,
+        "itemAmount": 1,
+        "weight": 300
+      }
+    ]
+  },
+  {
+    "ID": 10002,
+    "Rewards1": [],
+    "Amount": 0,
+    "Rewards2": [
+      {
+        "itemId": 7,
+        "itemAmount": 1,
+        "weight": 10000
+      },
+      {
+        "itemId": 301,
+        "itemAmount": 1,
+        "weight": 500
+      },
+      {
+        "itemId": 8,
+        "itemAmount": 1,
+        "weight": 5000
+      }
+    ]
+  },
+  {
+    "ID": 10003,
+    "Rewards1": [],
+    "Amount": 0,
+    "Rewards2": [
+      {
+        "itemId": 10,
+        "itemAmount": 3,
+        "weight": 10000
+      },
+      {
+        "itemId": 301,
+        "itemAmount": 1,
+        "weight": 1500
+      },
+      {
+        "itemId": 11,
+        "itemAmount": 2,
+        "weight": 5000
+      },
+      {
+        "itemId": 12,
+        "itemAmount": 1,
+        "weight": 300
+      }
+    ]
+  },
+  {
+    "ID": 10004,
+    "Rewards1": [],
+    "Amount": 0,
+    "Rewards2": [
+      {
+        "itemId": 10,
+        "itemAmount": 1,
+        "weight": 10000
+      },
+      {
+        "itemId": 301,
+        "itemAmount": 1,
+        "weight": 500
+      },
+      {
+        "itemId": 11,
+        "itemAmount": 1,
+        "weight": 5000
+      }
+    ]
+  },
+  {
+    "ID": 10005,
+    "Rewards1": [],
+    "Amount": 0,
+    "Rewards2": [
+      {
+        "itemId": 13,
+        "itemAmount": 5,
+        "weight": 10000
+      },
+      {
+        "itemId": 301,
+        "itemAmount": 1,
+        "weight": 1500
+      },
+      {
+        "itemId": 14,
+        "itemAmount": 2,
+        "weight": 5000
+      },
+      {
+        "itemId": 15,
+        "itemAmount": 1,
+        "weight": 300
+      }
+    ]
+  },
+  {
+    "ID": 10006,
+    "Rewards1": [],
+    "Amount": 0,
+    "Rewards2": [
+      {
+        "itemId": 13,
+        "itemAmount": 3,
+        "weight": 10000
+      },
+      {
+        "itemId": 301,
+        "itemAmount": 1,
+        "weight": 500
+      },
+      {
+        "itemId": 14,
+        "itemAmount": 1,
+        "weight": 5000
+      }
+    ]
+  }
+]

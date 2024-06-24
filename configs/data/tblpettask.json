@@ -1,0 +1,35 @@
+[
+  {
+    "ID": 1,
+    "FinishCost": 6,
+    "Refresh": [
+      {
+        "id": 0,
+        "num": 0
+      },
+      {
+        "id": 1,
+        "num": 100
+      },
+      {
+        "id": 2,
+        "num": 10
+      },
+      {
+        "id": 2,
+        "num": 20
+      }
+    ],
+    "TaskCount": 3,
+    "TaskExtension": [
+      {
+        "id": 1,
+        "num": 1000
+      },
+      {
+        "id": 2,
+        "num": 100
+      }
+    ]
+  }
+]
