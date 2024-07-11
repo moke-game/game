@@ -3,7 +3,6 @@ package buddy
 import (
 	"context"
 	"strconv"
-	"strings"
 	"time"
 
 	"go.uber.org/zap"
@@ -426,37 +425,4 @@ func (r *Router) handleFriendDeleteBlack(ctx context.Context, request ziface.IRe
 		Uid: req.Uid,
 	}
 	return resp, cpb.ERRORCODE_SUCCESS
-}
-func (r *Router) getErrorCode(err string) cpb.ERRORCODE {
-	sts := strings.Split(err, "=")
-	str := strings.TrimSpace(sts[len(sts)-1])
-	switch str {
-	case "ErrBuddyAlreadyAdded":
-		return cpb.ERRORCODE_FRIEND_IS_REPEAT
-	case "ErrBuddyAlreadyRequested":
-		return cpb.ERRORCODE_FRIEND_ALREADY_APPLY
-	case "ErrBuddyAlreadyInYourRequestList":
-		return cpb.ERRORCODE_FRIEND_ALREADY_APPLY
-	case "ErrBuddiesNotFound":
-		return cpb.ERRORCODE_FRIEND_NOT_EXIST
-	case "ErrInviterNotFound":
-		return cpb.ERRORCODE_FRIEND_NOT_IN_REQUEST
-	case "ErrSelfBuddiesTopLimit":
-		return cpb.ERRORCODE_FRIEND_MY_COUNT_MAX
-	case "ErrSelfInviterTopLimit":
-		return cpb.ERRORCODE_FRIEND_MY_COUNT_MAX
-	case "ErrTargetInviterTopLimit":
-		return cpb.ERRORCODE_FRIEND_YOU_COUNT_MAX
-	case "ErrTargetBuddiesTopLimit":
-		return cpb.ERRORCODE_FRIEND_YOU_COUNT_MAX
-	case "ErrCanNotAddSelf":
-		return cpb.ERRORCODE_FRIEND_YOU_COUNT_MAX
-	case "ErrInTargetBlockedList":
-		return cpb.ERRORCODE_FRIEND_IN_YOU_BLACKLIST
-	case "ErrInSelfBlockedList":
-		return cpb.ERRORCODE_FRIEND_IN_MY_BLACKLIST
-	case "ErrBlockedNumExceed":
-		//return cpb.
-	}
-	return cpb.ERRORCODE_FRIEND_NOT_IN_REQUEST
 }

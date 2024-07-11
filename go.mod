@@ -1,6 +1,6 @@
 module github.com/moke-game/game
 
-go 1.21
+go 1.21.1
 
 //replace github.com/gstones/zinx => ../zinx
 //replace github.com/gstones/moke-kit => ../moke-kit
