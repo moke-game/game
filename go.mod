@@ -4,7 +4,7 @@ go 1.22.5
 
 //replace github.com/gstones/zinx => ../zinx
 //replace github.com/gstones/moke-kit => ../moke-kit
-replace github.com/moke-game/platform => ../platform/
+//replace github.com/moke-game/platform => ../platform/
 
 require (
 	agones.dev/agones v1.40.0
