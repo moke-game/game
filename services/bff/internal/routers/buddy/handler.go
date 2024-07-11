@@ -208,15 +208,11 @@ func (r *Router) handleFriendAdd(ctx context.Context, request ziface.IRequest) (
 	addUidStr := strconv.FormatInt(req.AddUid, 10)
 	reqAdd := &pb.AddBuddyRequest{}
 	reqAdd.Uid = append(reqAdd.Uid, addUidStr)
-	if rep, err := r.bClient.AddBuddy(ctx, reqAdd); err != nil {
+	if _, err := r.bClient.AddBuddy(ctx, reqAdd); err != nil {
 		r.logger.Error("buddy client addBuddy err", zap.Error(err))
 		return nil, cpb.ERRORCODE_RPC_ERROR
-	} else {
-		if len(rep.Failed) > 0 {
-			return &bffpb.S2CFriendAdd{}, r.getErrorCode(rep.Failed[0])
-		}
-		return &bffpb.S2CFriendAdd{}, cpb.ERRORCODE_SUCCESS
 	}
+	return &bffpb.S2CFriendAdd{}, cpb.ERRORCODE_SUCCESS
 }
 
 func (r *Router) handleFriendAgree(ctx context.Context, request ziface.IRequest) (proto.Message, cpb.ERRORCODE) {

@@ -9,7 +9,7 @@ game service
 * cmd/game_cli: game client
 
 ## Architecture
-![architecture](./draws/rumble.drawio.png)
+![architecture](./draws/game.drawio.png)
 ## GameFlow
 ![img.png](./draws/gameflow.drawio.png)
 ## Prepare
