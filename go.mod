@@ -4,7 +4,7 @@ go 1.21
 
 //replace github.com/gstones/zinx => ../zinx
 //replace github.com/gstones/moke-kit => ../moke-kit
-replace github.com/moke-game/platform => ../platform/
+//replace github.com/moke-game/platform => ../platform/
 
 require (
 	agones.dev/agones v1.40.0
@@ -15,7 +15,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.19.1
 	github.com/gstones/moke-kit v1.0.1-0.20240617075011-41c65e1266c0
 	github.com/gstones/zinx v1.2.7-0.20240617071724-88bd884d8d08
-	github.com/moke-game/platform v0.0.0-20240623032118-4b4bc624b162
+	github.com/moke-game/platform v0.0.0-20240711124918-3e9a507a77d1
 	github.com/pkg/errors v0.9.1
 	github.com/redis/go-redis/v9 v9.5.1
 	github.com/samber/lo v1.39.0
