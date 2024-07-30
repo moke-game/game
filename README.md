@@ -15,5 +15,7 @@ game service
 ## Prepare
 2. [Install buf](https://buf.build/docs/installation)
 
+## 接入SDK及文档:
 
+https://buf.build/moke-game/game/sdks
 
