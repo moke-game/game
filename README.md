@@ -1,8 +1,9 @@
-# EverJoy Game Servers
+# Game Servers
 
 ## Introduction
 
-This project is EverJoy Game Servers
+This project is a game server template,
+which is designed to provide a basic game server framework for developers.
 
 ## Architecture
 
