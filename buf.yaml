@@ -1,6 +1,6 @@
 version: v2
 modules:
-  - path: api
+  - path: api/
     name: buf.build/moke-game/game
 deps:
   - buf.build/googleapis/googleapis
