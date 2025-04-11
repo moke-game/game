@@ -10,7 +10,7 @@ require (
 	github.com/gstones/moke-kit v1.0.5-0.20241104114519-3f1ee119ecc9
 	github.com/gstones/zinx v1.2.7-0.20240617071724-88bd884d8d08
 	github.com/moke-game/platform v0.0.0-20241116051820-47953b1ccdae
-	github.com/redis/go-redis/v9 v9.7.0
+	github.com/redis/go-redis/v9 v9.7.3
 	github.com/spf13/cobra v1.8.1
 	go.uber.org/fx v1.23.0
 	go.uber.org/zap v1.27.0
