@@ -1,6 +1,8 @@
 package game0
 
 import (
+	"context"
+
 	"github.com/gstones/moke-kit/orm/nosql"
 	"github.com/gstones/moke-kit/orm/nosql/diface"
 )
@@ -18,7 +20,7 @@ func (dm *Dao) Init(id string, doc diface.ICollection) error {
 	}
 
 	dm.Data = &Data{}
-	dm.DocumentBase.Init(&dm.Data, dm.clear, doc, key)
+	dm.DocumentBase.Init(context.Background(), &dm.Data, dm.clear, doc, key)
 	return nil
 }
 
