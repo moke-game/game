@@ -37,7 +37,7 @@ var TcpModule = fx.Module("tcpService",
 )
 
 // AllModule starts authenticated game transports (gRPC + HTTP gateway).
-// TCP is intentionally omitted — use TcpModule / AllWithTcpModule only for
+// TCP is intentionally omitted — use TcpModule / AllWithTCPModule only for
 // trusted local demos. Pair with auth.AuthMiddlewareModule (thin) or
 // auth.AuthAllModule (aggregate) in main.
 var AllModule = fx.Module("allService",
@@ -47,9 +47,9 @@ var AllModule = fx.Module("allService",
 	game0.HttpService,
 )
 
-// AllWithTcpModule is AllModule plus unauthenticated TCP (zinx).
+// AllWithTCPModule is AllModule plus unauthenticated TCP (zinx).
 // Do not use on public networks.
-var AllWithTcpModule = fx.Module("allServiceWithTcp",
+var AllWithTCPModule = fx.Module("allServiceWithTcp",
 	dfx.SettingsModule,
 	game0.ServiceInstance,
 	game0.GrpcService,

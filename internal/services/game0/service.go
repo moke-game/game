@@ -32,9 +32,16 @@ type Service struct {
 	gameHandler *domain.Game
 }
 
-func (s *Service) Run(request *pb2.RunRequest, server pb2.MatchFunction_RunServer) error {
-	s.logger.Info("Run", zap.Any("request", request))
+// matchFunctionService serves Open Match MatchFunction RPCs without player auth.
+// Registered separately so AuthFuncOverride applies only to MatchFunction methods,
+// not to Game0Service (which must remain authenticated).
+type matchFunctionService struct {
+	utility.WithoutAuth
+	logger *zap.Logger
+}
 
+func (m *matchFunctionService) Run(request *pb2.RunRequest, server pb2.MatchFunction_RunServer) error {
+	m.logger.Info("MatchFunction.Run", zap.Any("request", request))
 	return nil
 }
 
@@ -80,9 +87,11 @@ func (s *Service) Hi(ctx context.Context, request *pb.HiRequest) (*pb.HiResponse
 	}, nil
 
 }
+
 func (s *Service) RegisterWithGrpcServer(server siface.IGrpcServer) error {
 	pb.RegisterGame0ServiceServer(server.GrpcServer(), s)
-	pb2.RegisterMatchFunctionServer(server.GrpcServer(), s)
+	// Open Match Backend calls MatchFunction without a player bearer token.
+	pb2.RegisterMatchFunctionServer(server.GrpcServer(), &matchFunctionService{logger: s.logger})
 	return nil
 }
 
@@ -104,7 +113,7 @@ func (s *Service) PreHandle(_ ziface.IRequest) {
 }
 
 // Handle is the zinx TCP entrypoint. It is NOT covered by gRPC AuthMiddleware;
-// only enable via TcpModule / AllWithTcpModule on trusted networks.
+// only enable via TcpModule / AllWithTCPModule on trusted networks.
 func (s *Service) Handle(request ziface.IRequest) {
 	switch request.GetMsgID() {
 	case 1:

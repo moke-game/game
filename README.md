@@ -18,7 +18,7 @@ which is designed to provide a basic game server framework for developers.
 
 Public game APIs require auth by default (`AuthMiddlewareModule` / `AuthAllModule`). Do not embed `utility.WithoutAuth` on public services.
 
-Default `AllModule` exposes **gRPC + HTTP only**. TCP/zinx is **not** covered by AuthMiddleware (uid can be spoofed); enable only via `TcpModule` / `AllWithTcpModule` on trusted networks.
+Default `AllModule` exposes **gRPC + HTTP only**. TCP/zinx is **not** covered by AuthMiddleware (uid can be spoofed); enable only via `TcpModule` / `AllWithTCPModule` on trusted networks.
 
 Copy `.env.example` → `.env` for AUTH/TLS/CORS/NATS/Mongo/Redis knobs.
 
