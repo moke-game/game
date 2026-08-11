@@ -68,9 +68,8 @@ func (d *Game) Hi(uid, topic, message string) error {
 }
 
 func (d *Game) Watch(ctx context.Context, topic string, callback func(message string) error) error {
-	//nats mq subscribe
 	natsTopic := common.NatsHeader.CreateTopic(topic)
-	if _, err := d.mq.Subscribe(
+	natsSub, err := d.mq.Subscribe(
 		ctx,
 		natsTopic,
 		func(msg miface.Message, err error) common.ConsumptionCode {
@@ -78,13 +77,13 @@ func (d *Game) Watch(ctx context.Context, topic string, callback func(message st
 				return common.ConsumeNackPersistentFailure
 			}
 			return common.ConsumeAck
-		}); err != nil {
+		})
+	if err != nil {
 		return err
 	}
 
-	//local(channel) mq subscribe
 	localTopic := common.LocalHeader.CreateTopic(topic)
-	if _, err := d.mq.Subscribe(
+	localSub, err := d.mq.Subscribe(
 		ctx,
 		localTopic,
 		func(msg miface.Message, err error) common.ConsumptionCode {
@@ -92,10 +91,17 @@ func (d *Game) Watch(ctx context.Context, topic string, callback func(message st
 				return common.ConsumeNackPersistentFailure
 			}
 			return common.ConsumeAck
-		}); err != nil {
+		})
+	if err != nil {
+		_ = natsSub.Unsubscribe()
 		return err
 	}
 
+	defer func() {
+		_ = natsSub.Unsubscribe()
+		_ = localSub.Unsubscribe()
+	}()
+
 	<-ctx.Done()
-	return nil
+	return ctx.Err()
 }

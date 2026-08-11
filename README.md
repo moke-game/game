@@ -9,6 +9,17 @@ which is designed to provide a basic game server framework for developers.
 
 ![architecture](./draws/game.drawio.png)
 
+### Topologies
+
+| Entry | Path | Use when |
+|-------|------|----------|
+| **Aggregate** | `cmd/game0/service` | Local/dev: game + in-process platform modules (`AuthAllModule`) |
+| **Thin** | `cmd/game0/service-thin` | Prod-like split: game-only + remote platform clients (`AuthMiddlewareModule`, set `AUTH_URL`) |
+
+Public game APIs require auth by default (`AuthMiddlewareModule` / `AuthAllModule`). Do not embed `utility.WithoutAuth` on public services.
+
+Copy `.env.example` → `.env` for AUTH/TLS/CORS/NATS/Mongo/Redis knobs.
+
 ## How to run
 
 * deploy infrastructure:
@@ -17,10 +28,15 @@ which is designed to provide a basic game server framework for developers.
    docker compose -f ./deployment/docker-compose/infrastructure.yaml up -d
   ```
 
-* run service:
+* run service (aggregate):
   ```shell
   # fix the game-name to your game name 
     go run ./cmd/{game-name}/service/main.go
+  ```
+
+* or thin (remote platform):
+  ```shell
+    go run ./cmd/game0/service-thin/main.go
   ```
 
 ## How to build docker image?

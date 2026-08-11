@@ -9,7 +9,6 @@ import (
 	"github.com/gstones/moke-kit/orm/pkg/ofx"
 	"github.com/gstones/moke-kit/server/pkg/sfx"
 	"github.com/gstones/moke-kit/server/siface"
-	"github.com/gstones/moke-kit/utility"
 	"github.com/gstones/zinx/ziface"
 	"github.com/redis/go-redis/v9"
 	"go.uber.org/fx"
@@ -23,8 +22,9 @@ import (
 	"github.com/moke-game/game/pkg/dfx"
 )
 
+// Service is the game0 public API. Auth is enforced by platform AuthMiddlewareModule
+// (do not embed utility.WithoutAuth on public services).
 type Service struct {
-	utility.WithoutAuth
 	logger      *zap.Logger
 	gameHandler *domain.Game
 }
@@ -158,6 +158,36 @@ func NewService(
 	return
 }
 
+// ServiceModule provides one shared Service instance across gRPC, gateway, and TCP.
+var ServiceModule = fx.Provide(
+	func(
+		l *zap.Logger,
+		dProvider ofx.DocumentStoreParams,
+		setting dfx.SettingsParams,
+		mqParams mfx.MessageQueueParams,
+		redisClient ofx.RedisParams,
+	) (grpcOut sfx.GrpcServiceResult, httpOut sfx.GatewayServiceResult, tcpOut sfx.ZinxServiceResult, err error) {
+		coll, err := dProvider.DriverProvider.OpenDbDriver(setting.DbName)
+		if err != nil {
+			return
+		}
+		s, err := NewService(
+			l,
+			coll,
+			mqParams.MessageQueue,
+			redisClient.Redis,
+		)
+		if err != nil {
+			return
+		}
+		grpcOut.GrpcService = s
+		httpOut.GatewayService = s
+		tcpOut.ZinxService = s
+		return
+	},
+)
+
+// Deprecated: use ServiceModule so gRPC/HTTP/TCP share one instance.
 var GrpcService = fx.Provide(
 	func(
 		l *zap.Logger,
@@ -182,6 +212,7 @@ var GrpcService = fx.Provide(
 	},
 )
 
+// Deprecated: use ServiceModule.
 var HttpService = fx.Provide(
 	func(
 		l *zap.Logger,
@@ -206,6 +237,7 @@ var HttpService = fx.Provide(
 	},
 )
 
+// Deprecated: use ServiceModule.
 var TcpService = fx.Provide(
 	func(
 		l *zap.Logger,

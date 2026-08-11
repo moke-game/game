@@ -4,20 +4,28 @@ import (
 	"net"
 
 	"github.com/abiosoft/ishell"
-
 	"github.com/gstones/moke-kit/logging/slogger"
 	"github.com/gstones/moke-kit/server/tools"
+
+	authclient "github.com/moke-game/platform/services/auth/client"
 )
 
 func RunGrpc(url string) {
 	sh := ishell.New()
 	slogger.Info(sh, "interactive game connect to "+url)
+	slogger.Info(sh, "flow: auth token <id> → game token <access> → game hi")
 
 	if conn, err := tools.DialInsecure(url); err != nil {
 		slogger.Die(sh, err)
 	} else {
 		gameGrpc := NewDemoGrpcCli(conn)
 		sh.AddCmd(gameGrpc.GetCmd())
+
+		if authCmd, err := authclient.CreateAuthClient(url); err != nil {
+			slogger.Warn(sh, err)
+		} else {
+			sh.AddCmd(authCmd)
+		}
 
 		sh.Interrupt(func(c *ishell.Context, count int, input string) {
 			if count >= 2 {

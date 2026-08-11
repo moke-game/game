@@ -3,6 +3,7 @@ package game0
 import (
 	"context"
 	"fmt"
+	"sync"
 
 	pb "github.com/moke-game/game/api/gen/game0/api"
 
@@ -16,6 +17,9 @@ import (
 type DemoGrpc struct {
 	client pb.Game0ServiceClient
 	cmd    *ishell.Cmd
+
+	mu    sync.RWMutex
+	token string
 }
 
 func NewDemoGrpcCli(conn *grpc.ClientConn) *DemoGrpc {
@@ -36,7 +40,26 @@ func (p *DemoGrpc) GetCmd() *ishell.Cmd {
 	return p.cmd
 }
 
+// SetAccessToken stores the bearer token used by hi/watch.
+func (p *DemoGrpc) SetAccessToken(token string) {
+	p.mu.Lock()
+	defer p.mu.Unlock()
+	p.token = token
+}
+
+func (p *DemoGrpc) accessToken() string {
+	p.mu.RLock()
+	defer p.mu.RUnlock()
+	return p.token
+}
+
 func (p *DemoGrpc) initSubShells() {
+	p.cmd.AddCmd(&ishell.Cmd{
+		Name:    "token",
+		Help:    "set access token for subsequent RPCs",
+		Aliases: []string{"t"},
+		Func:    p.setToken,
+	})
 	p.cmd.AddCmd(&ishell.Cmd{
 		Name:    "hi",
 		Help:    "say hi",
@@ -49,7 +72,23 @@ func (p *DemoGrpc) initSubShells() {
 		Aliases: []string{"w"},
 		Func:    p.watch,
 	})
+}
 
+func (p *DemoGrpc) setToken(c *ishell.Context) {
+	c.ShowPrompt(false)
+	defer c.ShowPrompt(true)
+	tok := slogger.ReadLine(c, "access token: ")
+	p.SetAccessToken(tok)
+	slogger.Infof(c, "token set (%d chars)", len(tok))
+}
+
+func (p *DemoGrpc) authCtx() context.Context {
+	tok := p.accessToken()
+	if tok == "" {
+		tok = "test"
+	}
+	md := metadata.Pairs("authorization", fmt.Sprintf("%s %s", "bearer", tok))
+	return mm.MD(md).ToOutgoing(context.Background())
 }
 
 func (p *DemoGrpc) sayHi(c *ishell.Context) {
@@ -65,9 +104,7 @@ func (p *DemoGrpc) sayHi(c *ishell.Context) {
 	if t != "" {
 		topic = t
 	}
-	md := metadata.Pairs("authorization", fmt.Sprintf("%s %v", "bearer", "test"))
-	ctx := mm.MD(md).ToOutgoing(context.Background())
-	if response, err := p.client.Hi(ctx, &pb.HiRequest{
+	if response, err := p.client.Hi(p.authCtx(), &pb.HiRequest{
 		Uid:     "10000",
 		Message: msg,
 		Topic:   topic,
@@ -88,9 +125,7 @@ func (p *DemoGrpc) watch(c *ishell.Context) {
 		topic = t
 	}
 
-	md := metadata.Pairs("authorization", fmt.Sprintf("%s %v", "bearer", "test"))
-	ctx := mm.MD(md).ToOutgoing(context.Background())
-	if stream, err := p.client.Watch(ctx, &pb.WatchRequest{
+	if stream, err := p.client.Watch(p.authCtx(), &pb.WatchRequest{
 		Topic: topic,
 	}); err != nil {
 		slogger.Warn(c, err)

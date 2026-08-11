@@ -3,47 +3,41 @@ package modules
 import (
 	"go.uber.org/fx"
 
-	"github.com/moke-game/game/internal/services/game0"
+	auth "github.com/moke-game/platform/services/auth/pkg/module"
 
+	"github.com/moke-game/game/internal/services/game0"
 	"github.com/moke-game/game/pkg/dfx"
 )
 
-// GrpcModule  grpc service module
-// can inject it to any fxmain.Main(), if you want to start a game grpc service
+// GrpcModule starts game gRPC with platform AuthMiddlewareModule by default.
 var GrpcModule = fx.Module("grpcService",
 	dfx.SettingsModule,
-	dfx.AuthModule,
-	game0.GrpcService,
+	auth.AuthMiddlewareModule,
+	game0.ServiceModule,
 )
 
-// HttpModule  http service module
-// can inject it to any fxmain.Main(), if you want to start a game http service
+// HttpModule starts game gRPC + HTTP gateway with AuthMiddlewareModule.
 var HttpModule = fx.Module("httpService",
 	dfx.SettingsModule,
-	dfx.AuthModule,
-	game0.GrpcService,
-	game0.HttpService,
+	auth.AuthMiddlewareModule,
+	game0.ServiceModule,
 )
 
-// TcpModule  tcp service module
-// can inject it to any fxmain.Main(), if you want to start a game tcp service
+// TcpModule starts game TCP (zinx) service.
 var TcpModule = fx.Module("tcpService",
 	dfx.SettingsModule,
-	game0.TcpService,
+	game0.ServiceModule,
 )
 
-// AllModule  all service module
-// can inject it to any fxmain.Main(), if you want to start game all type services
+// AllModule starts all game transports.
+// Pair with platform auth.AuthMiddlewareModule (thin) or auth.AuthAllModule
+// (aggregate) in main — do not embed auth here to avoid duplicate providers.
 var AllModule = fx.Module("allService",
-	//dfx.AuthModule,
 	dfx.SettingsModule,
-	game0.GrpcService,
-	game0.HttpService,
-	game0.TcpService,
+	game0.ServiceModule,
 )
 
-// GrpcClientModule  grpc client module
-// can inject it to any fxmain.Main(), if you want a game grpc client to rpc game service
+// GrpcClientModule provides a game gRPC client.
 var GrpcClientModule = fx.Module("grpcClient",
 	dfx.SettingsModule,
 	dfx.Game0ClientModule,
