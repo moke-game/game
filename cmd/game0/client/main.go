@@ -9,8 +9,9 @@ import (
 )
 
 var options struct {
-	host    string
-	tcpHost string
+	host     string
+	authHost string
+	tcpHost  string
 }
 
 const (
@@ -28,9 +29,14 @@ func main() {
 		&options.host,
 		"host",
 		defaultHost,
-		"grpc http service (<host>:<port>)",
+		"game grpc/http service (<host>:<port>)",
 	)
-
+	rootCmd.PersistentFlags().StringVar(
+		&options.authHost,
+		"auth-host",
+		"",
+		"auth grpc service (<host>:<port>); default: AUTH_URL env or --host (aggregate)",
+	)
 	rootCmd.PersistentFlags().StringVar(
 		&options.tcpHost,
 		"tcp_host",
@@ -42,7 +48,10 @@ func main() {
 		Use:   "grpc",
 		Short: "Run an interactive grpc client",
 		Run: func(cmd *cobra.Command, args []string) {
-			game0.RunGrpc(options.host)
+			game0.RunGrpcWithOptions(game0.RunGrpcOptions{
+				GameURL: options.host,
+				AuthURL: options.authHost,
+			})
 		},
 	}
 	sTcp := &cobra.Command{

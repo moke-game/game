@@ -20,7 +20,9 @@ Public game APIs require auth by default (`AuthMiddlewareModule` / `AuthAllModul
 
 Copy `.env.example` → `.env` for AUTH/TLS/CORS/NATS/Mongo/Redis knobs.
 
-**Thin `AUTH_URL`:** must point at a **remote** AuthService (default example `localhost:8082`). Do not set it to this game's `PORT` (`8081`) — thin does not host auth, so middleware would dial itself and fail.
+**`AUTH_URL`:**
+- Aggregate: keep aligned with `PORT` (`.env.example` default `localhost:8081`).
+- Thin: override to a **remote** AuthService (e.g. `localhost:8082`). Do not use this game's `PORT` — thin does not host auth.
 
 ## How to run
 
@@ -38,7 +40,7 @@ Copy `.env.example` → `.env` for AUTH/TLS/CORS/NATS/Mongo/Redis knobs.
 
 * or thin (remote platform auth/clients must already be reachable):
   ```shell
-    # AUTH_URL=localhost:8082 (not the game PORT)
+    # override AUTH_URL away from PORT, e.g. AUTH_URL=localhost:8082
     go run ./cmd/game0/service-thin/main.go
   ```
 
@@ -62,8 +64,11 @@ docker buildx build -t <your_register_url>:latest --build-arg APP_NAME=<your_ser
    ```
 * run your interactive client:
     ```shell
-     # help
-     ./{game-name}.exe shell
+     # aggregate (auth on same host)
+     ./{game-name} grpc --host localhost:8081
+     # thin (auth on remote AUTH_URL)
+     ./{game-name} grpc --host localhost:8081 --auth-host localhost:8082
+     # flow: auth token → game token <access> → game hi
     ```
   tips: http client use Postman to connect `localhost:8081`.
 

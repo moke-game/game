@@ -114,8 +114,8 @@ func (p *DemoGrpc) sayHi(c *ishell.Context) {
 	if t != "" {
 		topic = t
 	}
+	// Uid in the request is ignored by the server; auth middleware supplies UIDContextKey.
 	if response, err := p.client.Hi(ctx, &pb.HiRequest{
-		Uid:     "10000",
 		Message: msg,
 		Topic:   topic,
 	}); err != nil {

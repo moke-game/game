@@ -205,8 +205,8 @@ github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd h1:TRLaZ9cD/w
 github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/reflect2 v1.0.2 h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9Gz0M=
 github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
-github.com/moke-game/platform v0.0.0-20260811113754-eb1cea52779c h1:62OCqFM79Cunk1hZUOkSZCHvgDaqsZb9fkY89uq0sEI=
-github.com/moke-game/platform v0.0.0-20260811113754-eb1cea52779c/go.mod h1:Ws/Kx2teblj8rmXcQJwAQn5NJTk7Aoz1yW0Z63EWHwI=
+github.com/moke-game/platform v0.0.0-20260811115401-66c14d25cc5f h1:VjMRdZ7bEgYyeEfbfwaRugjUY4HF80wZmlDCO5C87Y4=
+github.com/moke-game/platform v0.0.0-20260811115401-66c14d25cc5f/go.mod h1:Ws/Kx2teblj8rmXcQJwAQn5NJTk7Aoz1yW0Z63EWHwI=
 github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe/go.mod h1:wL8QJuTMNUDYhXwkmfOly8iTdp5TEcJFWZD2D7SIkUc=
 github.com/montanaflynn/stats v0.7.1 h1:etflOAAHORrCC44V+aR6Ftzort912ZU+YLiSTuV8eaE=
 github.com/montanaflynn/stats v0.7.1/go.mod h1:etXPPgVO6n31NxCd9KQUMvCM+ve0ruNzt6R8Bnaayow=

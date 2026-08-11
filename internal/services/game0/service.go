@@ -9,10 +9,13 @@ import (
 	"github.com/gstones/moke-kit/orm/pkg/ofx"
 	"github.com/gstones/moke-kit/server/pkg/sfx"
 	"github.com/gstones/moke-kit/server/siface"
+	"github.com/gstones/moke-kit/utility"
 	"github.com/gstones/zinx/ziface"
 	"github.com/redis/go-redis/v9"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
 	pb2 "open-match.dev/open-match/pkg/pb"
 
@@ -58,11 +61,15 @@ func (s *Service) Watch(request *pb.WatchRequest, server pb.Game0Service_WatchSe
 	return nil
 }
 
-func (s *Service) Hi(_ context.Context, request *pb.HiRequest) (*pb.HiResponse, error) {
+func (s *Service) Hi(ctx context.Context, request *pb.HiRequest) (*pb.HiResponse, error) {
+	uid, ok := ctx.Value(utility.UIDContextKey).(string)
+	if !ok || uid == "" {
+		return nil, status.Error(codes.Unauthenticated, "missing uid in context")
+	}
 	message := request.GetMessage()
-	s.logger.Info("Hi", zap.String("message", message))
+	s.logger.Info("Hi", zap.String("uid", uid), zap.String("message", message))
 
-	if err := s.gameHandler.Hi(request.GetUid(), request.GetTopic(), request.GetMessage()); err != nil {
+	if err := s.gameHandler.Hi(uid, request.GetTopic(), request.GetMessage()); err != nil {
 		return nil, err
 	}
 	return &pb.HiResponse{
