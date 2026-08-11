@@ -8,7 +8,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3
 	github.com/gstones/moke-kit v1.0.5-0.20260811085843-60e104db6db7
 	github.com/gstones/zinx v1.2.7-0.20240617071724-88bd884d8d08
-	github.com/moke-game/platform v0.0.0-20260811115401-66c14d25cc5f
+	github.com/moke-game/platform v0.0.0-20260811123400-b0cd3d45e29e
 	github.com/redis/go-redis/v9 v9.7.3
 	github.com/spf13/cobra v1.9.1
 	go.uber.org/fx v1.23.0

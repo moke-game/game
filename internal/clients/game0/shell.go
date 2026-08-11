@@ -17,10 +17,12 @@ type RunGrpcOptions struct {
 	AuthURL string // if empty, falls back to GameURL (aggregate) or AUTH_URL env
 }
 
+// RunGrpc starts the interactive gRPC shell against gameURL (auth defaults to same host).
 func RunGrpc(url string) {
 	RunGrpcWithOptions(RunGrpcOptions{GameURL: url})
 }
 
+// RunGrpcWithOptions starts the interactive gRPC shell with separate game/auth URLs.
 func RunGrpcWithOptions(opts RunGrpcOptions) {
 	sh := ishell.New()
 	gameURL := opts.GameURL

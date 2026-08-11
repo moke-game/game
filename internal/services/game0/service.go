@@ -40,6 +40,7 @@ func (s *Service) Run(request *pb2.RunRequest, server pb2.MatchFunction_RunServe
 
 // ---------------- grpc ----------------
 
+// Watch streams topic messages for an authenticated caller.
 func (s *Service) Watch(request *pb.WatchRequest, server pb.Game0Service_WatchServer) error {
 	topic := request.GetTopic()
 	s.logger.Info("Watch", zap.String("topic", topic))
@@ -61,6 +62,8 @@ func (s *Service) Watch(request *pb.WatchRequest, server pb.Game0Service_WatchSe
 	return nil
 }
 
+// Hi handles the authenticated hello RPC. UID comes from auth middleware context,
+// not from the request payload (avoids uid spoofing).
 func (s *Service) Hi(ctx context.Context, request *pb.HiRequest) (*pb.HiResponse, error) {
 	uid, ok := ctx.Value(utility.UIDContextKey).(string)
 	if !ok || uid == "" {
@@ -100,6 +103,8 @@ func (s *Service) PreHandle(_ ziface.IRequest) {
 
 }
 
+// Handle is the zinx TCP entrypoint. It is NOT covered by gRPC AuthMiddleware;
+// only enable via TcpModule / AllWithTcpModule on trusted networks.
 func (s *Service) Handle(request ziface.IRequest) {
 	switch request.GetMsgID() {
 	case 1:
@@ -107,6 +112,8 @@ func (s *Service) Handle(request ziface.IRequest) {
 		if err := proto.Unmarshal(request.GetData(), req); err != nil {
 			s.logger.Error("unmarshal request data error", zap.Error(err))
 		} else {
+			s.logger.Warn("tcp Hi has no auth; uid taken from payload (demo only)",
+				zap.String("uid", req.GetUid()))
 			if err := s.gameHandler.Hi(req.GetUid(), req.GetTopic(), req.GetMessage()); err != nil {
 				s.logger.Error("Hi error", zap.Error(err))
 			}

@@ -27,17 +27,29 @@ var HttpModule = fx.Module("httpService",
 )
 
 // TcpModule starts game TCP (zinx) only.
-// Note: zinx does not use gRPC AuthMiddleware; protect at network edge if needed.
+//
+// WARNING: zinx does not use gRPC AuthMiddleware. Callers can spoof uid.
+// Opt-in for local experiments only; keep off the public network.
 var TcpModule = fx.Module("tcpService",
 	dfx.SettingsModule,
 	game0.ServiceInstance,
 	game0.TcpService,
 )
 
-// AllModule starts all game transports (shared Service instance).
-// Pair with platform auth.AuthMiddlewareModule (thin) or auth.AuthAllModule
-// (aggregate) in main — do not embed auth here to avoid duplicate providers.
+// AllModule starts authenticated game transports (gRPC + HTTP gateway).
+// TCP is intentionally omitted — use TcpModule / AllWithTcpModule only for
+// trusted local demos. Pair with auth.AuthMiddlewareModule (thin) or
+// auth.AuthAllModule (aggregate) in main.
 var AllModule = fx.Module("allService",
+	dfx.SettingsModule,
+	game0.ServiceInstance,
+	game0.GrpcService,
+	game0.HttpService,
+)
+
+// AllWithTcpModule is AllModule plus unauthenticated TCP (zinx).
+// Do not use on public networks.
+var AllWithTcpModule = fx.Module("allServiceWithTcp",
 	dfx.SettingsModule,
 	game0.ServiceInstance,
 	game0.GrpcService,

@@ -18,6 +18,8 @@ which is designed to provide a basic game server framework for developers.
 
 Public game APIs require auth by default (`AuthMiddlewareModule` / `AuthAllModule`). Do not embed `utility.WithoutAuth` on public services.
 
+Default `AllModule` exposes **gRPC + HTTP only**. TCP/zinx is **not** covered by AuthMiddleware (uid can be spoofed); enable only via `TcpModule` / `AllWithTcpModule` on trusted networks.
+
 Copy `.env.example` → `.env` for AUTH/TLS/CORS/NATS/Mongo/Redis knobs.
 
 **`AUTH_URL`:**
@@ -77,8 +79,10 @@ docker buildx build -t <your_register_url>:latest --build-arg APP_NAME=<your_ser
 * install [k6](https://grafana.com/docs/k6/latest/get-started/installation/)
 * run k6 load test
    ``` shell
-    # fix the game-name to your game name
-    k6 run ./tests/{game-name}/{game-name}.js
+    # aggregate (auth on same host as game)
+    k6 run ./tests/game0/game0.js
+    # thin: Authenticate against remote auth
+    AUTH_HOST=127.0.0.1:8082 SERVER_HOST=127.0.0.1:8081 k6 run ./tests/game0/game0.js
   ```
 
 ## Proto file Manage
