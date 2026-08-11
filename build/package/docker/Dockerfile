@@ -5,7 +5,7 @@ ARG GIT_USR="docker"
 #https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic
 ARG GIT_PWD="your_git_access_token"
 # Step 1: Modules caching
-FROM golang:1.22.5-alpine as modules
+FROM golang:1.25.12-alpine as modules
 ARG GIT_USR
 ARG GIT_PWD
 ARG GIT_URL
@@ -20,7 +20,7 @@ RUN go mod download
 
 
 # Step 2: Builder
-FROM golang:1.22.5-alpine as builder
+FROM golang:1.25.12-alpine as builder
 ARG APP_NAME
 COPY --from=modules /go/pkg /go/pkg
 COPY . /app
