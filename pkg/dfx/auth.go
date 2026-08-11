@@ -14,13 +14,14 @@ import (
 // Author is an optional custom auth middleware example.
 //
 // Default wiring uses platform AuthMiddlewareModule (ValidateToken) via
-// pkg/modules.AllModule — do not enable CustomAuthModule unless you intentionally
+// cmd mains — do not enable CustomAuthModule unless you intentionally
 // replace that middleware (both export name:"AuthMiddleware").
+// CustomAuthModule does NOT validate tokens; it only extracts the bearer.
 type Author struct {
 	unAuthMethods map[string]struct{}
 }
 
-// Auth extracts the bearer token. Replace the TODO body if you use CustomAuthModule.
+// Auth extracts the bearer token. Replace the body if you use CustomAuthModule.
 func (d *Author) Auth(ctx context.Context) (context.Context, error) {
 	method, _ := grpc.Method(ctx)
 	if _, ok := d.unAuthMethods[method]; ok {
@@ -44,7 +45,7 @@ func (d *Author) AddUnAuthMethod(method string) {
 }
 
 // CustomAuthModule is an optional stub middleware for experiments only.
-// Production/templates should use:
+// It does not call ValidateToken. Production/templates should use:
 //
 //	auth "github.com/moke-game/platform/services/auth/pkg/module"
 //	auth.AuthMiddlewareModule
@@ -58,7 +59,3 @@ var CustomAuthModule = fx.Provide(
 		return
 	},
 )
-
-// AuthModule is kept as an alias so older references compile, but it is not
-// used by AllModule anymore. Prefer platform AuthMiddlewareModule.
-var AuthModule = CustomAuthModule

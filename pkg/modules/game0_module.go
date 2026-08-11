@@ -9,32 +9,40 @@ import (
 	"github.com/moke-game/game/pkg/dfx"
 )
 
-// GrpcModule starts game gRPC with platform AuthMiddlewareModule by default.
+// GrpcModule starts game gRPC only, with platform AuthMiddlewareModule.
 var GrpcModule = fx.Module("grpcService",
 	dfx.SettingsModule,
 	auth.AuthMiddlewareModule,
-	game0.ServiceModule,
+	game0.ServiceInstance,
+	game0.GrpcService,
 )
 
 // HttpModule starts game gRPC + HTTP gateway with AuthMiddlewareModule.
 var HttpModule = fx.Module("httpService",
 	dfx.SettingsModule,
 	auth.AuthMiddlewareModule,
-	game0.ServiceModule,
+	game0.ServiceInstance,
+	game0.GrpcService,
+	game0.HttpService,
 )
 
-// TcpModule starts game TCP (zinx) service.
+// TcpModule starts game TCP (zinx) only.
+// Note: zinx does not use gRPC AuthMiddleware; protect at network edge if needed.
 var TcpModule = fx.Module("tcpService",
 	dfx.SettingsModule,
-	game0.ServiceModule,
+	game0.ServiceInstance,
+	game0.TcpService,
 )
 
-// AllModule starts all game transports.
+// AllModule starts all game transports (shared Service instance).
 // Pair with platform auth.AuthMiddlewareModule (thin) or auth.AuthAllModule
 // (aggregate) in main — do not embed auth here to avoid duplicate providers.
 var AllModule = fx.Module("allService",
 	dfx.SettingsModule,
-	game0.ServiceModule,
+	game0.ServiceInstance,
+	game0.GrpcService,
+	game0.HttpService,
+	game0.TcpService,
 )
 
 // GrpcClientModule provides a game gRPC client.

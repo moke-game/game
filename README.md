@@ -14,11 +14,13 @@ which is designed to provide a basic game server framework for developers.
 | Entry | Path | Use when |
 |-------|------|----------|
 | **Aggregate** | `cmd/game0/service` | Local/dev: game + in-process platform modules (`AuthAllModule`) |
-| **Thin** | `cmd/game0/service-thin` | Prod-like split: game-only + remote platform clients (`AuthMiddlewareModule`, set `AUTH_URL`) |
+| **Thin** | `cmd/game0/service-thin` | Prod-like split: game-only + remote platform clients (`AuthMiddlewareModule`) |
 
 Public game APIs require auth by default (`AuthMiddlewareModule` / `AuthAllModule`). Do not embed `utility.WithoutAuth` on public services.
 
 Copy `.env.example` → `.env` for AUTH/TLS/CORS/NATS/Mongo/Redis knobs.
+
+**Thin `AUTH_URL`:** must point at a **remote** AuthService (default example `localhost:8082`). Do not set it to this game's `PORT` (`8081`) — thin does not host auth, so middleware would dial itself and fail.
 
 ## How to run
 
@@ -34,8 +36,9 @@ Copy `.env.example` → `.env` for AUTH/TLS/CORS/NATS/Mongo/Redis knobs.
     go run ./cmd/{game-name}/service/main.go
   ```
 
-* or thin (remote platform):
+* or thin (remote platform auth/clients must already be reachable):
   ```shell
+    # AUTH_URL=localhost:8082 (not the game PORT)
     go run ./cmd/game0/service-thin/main.go
   ```
 

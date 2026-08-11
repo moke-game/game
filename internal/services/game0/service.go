@@ -158,106 +158,48 @@ func NewService(
 	return
 }
 
-// ServiceModule provides one shared Service instance across gRPC, gateway, and TCP.
-var ServiceModule = fx.Provide(
+// ServiceInstance provides one shared *Service for transport providers below.
+var ServiceInstance = fx.Provide(
 	func(
 		l *zap.Logger,
 		dProvider ofx.DocumentStoreParams,
 		setting dfx.SettingsParams,
 		mqParams mfx.MessageQueueParams,
 		redisClient ofx.RedisParams,
-	) (grpcOut sfx.GrpcServiceResult, httpOut sfx.GatewayServiceResult, tcpOut sfx.ZinxServiceResult, err error) {
+	) (s *Service, err error) {
 		coll, err := dProvider.DriverProvider.OpenDbDriver(setting.DbName)
 		if err != nil {
-			return
+			return nil, err
 		}
-		s, err := NewService(
+		return NewService(
 			l,
 			coll,
 			mqParams.MessageQueue,
 			redisClient.Redis,
 		)
-		if err != nil {
-			return
-		}
-		grpcOut.GrpcService = s
-		httpOut.GatewayService = s
-		tcpOut.ZinxService = s
-		return
 	},
 )
 
-// Deprecated: use ServiceModule so gRPC/HTTP/TCP share one instance.
+// GrpcService registers the shared Service on the gRPC server.
 var GrpcService = fx.Provide(
-	func(
-		l *zap.Logger,
-		dProvider ofx.DocumentStoreParams,
-		setting dfx.SettingsParams,
-		mqParams mfx.MessageQueueParams,
-		redisClient ofx.RedisParams,
-	) (out sfx.GrpcServiceResult, err error) {
-		if coll, err := dProvider.DriverProvider.OpenDbDriver(setting.DbName); err != nil {
-			return out, err
-		} else if s, err := NewService(
-			l,
-			coll,
-			mqParams.MessageQueue,
-			redisClient.Redis,
-		); err != nil {
-			return out, err
-		} else {
-			out.GrpcService = s
-		}
+	func(s *Service) (out sfx.GrpcServiceResult, err error) {
+		out.GrpcService = s
 		return
 	},
 )
 
-// Deprecated: use ServiceModule.
+// HttpService registers the shared Service on the HTTP gateway.
 var HttpService = fx.Provide(
-	func(
-		l *zap.Logger,
-		dProvider ofx.DocumentStoreParams,
-		setting dfx.SettingsParams,
-		mqParams mfx.MessageQueueParams,
-		redisClient ofx.RedisParams,
-	) (out sfx.GatewayServiceResult, err error) {
-		if coll, err := dProvider.DriverProvider.OpenDbDriver(setting.DbName); err != nil {
-			return out, err
-		} else if s, err := NewService(
-			l,
-			coll,
-			mqParams.MessageQueue,
-			redisClient.Redis,
-		); err != nil {
-			return out, err
-		} else {
-			out.GatewayService = s
-		}
+	func(s *Service) (out sfx.GatewayServiceResult, err error) {
+		out.GatewayService = s
 		return
 	},
 )
 
-// Deprecated: use ServiceModule.
+// TcpService registers the shared Service on the TCP (zinx) server.
 var TcpService = fx.Provide(
-	func(
-		l *zap.Logger,
-		dProvider ofx.DocumentStoreParams,
-		setting dfx.SettingsParams,
-		mqParams mfx.MessageQueueParams,
-		redisClient ofx.RedisParams,
-	) (out sfx.ZinxServiceResult, err error) {
-		if coll, err := dProvider.DriverProvider.OpenDbDriver(setting.DbName); err != nil {
-			return out, err
-		} else if s, err := NewService(
-			l,
-			coll,
-			mqParams.MessageQueue,
-			redisClient.Redis,
-		); err != nil {
-			return out, err
-		} else {
-			out.ZinxService = s
-		}
+	func(s *Service) (out sfx.ZinxServiceResult, err error) {
+		out.ZinxService = s
 		return
 	},
 )

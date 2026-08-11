@@ -13,7 +13,7 @@ import (
 func RunGrpc(url string) {
 	sh := ishell.New()
 	slogger.Info(sh, "interactive game connect to "+url)
-	slogger.Info(sh, "flow: auth token <id> → game token <access> → game hi")
+	slogger.Info(sh, "flow: auth token → copy access → game token → game hi")
 
 	if conn, err := tools.DialInsecure(url); err != nil {
 		slogger.Die(sh, err)

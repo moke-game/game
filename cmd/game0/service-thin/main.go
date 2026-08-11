@@ -18,8 +18,10 @@ import (
 )
 
 // Thin topology: game-only process talking to remote platform over gRPC clients.
-// Set AUTH_URL (and other *_URL envs) to the remote platform endpoints.
-// AuthMiddlewareModule validates tokens via the remote AuthService.
+//
+// AUTH_URL must target a remote AuthService (see .env.example → localhost:8082).
+// Do not point AUTH_URL at this process's PORT — thin does not host AuthService.
+// AuthMiddlewareModule validates tokens via that remote AuthService.
 func main() {
 	fxmain.Main(
 		mfx.NatsModule,

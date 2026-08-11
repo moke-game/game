@@ -2,6 +2,7 @@ package game0
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"sync"
 
@@ -62,13 +63,13 @@ func (p *DemoGrpc) initSubShells() {
 	})
 	p.cmd.AddCmd(&ishell.Cmd{
 		Name:    "hi",
-		Help:    "say hi",
+		Help:    "say hi (requires game token first)",
 		Aliases: []string{"hi"},
 		Func:    p.sayHi,
 	})
 	p.cmd.AddCmd(&ishell.Cmd{
 		Name:    "watch",
-		Help:    "watch topic",
+		Help:    "watch topic (requires game token first)",
 		Aliases: []string{"w"},
 		Func:    p.watch,
 	})
@@ -78,22 +79,31 @@ func (p *DemoGrpc) setToken(c *ishell.Context) {
 	c.ShowPrompt(false)
 	defer c.ShowPrompt(true)
 	tok := slogger.ReadLine(c, "access token: ")
+	if tok == "" {
+		slogger.Warn(c, errors.New("empty token; run: auth token <id>, then paste access token here"))
+		return
+	}
 	p.SetAccessToken(tok)
 	slogger.Infof(c, "token set (%d chars)", len(tok))
 }
 
-func (p *DemoGrpc) authCtx() context.Context {
+func (p *DemoGrpc) authCtx() (context.Context, error) {
 	tok := p.accessToken()
 	if tok == "" {
-		tok = "test"
+		return nil, errors.New("no access token; run: auth token → game token <access>")
 	}
 	md := metadata.Pairs("authorization", fmt.Sprintf("%s %s", "bearer", tok))
-	return mm.MD(md).ToOutgoing(context.Background())
+	return mm.MD(md).ToOutgoing(context.Background()), nil
 }
 
 func (p *DemoGrpc) sayHi(c *ishell.Context) {
 	c.ShowPrompt(false)
 	defer c.ShowPrompt(true)
+	ctx, err := p.authCtx()
+	if err != nil {
+		slogger.Warn(c, err)
+		return
+	}
 	msg := "hello"
 	in := slogger.ReadLine(c, "message(default:hello): ")
 	if in != "" {
@@ -104,7 +114,7 @@ func (p *DemoGrpc) sayHi(c *ishell.Context) {
 	if t != "" {
 		topic = t
 	}
-	if response, err := p.client.Hi(p.authCtx(), &pb.HiRequest{
+	if response, err := p.client.Hi(ctx, &pb.HiRequest{
 		Uid:     "10000",
 		Message: msg,
 		Topic:   topic,
@@ -119,13 +129,19 @@ func (p *DemoGrpc) watch(c *ishell.Context) {
 	c.ShowPrompt(false)
 	defer c.ShowPrompt(true)
 
+	ctx, err := p.authCtx()
+	if err != nil {
+		slogger.Warn(c, err)
+		return
+	}
+
 	topic := "game"
 	t := slogger.ReadLine(c, "topic(default:game): ")
 	if t != "" {
 		topic = t
 	}
 
-	if stream, err := p.client.Watch(p.authCtx(), &pb.WatchRequest{
+	if stream, err := p.client.Watch(ctx, &pb.WatchRequest{
 		Topic: topic,
 	}); err != nil {
 		slogger.Warn(c, err)
