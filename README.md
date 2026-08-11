@@ -5,6 +5,10 @@
 This project is a game server template,
 which is designed to provide a basic game server framework for developers.
 
+New games should be scaffolded with the **moke-kit `create-game` skill**
+(see [GStones/moke-kit](https://github.com/GStones/moke-kit) `.agents/skills/create-game`),
+then evolve toward this reference layout (platform auth, aggregate vs thin).
+
 ## Architecture
 
 ![architecture](./draws/game.drawio.png)
@@ -15,6 +19,9 @@ which is designed to provide a basic game server framework for developers.
 |-------|------|----------|
 | **Aggregate** | `cmd/game0/service` | Local/dev: game + in-process platform modules (`AuthAllModule`) |
 | **Thin** | `cmd/game0/service-thin` | Prod-like split: game-only + remote platform clients (`AuthMiddlewareModule`) |
+
+**Local vs prod:** aggregate co-hosts platform services for a single-process demo.
+Prod typically runs thin game processes against remote platform (`AUTH_URL` and other `*_URL`s).
 
 Public game APIs require auth by default (`AuthMiddlewareModule` / `AuthAllModule`). Do not embed `utility.WithoutAuth` on public services.
 
