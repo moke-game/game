@@ -9,6 +9,23 @@ which is designed to provide a basic game server framework for developers.
 
 ![architecture](./draws/game.drawio.png)
 
+### Topologies
+
+| Entry | Path | Use when |
+|-------|------|----------|
+| **Aggregate** | `cmd/game0/service` | Local/dev: game + in-process platform modules (`AuthAllModule`) |
+| **Thin** | `cmd/game0/service-thin` | Prod-like split: game-only + remote platform clients (`AuthMiddlewareModule`) |
+
+Public game APIs require auth by default (`AuthMiddlewareModule` / `AuthAllModule`). Do not embed `utility.WithoutAuth` on public services.
+
+Default `AllModule` exposes **gRPC + HTTP only**. TCP/zinx is **not** covered by AuthMiddleware (uid can be spoofed); enable only via `TcpModule` / `AllWithTCPModule` on trusted networks.
+
+Copy `.env.example` → `.env` for AUTH/TLS/CORS/NATS/Mongo/Redis knobs.
+
+**`AUTH_URL`:**
+- Aggregate: keep aligned with `PORT` (`.env.example` default `localhost:8081`).
+- Thin: override to a **remote** AuthService (e.g. `localhost:8082`). Do not use this game's `PORT` — thin does not host auth.
+
 ## How to run
 
 * deploy infrastructure:
@@ -17,10 +34,16 @@ which is designed to provide a basic game server framework for developers.
    docker compose -f ./deployment/docker-compose/infrastructure.yaml up -d
   ```
 
-* run service:
+* run service (aggregate):
   ```shell
   # fix the game-name to your game name 
     go run ./cmd/{game-name}/service/main.go
+  ```
+
+* or thin (remote platform auth/clients must already be reachable):
+  ```shell
+    # override AUTH_URL away from PORT, e.g. AUTH_URL=localhost:8082
+    go run ./cmd/game0/service-thin/main.go
   ```
 
 ## How to build docker image?
@@ -43,8 +66,11 @@ docker buildx build -t <your_register_url>:latest --build-arg APP_NAME=<your_ser
    ```
 * run your interactive client:
     ```shell
-     # help
-     ./{game-name}.exe shell
+     # aggregate (auth on same host)
+     ./{game-name} grpc --host localhost:8081
+     # thin (auth on remote AUTH_URL)
+     ./{game-name} grpc --host localhost:8081 --auth-host localhost:8082
+     # flow: auth token → game token <access> → game hi
     ```
   tips: http client use Postman to connect `localhost:8081`.
 
@@ -53,8 +79,10 @@ docker buildx build -t <your_register_url>:latest --build-arg APP_NAME=<your_ser
 * install [k6](https://grafana.com/docs/k6/latest/get-started/installation/)
 * run k6 load test
    ``` shell
-    # fix the game-name to your game name
-    k6 run ./tests/{game-name}/{game-name}.js
+    # aggregate (auth on same host as game)
+    k6 run ./tests/game0/game0.js
+    # thin: Authenticate against remote auth
+    AUTH_HOST=127.0.0.1:8082 SERVER_HOST=127.0.0.1:8081 k6 run ./tests/game0/game0.js
   ```
 
 ## Proto file Manage

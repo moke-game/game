@@ -2,22 +2,53 @@ package game0
 
 import (
 	"net"
+	"os"
 
 	"github.com/abiosoft/ishell"
-
 	"github.com/gstones/moke-kit/logging/slogger"
 	"github.com/gstones/moke-kit/server/tools"
+
+	authclient "github.com/moke-game/platform/services/auth/client"
 )
 
-func RunGrpc(url string) {
-	sh := ishell.New()
-	slogger.Info(sh, "interactive game connect to "+url)
+// RunGrpcOptions configures the interactive gRPC shell.
+type RunGrpcOptions struct {
+	GameURL string
+	AuthURL string // if empty, falls back to GameURL (aggregate) or AUTH_URL env
+}
 
-	if conn, err := tools.DialInsecure(url); err != nil {
+// RunGrpc starts the interactive gRPC shell against gameURL (auth defaults to same host).
+func RunGrpc(url string) {
+	RunGrpcWithOptions(RunGrpcOptions{GameURL: url})
+}
+
+// RunGrpcWithOptions starts the interactive gRPC shell with separate game/auth URLs.
+func RunGrpcWithOptions(opts RunGrpcOptions) {
+	sh := ishell.New()
+	gameURL := opts.GameURL
+	authURL := opts.AuthURL
+	if authURL == "" {
+		authURL = os.Getenv("AUTH_URL")
+	}
+	if authURL == "" {
+		authURL = gameURL
+	}
+
+	slogger.Info(sh, "interactive game connect to "+gameURL)
+	slogger.Info(sh, "auth client connect to "+authURL)
+	slogger.Info(sh, "flow: auth token → copy access → game token → game hi")
+
+	if conn, err := tools.DialInsecure(gameURL); err != nil {
 		slogger.Die(sh, err)
 	} else {
 		gameGrpc := NewDemoGrpcCli(conn)
 		sh.AddCmd(gameGrpc.GetCmd())
+
+		if authCmd, err := authclient.CreateAuthClient(authURL); err != nil {
+			slogger.Warn(sh, err)
+		} else {
+			sh.AddCmd(authCmd)
+		}
 
 		sh.Interrupt(func(c *ishell.Context, count int, input string) {
 			if count >= 2 {

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package game.pb;
-option go_package = "game/api;pb";
+package game0.pb;
+option go_package = "game0/api;pb";
 
-service DemoService {
+service Game0Service {
   rpc Hi (HiRequest) returns (HiResponse) {};
   rpc Watch(WatchRequest) returns (stream WatchResponse) {};
 }
@@ -11,6 +11,7 @@ service DemoService {
 message HiRequest {
   string uid = 1;
   string message = 2;
+  string topic = 3;
 }
 
 message HiResponse {

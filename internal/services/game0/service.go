@@ -14,6 +14,8 @@ import (
 	"github.com/redis/go-redis/v9"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
 	pb2 "open-match.dev/open-match/pkg/pb"
 
@@ -23,20 +25,29 @@ import (
 	"github.com/moke-game/game/pkg/dfx"
 )
 
+// Service is the game0 public API. Auth is enforced by platform AuthMiddlewareModule
+// (do not embed utility.WithoutAuth on public services).
 type Service struct {
-	utility.WithoutAuth
 	logger      *zap.Logger
 	gameHandler *domain.Game
 }
 
-func (s *Service) Run(request *pb2.RunRequest, server pb2.MatchFunction_RunServer) error {
-	s.logger.Info("Run", zap.Any("request", request))
+// matchFunctionService serves Open Match MatchFunction RPCs without player auth.
+// Registered separately so AuthFuncOverride applies only to MatchFunction methods,
+// not to Game0Service (which must remain authenticated).
+type matchFunctionService struct {
+	utility.WithoutAuth
+	logger *zap.Logger
+}
 
+func (m *matchFunctionService) Run(request *pb2.RunRequest, server pb2.MatchFunction_RunServer) error {
+	m.logger.Info("MatchFunction.Run", zap.Any("request", request))
 	return nil
 }
 
 // ---------------- grpc ----------------
 
+// Watch streams topic messages for an authenticated caller.
 func (s *Service) Watch(request *pb.WatchRequest, server pb.Game0Service_WatchServer) error {
 	topic := request.GetTopic()
 	s.logger.Info("Watch", zap.String("topic", topic))
@@ -58,11 +69,17 @@ func (s *Service) Watch(request *pb.WatchRequest, server pb.Game0Service_WatchSe
 	return nil
 }
 
-func (s *Service) Hi(_ context.Context, request *pb.HiRequest) (*pb.HiResponse, error) {
+// Hi handles the authenticated hello RPC. UID comes from auth middleware context,
+// not from the request payload (avoids uid spoofing).
+func (s *Service) Hi(ctx context.Context, request *pb.HiRequest) (*pb.HiResponse, error) {
+	uid, ok := ctx.Value(utility.UIDContextKey).(string)
+	if !ok || uid == "" {
+		return nil, status.Error(codes.Unauthenticated, "missing uid in context")
+	}
 	message := request.GetMessage()
-	s.logger.Info("Hi", zap.String("message", message))
+	s.logger.Info("Hi", zap.String("uid", uid), zap.String("message", message))
 
-	if err := s.gameHandler.Hi(request.GetUid(), request.GetTopic(), request.GetMessage()); err != nil {
+	if err := s.gameHandler.Hi(uid, request.GetTopic(), request.GetMessage()); err != nil {
 		return nil, err
 	}
 	return &pb.HiResponse{
@@ -70,9 +87,11 @@ func (s *Service) Hi(_ context.Context, request *pb.HiRequest) (*pb.HiResponse, 
 	}, nil
 
 }
+
 func (s *Service) RegisterWithGrpcServer(server siface.IGrpcServer) error {
 	pb.RegisterGame0ServiceServer(server.GrpcServer(), s)
-	pb2.RegisterMatchFunctionServer(server.GrpcServer(), s)
+	// Open Match Backend calls MatchFunction without a player bearer token.
+	pb2.RegisterMatchFunctionServer(server.GrpcServer(), &matchFunctionService{logger: s.logger})
 	return nil
 }
 
@@ -93,6 +112,8 @@ func (s *Service) PreHandle(_ ziface.IRequest) {
 
 }
 
+// Handle is the zinx TCP entrypoint. It is NOT covered by gRPC AuthMiddleware;
+// only enable via TcpModule / AllWithTCPModule on trusted networks.
 func (s *Service) Handle(request ziface.IRequest) {
 	switch request.GetMsgID() {
 	case 1:
@@ -100,6 +121,8 @@ func (s *Service) Handle(request ziface.IRequest) {
 		if err := proto.Unmarshal(request.GetData(), req); err != nil {
 			s.logger.Error("unmarshal request data error", zap.Error(err))
 		} else {
+			s.logger.Warn("tcp Hi has no auth; uid taken from payload (demo only)",
+				zap.String("uid", req.GetUid()))
 			if err := s.gameHandler.Hi(req.GetUid(), req.GetTopic(), req.GetMessage()); err != nil {
 				s.logger.Error("Hi error", zap.Error(err))
 			}
@@ -158,74 +181,48 @@ func NewService(
 	return
 }
 
+// ServiceInstance provides one shared *Service for transport providers below.
+var ServiceInstance = fx.Provide(
+	func(
+		l *zap.Logger,
+		dProvider ofx.DocumentStoreParams,
+		setting dfx.SettingsParams,
+		mqParams mfx.MessageQueueParams,
+		redisClient ofx.RedisParams,
+	) (s *Service, err error) {
+		coll, err := dProvider.DriverProvider.OpenDbDriver(setting.DbName)
+		if err != nil {
+			return nil, err
+		}
+		return NewService(
+			l,
+			coll,
+			mqParams.MessageQueue,
+			redisClient.Redis,
+		)
+	},
+)
+
+// GrpcService registers the shared Service on the gRPC server.
 var GrpcService = fx.Provide(
-	func(
-		l *zap.Logger,
-		dProvider ofx.DocumentStoreParams,
-		setting dfx.SettingsParams,
-		mqParams mfx.MessageQueueParams,
-		redisClient ofx.RedisParams,
-	) (out sfx.GrpcServiceResult, err error) {
-		if coll, err := dProvider.DriverProvider.OpenDbDriver(setting.DbName); err != nil {
-			return out, err
-		} else if s, err := NewService(
-			l,
-			coll,
-			mqParams.MessageQueue,
-			redisClient.Redis,
-		); err != nil {
-			return out, err
-		} else {
-			out.GrpcService = s
-		}
+	func(s *Service) (out sfx.GrpcServiceResult, err error) {
+		out.GrpcService = s
 		return
 	},
 )
 
+// HttpService registers the shared Service on the HTTP gateway.
 var HttpService = fx.Provide(
-	func(
-		l *zap.Logger,
-		dProvider ofx.DocumentStoreParams,
-		setting dfx.SettingsParams,
-		mqParams mfx.MessageQueueParams,
-		redisClient ofx.RedisParams,
-	) (out sfx.GatewayServiceResult, err error) {
-		if coll, err := dProvider.DriverProvider.OpenDbDriver(setting.DbName); err != nil {
-			return out, err
-		} else if s, err := NewService(
-			l,
-			coll,
-			mqParams.MessageQueue,
-			redisClient.Redis,
-		); err != nil {
-			return out, err
-		} else {
-			out.GatewayService = s
-		}
+	func(s *Service) (out sfx.GatewayServiceResult, err error) {
+		out.GatewayService = s
 		return
 	},
 )
 
+// TcpService registers the shared Service on the TCP (zinx) server.
 var TcpService = fx.Provide(
-	func(
-		l *zap.Logger,
-		dProvider ofx.DocumentStoreParams,
-		setting dfx.SettingsParams,
-		mqParams mfx.MessageQueueParams,
-		redisClient ofx.RedisParams,
-	) (out sfx.ZinxServiceResult, err error) {
-		if coll, err := dProvider.DriverProvider.OpenDbDriver(setting.DbName); err != nil {
-			return out, err
-		} else if s, err := NewService(
-			l,
-			coll,
-			mqParams.MessageQueue,
-			redisClient.Redis,
-		); err != nil {
-			return out, err
-		} else {
-			out.ZinxService = s
-		}
+	func(s *Service) (out sfx.ZinxServiceResult, err error) {
+		out.ZinxService = s
 		return
 	},
 )

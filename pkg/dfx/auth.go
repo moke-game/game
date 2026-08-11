@@ -11,12 +11,17 @@ import (
 	"google.golang.org/grpc"
 )
 
-// Author is a game auth service
+// Author is an optional custom auth middleware example.
+//
+// Default wiring uses platform AuthMiddlewareModule (ValidateToken) via
+// cmd mains — do not enable CustomAuthModule unless you intentionally
+// replace that middleware (both export name:"AuthMiddleware").
+// CustomAuthModule does NOT validate tokens; it only extracts the bearer.
 type Author struct {
 	unAuthMethods map[string]struct{}
 }
 
-// Auth is a game auth method
+// Auth extracts the bearer token. Replace the body if you use CustomAuthModule.
 func (d *Author) Auth(ctx context.Context) (context.Context, error) {
 	method, _ := grpc.Method(ctx)
 	if _, ok := d.unAuthMethods[method]; ok {
@@ -26,15 +31,12 @@ func (d *Author) Auth(ctx context.Context) (context.Context, error) {
 	if err != nil {
 		return ctx, err
 	}
-	// TODO check token with your custom auth middleware
-	//CheckToken(token)
+	// Custom deployments: validate token here (or prefer platform AuthMiddlewareModule).
 	_ = token
 	return ctx, nil
 }
 
-//AddUnAuthMethod(method string)
-
-// AddUnAuthMethod add you want to disable auth method here
+// AddUnAuthMethod marks a full method name as unauthenticated.
 func (d *Author) AddUnAuthMethod(method string) {
 	if d.unAuthMethods == nil {
 		d.unAuthMethods = make(map[string]struct{})
@@ -42,17 +44,12 @@ func (d *Author) AddUnAuthMethod(method string) {
 	d.unAuthMethods[method] = struct{}{}
 }
 
-// AuthModule is a game auth module
-// you can implement your own auth service or auth function
-// Auth will check every rpc/http request,
-// if you want to disable it for a service, add `utility.WithoutAuth` in struct of your service
+// CustomAuthModule is an optional stub middleware for experiments only.
+// It does not call ValidateToken. Production/templates should use:
 //
-//	type service struct {
-//		utility.WithoutAuth
-//	}
-//
-// or disable it for a method, add the method name by `AddUnAuthMethod`
-var AuthModule = fx.Provide(
+//	auth "github.com/moke-game/platform/services/auth/pkg/module"
+//	auth.AuthMiddlewareModule
+var CustomAuthModule = fx.Provide(
 	func(
 		l *zap.Logger,
 	) (out sfx.AuthMiddlewareResult, err error) {
