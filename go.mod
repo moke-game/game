@@ -8,7 +8,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.28.0
 	github.com/gstones/moke-kit v1.0.5-0.20260811094419-bcdfe55515cd
 	github.com/gstones/zinx v1.2.7-0.20240617071724-88bd884d8d08
-	github.com/moke-game/platform v0.0.0-20260811134209-1fe973532f5a
+	github.com/moke-game/platform v0.0.0-20260811135921-fbeffe0b07e2
 	github.com/redis/go-redis/v9 v9.7.3
 	github.com/spf13/cobra v1.9.1
 	go.uber.org/fx v1.23.0
@@ -56,7 +56,7 @@ require (
 	github.com/go-jose/go-jose/v4 v4.1.4 // indirect
 	github.com/go-logr/logr v1.4.4 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
-	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
+	github.com/golang-jwt/jwt/v5 v5.3.1 // indirect
 	github.com/golang/snappy v1.0.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/websocket v1.5.3 // indirect
