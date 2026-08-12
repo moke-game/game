@@ -8,7 +8,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.28.0
 	github.com/gstones/moke-kit v1.0.5-0.20260812022140-acb9f313d7fd
 	github.com/gstones/zinx v1.2.7-0.20240617071724-88bd884d8d08
-	github.com/moke-game/platform v0.0.0-20260812031638-1fe842e07c0c
+	github.com/moke-game/platform v0.0.0-20260812034909-98db477596bc
 	github.com/redis/go-redis/v9 v9.7.3
 	github.com/spf13/cobra v1.9.1
 	go.uber.org/fx v1.23.0
@@ -75,7 +75,7 @@ require (
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kelseyhightower/envconfig v1.4.0 // indirect
-	github.com/klauspost/compress v1.18.0 // indirect
+	github.com/klauspost/compress v1.18.7 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.10 // indirect
 	github.com/klauspost/reedsolomon v1.12.4 // indirect
 	github.com/lithammer/shortuuid/v3 v3.0.7 // indirect
