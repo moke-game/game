@@ -3,24 +3,22 @@ package modules
 import (
 	"go.uber.org/fx"
 
-	auth "github.com/moke-game/platform/services/auth/pkg/module"
-
 	"github.com/moke-game/game/internal/services/game0"
 	"github.com/moke-game/game/pkg/dfx"
 )
 
-// GrpcModule starts game gRPC only, with platform AuthMiddlewareModule.
+// GrpcModule starts game gRPC only.
+// Auth is not included — pair auth.AuthMiddlewareModule or auth.AuthAllModule in main.
 var GrpcModule = fx.Module("grpcService",
 	dfx.SettingsModule,
-	auth.AuthMiddlewareModule,
 	game0.ServiceInstance,
 	game0.GrpcService,
 )
 
-// HttpModule starts game gRPC + HTTP gateway with AuthMiddlewareModule.
+// HttpModule starts game gRPC + HTTP gateway.
+// Auth is not included — pair auth in main the same way as GrpcModule / AllModule.
 var HttpModule = fx.Module("httpService",
 	dfx.SettingsModule,
-	auth.AuthMiddlewareModule,
 	game0.ServiceInstance,
 	game0.GrpcService,
 	game0.HttpService,

@@ -2,7 +2,7 @@
 
 ## Auth topology
 - Public game APIs must not embed `utility.WithoutAuth`.
-- `AllModule` has no auth provider — pair `AuthAllModule` (aggregate) or `AuthMiddlewareModule` (thin) in `main`, never both with a stub.
+- `GrpcModule` / `HttpModule` / `AllModule` have no auth provider — pair `AuthAllModule` (aggregate) or `AuthMiddlewareModule` (thin) in `main`, never both with a stub.
 - Flag handlers that trust `request.uid` instead of `UIDContextKey`.
 - MatchFunction / Open Match callbacks may be WithoutAuth — flag if that type is reused for player-facing RPCs.
 
