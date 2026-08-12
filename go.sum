@@ -139,8 +139,8 @@ github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.3.1 h1:KcFzXwzM/kGhIRHvc8jdix
 github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.3.1/go.mod h1:qOchhhIlmRcqk/O9uCo/puJlyo07YINaIqdZfZG3Jkc=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.28.0 h1:HWRh5R2+9EifMyIHV7ZV+MIZqgz+PMpZ14Jynv3O2Zs=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.28.0/go.mod h1:JfhWUomR1baixubs02l85lZYYOm7LV6om4ceouMv45c=
-github.com/gstones/moke-kit v1.0.5-0.20260811094419-bcdfe55515cd h1:Wjoql7CGC37RqOd7cuvWaIfY3+nLQggihqoZVRLnju0=
-github.com/gstones/moke-kit v1.0.5-0.20260811094419-bcdfe55515cd/go.mod h1:v/VZdvZ2wSit8B4plZBJ8nzBJFlZNQ1X6vI0jdfQJFU=
+github.com/gstones/moke-kit v1.0.5-0.20260812022140-acb9f313d7fd h1:0lklTFcnbZt771O4WEanbdyqomi4b6fWMt/A04dEYMo=
+github.com/gstones/moke-kit v1.0.5-0.20260812022140-acb9f313d7fd/go.mod h1:v/VZdvZ2wSit8B4plZBJ8nzBJFlZNQ1X6vI0jdfQJFU=
 github.com/gstones/zinx v1.2.7-0.20240617071724-88bd884d8d08 h1:YjrnGjuIRVs2t0MjMs4DFQox9GH/4jlOELMRVD5d+xg=
 github.com/gstones/zinx v1.2.7-0.20240617071724-88bd884d8d08/go.mod h1:tgm/iZBMyKKZj4totfeu4+PMzSLb4JH8pnGdcG3ql+8=
 github.com/hashicorp/errwrap v1.0.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=
@@ -209,8 +209,8 @@ github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd h1:TRLaZ9cD/w
 github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/reflect2 v1.0.2 h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9Gz0M=
 github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
-github.com/moke-game/platform v0.0.0-20260812022153-40241b2322e3 h1:CN0hRDvUC0iHyqGDH7mflIxLApI2/Z50N5cyEz7V8rw=
-github.com/moke-game/platform v0.0.0-20260812022153-40241b2322e3/go.mod h1:ckqWe5JgHWISyEc90r/+FM9VKGlQKitluSmo6Wv3f1M=
+github.com/moke-game/platform v0.0.0-20260812024114-1753fc966873 h1:itzk/K/3EmzBuVat1isSU/RsoLQ4Ns1IoeyblUoxo88=
+github.com/moke-game/platform v0.0.0-20260812024114-1753fc966873/go.mod h1:3AxGi1ycrKQwLE13WX8ADsQlMrTO3gyf60hs+pZliis=
 github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe/go.mod h1:wL8QJuTMNUDYhXwkmfOly8iTdp5TEcJFWZD2D7SIkUc=
 github.com/montanaflynn/stats v0.7.1 h1:etflOAAHORrCC44V+aR6Ftzort912ZU+YLiSTuV8eaE=
 github.com/montanaflynn/stats v0.7.1/go.mod h1:etXPPgVO6n31NxCd9KQUMvCM+ve0ruNzt6R8Bnaayow=
