@@ -7,7 +7,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      BUF_TOKEN: ${{ secrets.BUF_TOKEN }}
+      # Boolean only — do not set BUF_TOKEN here; buf-breaking-action treats it as a Buf API token.
+      HAS_BUF_TOKEN: ${{ secrets.BUF_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -20,9 +21,9 @@ jobs:
           against: "https://github.com/${{ github.repository }}.git#branch=main,ref=HEAD~1"
 
       # Skip when BUF_TOKEN is unset; fail hard when present but invalid.
-      # secrets cannot be used in if:; map the token to env first.
+      # secrets cannot be used in if:; gate on the boolean env instead.
       - name: Push module to BSR
-        if: ${{ env.BUF_TOKEN != '' }}
+        if: ${{ env.HAS_BUF_TOKEN == 'true' }}
         uses: bufbuild/buf-push-action@v1
         with:
           buf_token: ${{ secrets.BUF_TOKEN }}
