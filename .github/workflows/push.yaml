@@ -27,3 +27,5 @@ jobs:
         uses: bufbuild/buf-push-action@v1
         with:
           buf_token: ${{ secrets.BUF_TOKEN }}
+          # Match buf.build/moke-game/platform (public). Creates the repo on first push if missing.
+          create_visibility: public
