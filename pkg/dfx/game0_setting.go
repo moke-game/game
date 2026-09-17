@@ -1,12 +1,11 @@
 package dfx
 
 import (
-	"go.uber.org/fx"
-
 	"github.com/gstones/moke-kit/utility"
+	"go.uber.org/fx"
 )
 
-// SettingsParams  you can customize it as your need
+// SettingsParams is injected game config.
 type SettingsParams struct {
 	fx.In
 
@@ -14,6 +13,7 @@ type SettingsParams struct {
 	DbName  string `name:"DbName"`
 }
 
+// SettingsResult is loaded from GAME_URL / DB_NAME.
 type SettingsResult struct {
 	fx.Out
 
@@ -21,15 +21,10 @@ type SettingsResult struct {
 	DbName  string `name:"DbName" envconfig:"DB_NAME" default:"game"`
 }
 
-func (g *SettingsResult) LoadFromEnv() (err error) {
-	err = utility.Load(g)
-	return
+// LoadFromEnv fills settings from the process environment.
+func (g *SettingsResult) LoadFromEnv() error {
+	return utility.Load(g)
 }
 
-// SettingsModule  config your app settings
-var SettingsModule = fx.Provide(
-	func() (out SettingsResult, err error) {
-		err = out.LoadFromEnv()
-		return
-	},
-)
+// SettingsModule provides game settings from the environment.
+var SettingsModule = ProvideFromEnv[SettingsResult]()

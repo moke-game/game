@@ -25,7 +25,7 @@ type Author struct {
 func (d *Author) Auth(ctx context.Context) (context.Context, error) {
 	method, _ := grpc.Method(ctx)
 	if _, ok := d.unAuthMethods[method]; ok {
-		return context.WithValue(ctx, utility.WithOutTag, true), nil
+		return context.WithValue(ctx, utility.WithoutTag, true), nil
 	}
 	token, err := auth.AuthFromMD(ctx, string(utility.TokenContextKey))
 	if err != nil {
@@ -50,9 +50,7 @@ func (d *Author) AddUnAuthMethod(method string) {
 //	auth "github.com/moke-game/platform/services/auth/pkg/module"
 //	auth.AuthMiddlewareModule
 var CustomAuthModule = fx.Provide(
-	func(
-		l *zap.Logger,
-	) (out sfx.AuthMiddlewareResult, err error) {
+	func(_ *zap.Logger) (out sfx.AuthMiddlewareResult, err error) {
 		out.AuthMiddleware = &Author{
 			unAuthMethods: make(map[string]struct{}),
 		}

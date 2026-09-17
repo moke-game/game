@@ -15,13 +15,31 @@ then evolve toward this reference layout (platform auth, aggregate vs thin).
 
 ### Topologies
 
-| Entry | Path | Use when |
-|-------|------|----------|
-| **Aggregate** | `cmd/game0/service` | Local/dev: game + in-process platform modules (`AuthAllModule`) |
-| **Thin** | `cmd/game0/service-thin` | Prod-like split: game-only + remote platform clients (`AuthMiddlewareModule`) |
+| Entry | Path | Module | Use when |
+|-------|------|--------|----------|
+| **Aggregate** | `cmd/game0/service` | `modules.Aggregate` | Local/dev: game + in-process platform (`AuthAllModule`) |
+| **Thin** | `cmd/game0/service-thin` | `modules.Thin` | Prod-like: game-only + remote platform clients (`AuthMiddlewareModule`) |
 
 **Local vs prod:** aggregate co-hosts platform services for a single-process demo.
 Prod typically runs thin game processes against remote platform (`AUTH_URL` and other `*_URL`s).
+
+### Assemble (LEGO)
+
+`fxmain.Main(...)` already includes process settings, logging, gRPC/gateway binding, Mongo, Redis client, and the MQ router. Add only the extra bricks this game needs:
+
+| Need | Module | Where |
+|------|--------|-------|
+| `nats://` + `local://` + Redis `ICache` | `modules.Infra` | both topologies (Watch/Hi use both MQ backends) |
+| Game gRPC + HTTP | `modules.AllModule` | both (TCP is opt-in: `AllWithTCPModule`) |
+| In-process platform + AuthService | `modules.Platform` | aggregate |
+| Remote platform clients + JWT middleware | `modules.PlatformClients` | thin |
+
+```go
+fxmain.Main(modules.Aggregate) // Infra + AllModule + Platform
+fxmain.Main(modules.Thin)      // Infra + AllModule + PlatformClients
+```
+
+Swap a brick instead of rewriting `main`: e.g. `fxmain.Main(modules.Infra, modules.GrpcModule, modules.PlatformClients)`.
 
 Public game APIs require auth by default (`AuthMiddlewareModule` / `AuthAllModule`). Do not embed `utility.WithoutAuth` on public services.
 
