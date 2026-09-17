@@ -4,6 +4,7 @@ go 1.27.0
 
 require (
 	github.com/abiosoft/ishell v2.0.0+incompatible
+	github.com/alicebob/miniredis/v2 v2.38.0
 	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.3.1
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.28.0
 	github.com/gstones/moke-kit v1.0.5-0.20260917090450-382af69044bc
@@ -116,6 +117,7 @@ require (
 	github.com/xdg-go/stringprep v1.0.4 // indirect
 	github.com/xtaci/kcp-go v5.4.20+incompatible // indirect
 	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
+	github.com/yuin/gopher-lua v1.1.1 // indirect
 	go.mongodb.org/mongo-driver v1.17.7 // indirect
 	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.70.0 // indirect
