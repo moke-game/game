@@ -7,19 +7,23 @@ import (
 	"github.com/moke-game/game/pkg/dfx"
 )
 
-// GrpcModule starts game gRPC only.
-// Auth is not included — pair auth.AuthMiddlewareModule or auth.AuthAllModule in main.
-var GrpcModule = fx.Module("grpcService",
+// gameCore is the shared game instance + settings. Transport modules add
+// gRPC / HTTP / TCP on top. Auth is never included here — pair it in main
+// via Platform (aggregate) or PlatformClients (thin).
+var gameCore = fx.Options(
 	dfx.SettingsModule,
 	game0.ServiceInstance,
+)
+
+// GrpcModule starts game gRPC only.
+var GrpcModule = fx.Module("grpcService",
+	gameCore,
 	game0.GrpcService,
 )
 
 // HttpModule starts game gRPC + HTTP gateway.
-// Auth is not included — pair auth in main the same way as GrpcModule / AllModule.
 var HttpModule = fx.Module("httpService",
-	dfx.SettingsModule,
-	game0.ServiceInstance,
+	gameCore,
 	game0.GrpcService,
 	game0.HttpService,
 )
@@ -29,18 +33,14 @@ var HttpModule = fx.Module("httpService",
 // WARNING: zinx does not use gRPC AuthMiddleware. Callers can spoof uid.
 // Opt-in for local experiments only; keep off the public network.
 var TcpModule = fx.Module("tcpService",
-	dfx.SettingsModule,
-	game0.ServiceInstance,
+	gameCore,
 	game0.TcpService,
 )
 
-// AllModule starts authenticated game transports (gRPC + HTTP gateway).
-// TCP is intentionally omitted — use TcpModule / AllWithTCPModule only for
-// trusted local demos. Pair with auth.AuthMiddlewareModule (thin) or
-// auth.AuthAllModule (aggregate) in main.
+// AllModule starts game gRPC + HTTP gateway (TCP omitted by default).
+// Pair with Platform (AuthAllModule) or PlatformClients (AuthMiddlewareModule).
 var AllModule = fx.Module("allService",
-	dfx.SettingsModule,
-	game0.ServiceInstance,
+	gameCore,
 	game0.GrpcService,
 	game0.HttpService,
 )
@@ -48,8 +48,7 @@ var AllModule = fx.Module("allService",
 // AllWithTCPModule is AllModule plus unauthenticated TCP (zinx).
 // Do not use on public networks.
 var AllWithTCPModule = fx.Module("allServiceWithTcp",
-	dfx.SettingsModule,
-	game0.ServiceInstance,
+	gameCore,
 	game0.GrpcService,
 	game0.HttpService,
 	game0.TcpService,

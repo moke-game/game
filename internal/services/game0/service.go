@@ -203,26 +203,24 @@ var ServiceInstance = fx.Provide(
 	},
 )
 
-// GrpcService registers the shared Service on the gRPC server.
-var GrpcService = fx.Provide(
-	func(s *Service) (out sfx.GrpcServiceResult, err error) {
-		out.GrpcService = s
+func bindTransport[T any](set func(*T, *Service)) fx.Option {
+	return fx.Provide(func(s *Service) (out T) {
+		set(&out, s)
 		return
-	},
-)
+	})
+}
+
+// GrpcService registers the shared Service on the gRPC server.
+var GrpcService = bindTransport(func(out *sfx.GrpcServiceResult, s *Service) {
+	out.GrpcService = s
+})
 
 // HttpService registers the shared Service on the HTTP gateway.
-var HttpService = fx.Provide(
-	func(s *Service) (out sfx.GatewayServiceResult, err error) {
-		out.GatewayService = s
-		return
-	},
-)
+var HttpService = bindTransport(func(out *sfx.GatewayServiceResult, s *Service) {
+	out.GatewayService = s
+})
 
 // TcpService registers the shared Service on the TCP (zinx) server.
-var TcpService = fx.Provide(
-	func(s *Service) (out sfx.ZinxServiceResult, err error) {
-		out.ZinxService = s
-		return
-	},
-)
+var TcpService = bindTransport(func(out *sfx.ZinxServiceResult, s *Service) {
+	out.ZinxService = s
+})
