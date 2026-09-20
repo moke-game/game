@@ -51,22 +51,9 @@ func (m *matchFunctionService) Run(request *pb2.RunRequest, server pb2.MatchFunc
 func (s *Service) Watch(request *pb.WatchRequest, server pb.Game0Service_WatchServer) error {
 	topic := request.GetTopic()
 	s.logger.Info("Watch", zap.String("topic", topic))
-
-	if err := s.gameHandler.Watch(
-		server.Context(),
-		topic,
-		func(message string) error {
-			if err := server.Send(&pb.WatchResponse{
-				Message: message,
-			}); err != nil {
-				return err
-			}
-			return nil
-		}); err != nil {
-		return err
-	}
-
-	return nil
+	return s.gameHandler.Watch(server.Context(), topic, func(message string) error {
+		return server.Send(&pb.WatchResponse{Message: message})
+	})
 }
 
 // Hi handles the authenticated hello RPC. UID comes from auth middleware context,

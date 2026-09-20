@@ -7,13 +7,13 @@ import (
 	"go.uber.org/fx"
 )
 
-func TestProvideFromEnvLoads(t *testing.T) {
+func TestSettingsModuleLoads(t *testing.T) {
 	t.Setenv("GAME_URL", "example:9")
 	t.Setenv("DB_NAME", "testdb")
 
 	var got SettingsParams
 	app := fx.New(
-		ProvideFromEnv[SettingsResult](),
+		SettingsModule,
 		fx.NopLogger,
 		fx.Populate(&got),
 	)

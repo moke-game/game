@@ -11,12 +11,11 @@ import (
 	"google.golang.org/grpc"
 )
 
-// Author is an optional custom auth middleware example.
-//
-// Default wiring uses platform AuthMiddlewareModule (ValidateToken) via
-// cmd mains — do not enable CustomAuthModule unless you intentionally
-// replace that middleware (both export name:"AuthMiddleware").
-// CustomAuthModule does NOT validate tokens; it only extracts the bearer.
+// Author is a stub middleware that extracts a bearer token and does not
+// validate it. Production wiring uses platform AuthMiddlewareModule
+// (ValidateToken) via Platform / PlatformClients — do not enable
+// CustomAuthModule unless you intentionally replace that provider
+// (both export name:"AuthMiddleware").
 type Author struct {
 	unAuthMethods map[string]struct{}
 }
@@ -31,7 +30,6 @@ func (d *Author) Auth(ctx context.Context) (context.Context, error) {
 	if err != nil {
 		return ctx, err
 	}
-	// Custom deployments: validate token here (or prefer platform AuthMiddlewareModule).
 	_ = token
 	return ctx, nil
 }
@@ -44,11 +42,8 @@ func (d *Author) AddUnAuthMethod(method string) {
 	d.unAuthMethods[method] = struct{}{}
 }
 
-// CustomAuthModule is an optional stub middleware for experiments only.
-// It does not call ValidateToken. Production/templates should use:
-//
-//	auth "github.com/moke-game/platform/services/auth/pkg/module"
-//	auth.AuthMiddlewareModule
+// CustomAuthModule is an optional stub for tests and local experiments.
+// It does not call ValidateToken. Templates should use Platform or PlatformClients.
 var CustomAuthModule = fx.Provide(
 	func(_ *zap.Logger) (out sfx.AuthMiddlewareResult, err error) {
 		out.AuthMiddleware = &Author{
