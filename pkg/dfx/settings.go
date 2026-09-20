@@ -1,8 +1,9 @@
 package dfx
 
 import (
-	"github.com/gstones/moke-kit/utility"
 	"go.uber.org/fx"
+
+	"github.com/moke-game/platform/pkg/platformfx"
 )
 
 // SettingsParams is injected game config.
@@ -21,10 +22,5 @@ type SettingsResult struct {
 	DbName  string `name:"DbName" envconfig:"DB_NAME" default:"game"`
 }
 
-// LoadFromEnv fills settings from the process environment.
-func (g *SettingsResult) LoadFromEnv() error {
-	return utility.Load(g)
-}
-
 // SettingsModule provides game settings from the environment.
-var SettingsModule = ProvideFromEnv[SettingsResult]()
+var SettingsModule = platformfx.ProvideFromEnv[SettingsResult]()

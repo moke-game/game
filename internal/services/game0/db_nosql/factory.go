@@ -23,25 +23,29 @@ func OpenDatabase(l *zap.Logger, coll diface.ICollection) Database {
 }
 
 func (db *Database) LoadOrCreateDemo(id string) (*game0.Dao, error) {
-	if dm, err := game0.NewDemoModel(id, db.coll); err != nil {
+	dm, err := game0.NewDemoModel(id, db.coll)
+	if err != nil {
 		return nil, err
-	} else if err = dm.Load(); errors.Is(err, nerrors.ErrNotFound) {
-		if dm, err = game0.NewDemoModel(id, db.coll); err != nil {
-			return nil, err
-		} else if err := dm.InitDefault(); err != nil {
-			return nil, err
-		} else if err = dm.Create(); err != nil {
-			if err = dm.Load(); err != nil {
-				return nil, err
-			} else {
-				return dm, nil
-			}
-		} else {
-			return dm, nil
-		}
-	} else if err != nil {
-		return nil, err
-	} else {
+	}
+	if err = dm.Load(); err == nil {
 		return dm, nil
 	}
+	if !errors.Is(err, nerrors.ErrNotFound) {
+		return nil, err
+	}
+
+	dm, err = game0.NewDemoModel(id, db.coll)
+	if err != nil {
+		return nil, err
+	}
+	if err = dm.InitDefault(); err != nil {
+		return nil, err
+	}
+	if err = dm.Create(); err == nil {
+		return dm, nil
+	}
+	if err = dm.Load(); err != nil {
+		return nil, err
+	}
+	return dm, nil
 }

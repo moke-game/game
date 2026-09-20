@@ -25,12 +25,12 @@ Prod typically runs thin game processes against remote platform (`AUTH_URL` and 
 
 ### Assemble (LEGO)
 
-`fxmain.Main(...)` already includes process settings, logging, gRPC/gateway binding, Mongo, Redis client, and the MQ router. Add only the extra bricks this game needs:
+All process bricks live in `pkg/modules`. `fxmain.Main(...)` already includes process settings, logging, gRPC/gateway binding, Mongo, Redis client, and the MQ router. Add only the extra bricks this game needs:
 
 | Need | Module | Where |
 |------|--------|-------|
 | `nats://` + `local://` + Redis `ICache` | `modules.Infra` | both topologies (Watch/Hi use both MQ backends) |
-| Game gRPC + HTTP | `modules.AllModule` | both (TCP is opt-in: `AllWithTCPModule`) |
+| Game gRPC + HTTP | `modules.AllModule` (`HttpModule`) | both (TCP is opt-in: `AllWithTCPModule`) |
 | In-process platform + AuthService | `modules.Platform` | aggregate |
 | Remote platform clients + JWT middleware | `modules.PlatformClients` | thin |
 
@@ -40,6 +40,8 @@ fxmain.Main(modules.Thin)      // Infra + AllModule + PlatformClients
 ```
 
 Swap a brick instead of rewriting `main`: e.g. `fxmain.Main(modules.Infra, modules.GrpcModule, modules.PlatformClients)`.
+
+Game settings and outbound clients use platform's shared `platformfx` helpers (`ProvideFromEnv`, `NewClient`) in `pkg/dfx`.
 
 Public game APIs require auth by default (`AuthMiddlewareModule` / `AuthAllModule`). Do not embed `utility.WithoutAuth` on public services.
 
